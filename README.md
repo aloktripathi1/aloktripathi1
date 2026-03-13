@@ -115,7 +115,7 @@ Coursework & projects from **Tools in Data Science** — data engineering, repro
 
 <br/><br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=aloktripathi1&theme=onestar&no-frame=true&no-bg=true&column=6&margin-w=8" />
+<img src="https://github-profile-trophy.vercel.app/?username=aloktripathi1&theme=darkhub&no-frame=true&no-bg=true&column=6&margin-w=8" />
 
 </div>
 
