@@ -1,17 +1,20 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:21262d&height=120&section=header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:0d1117,100:161b22&height=140&section=header&animation=fadeIn" />
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=34&duration=3000&pause=800&color=C9D1D9&center=true&vCenter=true&width=900&lines=Hi%2C+I'm+Alok+Tripathi+%F0%9F%91%8B;Data+Science+%40+IIT+Madras;AI+%2F+ML+%C2%B7+Backend+%C2%B7+Data+Engineering;Builder+at+heart." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=38&duration=2800&pause=900&color=C9D1D9&center=true&vCenter=true&width=950&lines=Hey%2C+I'm+Alok+Tripathi+%F0%9F%91%8B;Data+Science+%40+IIT+Madras;AI+%2F+ML+%C2%B7+Backend+%C2%B7+Data+Engineering;I+build+things+that+scale+and+ship." alt="Typing SVG" />
 </a>
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=vercel&logoColor=c9d1d9)](https://aloktripathi.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=c9d1d9)](https://www.linkedin.com/in/aloktripathi1)
-[![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=c9d1d9)](https://github.com/aloktripathi1)
-[![Profile Views](https://komarev.com/ghpvc/?username=aloktripathi1&color=6e7681&style=for-the-badge&label=VIEWS)](https://github.com/aloktripathi1)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0d1117?style=flat-square&logo=vercel&logoColor=c9d1d9&labelColor=161b22)](https://aloktripathi.vercel.app)
+&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=c9d1d9&labelColor=161b22)](https://www.linkedin.com/in/aloktripathi1)
+&nbsp;
+[![GitHub followers](https://img.shields.io/github/followers/aloktripathi1?style=flat-square&logo=github&logoColor=c9d1d9&label=follow&labelColor=161b22&color=0d1117)](https://github.com/aloktripathi1)
+&nbsp;
+[![Views](https://komarev.com/ghpvc/?username=aloktripathi1&style=flat-square&color=161b22&label=views)](https://github.com/aloktripathi1)
 
 </div>
 
@@ -19,144 +22,91 @@
 
 ```python
 class Alok:
-    institution  = "IIT Madras — B.S. Data Science"
-    interests    = ["Machine Learning", "Backend Engineering", "Data Pipelines"]
-    currently    = "Building things that scale and ship"
-    open_to      = ["Internships", "Research", "Open Source Collabs"]
-
-    def say_hi(self):
-        print("Thanks for stopping by. Let's build something interesting.")
+    institution = "IIT Madras  ·  B.S. Data Science"
+    building    = "tools that are useful, fast, and actually ship"
+    interests   = ["ML Systems", "Backend Engineering", "Data Pipelines"]
+    open_to     = ["Internships", "Research", "Open Source"]
 ```
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:161b22,100:21262d&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
 
-## `~/stack`
+### `stack`
+
+<div align="center">
+<img src="https://skillicons.dev/icons?i=python,typescript,javascript,flask,fastapi,vue,react,redis,docker,git,linux,vscode,sqlite&theme=dark&perline=14" />
+</div>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
+
+### `projects`
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,typescript,javascript,flask,fastapi,vue,react,sqlite,redis,docker,git,linux,vscode,jupyter&theme=dark&perline=7" />
+[![deadline-intel](https://github-readme-stats.vercel.app/api/pin/?username=aloktripathi1&repo=deadline-intel&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&border_radius=6)](https://github.com/aloktripathi1/deadline-intel)
+[![Medihub](https://github-readme-stats.vercel.app/api/pin/?username=aloktripathi1&repo=Medihub&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&border_radius=6)](https://github.com/aloktripathi1/Medihub)
+
+[![Learnsy](https://github-readme-stats.vercel.app/api/pin/?username=aloktripathi1&repo=Learnsy&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&border_radius=6)](https://github.com/aloktripathi1/Learnsy)
+[![tds-jan-2026](https://github-readme-stats.vercel.app/api/pin/?username=aloktripathi1&repo=tds-jan-2026&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&border_radius=6)](https://github.com/aloktripathi1/tds-jan-2026)
 
 </div>
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:161b22,100:21262d&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
 
-## `~/projects`
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<h3><a href="https://github.com/aloktripathi1/deadline-intel">⏱ deadline-intel</a></h3>
-
-`TypeScript` &nbsp; ⭐ 7
-
-Deadline tracking app for **IIT Madras BS students** — stay on top of every course deadline without the chaos.
-
-![deadline-intel](https://img.shields.io/github/last-commit/aloktripathi1/deadline-intel?color=21262d&labelColor=0d1117&style=flat-square&label=last+commit&logo=github&logoColor=c9d1d9)
-
-</td>
-<td width="50%" valign="top">
-
-<h3><a href="https://github.com/aloktripathi1/Medihub">🏥 Medihub</a></h3>
-
-`Vue` `Flask` `Redis` `Celery` &nbsp; ⭐ 1
-
-Full-stack **hospital management** app — appointments, patient records & doctor schedules with async task queuing.
-
-![Medihub](https://img.shields.io/github/last-commit/aloktripathi1/Medihub?color=21262d&labelColor=0d1117&style=flat-square&label=last+commit&logo=github&logoColor=c9d1d9)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<h3><a href="https://github.com/aloktripathi1/Learnsy">📚 Learnsy</a></h3>
-
-`TypeScript` &nbsp; ⭐ 1
-
-Distraction-free, **YouTube-powered study platform** for deep focus, habit-building & knowledge retention.
-
-![Learnsy](https://img.shields.io/github/last-commit/aloktripathi1/Learnsy?color=21262d&labelColor=0d1117&style=flat-square&label=last+commit&logo=github&logoColor=c9d1d9)
-
-</td>
-<td width="50%" valign="top">
-
-<h3><a href="https://github.com/aloktripathi1/tds-jan-2026">🧰 tds-jan-2026</a></h3>
-
-`Python` &nbsp; ⭐ 5 · 🍴 5
-
-Coursework & projects from **Tools in Data Science** — data engineering, reproducible workflows & MLOps deployment.
-
-![tds](https://img.shields.io/github/last-commit/aloktripathi1/tds-jan-2026?color=21262d&labelColor=0d1117&style=flat-square&label=last+commit&logo=github&logoColor=c9d1d9)
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:161b22,100:21262d&height=2" width="100%"/>
-
-## `~/stats`
+### `stats`
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=aloktripathi1&show_icons=true&theme=github_dark&hide_border=true&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&bg_color=0d1117&rank_icon=github" height="160"/>
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aloktripathi1&layout=compact&theme=github_dark&hide_border=true&title_color=c9d1d9&text_color=8b949e&bg_color=0d1117&langs_count=6" height="160"/>
+<img src="https://github-readme-stats.vercel.app/api?username=aloktripathi1&show_icons=true&theme=github_dark&hide_border=true&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&bg_color=0d1117&rank_icon=github&card_width=420&border_radius=6" height="155"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aloktripathi1&layout=compact&theme=github_dark&hide_border=true&title_color=c9d1d9&text_color=8b949e&bg_color=0d1117&langs_count=6&card_width=280&border_radius=6" height="155"/>
 
-<br/><br/>
+<br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=aloktripathi1&theme=github-dark-blue&hide_border=true&ring=6e7681&fire=c9d1d9&currStreakLabel=c9d1d9&sideLabels=8b949e&dates=8b949e" />
-
-<br/><br/>
+<img src="https://github-readme-streak-stats-eight.vercel.app/?user=aloktripathi1&theme=github-dark-blue&hide_border=true&ring=8b949e&fire=e3b341&currStreakLabel=c9d1d9&sideLabels=6e7681&dates=6e7681&background=0d1117&border_radius=6" />
 
 </div>
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:161b22,100:21262d&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
 
-## `~/learning`
+### `currently learning`
 
 ```text
-Machine Learning Systems      ███████████████░░░░░  in progress
-Distributed Backend Arch      ████████████░░░░░░░░  ongoing
-MLOps & Deployment            █████████░░░░░░░░░░░  exploring
-Reproducible Data Pipelines   ██████████████░░░░░░  active
+ML Systems & Deployment         ████████████████░░░░  in progress
+Distributed Backend Arch        █████████████░░░░░░░  ongoing
+Reproducible Data Pipelines     ███████████████░░░░░  active
+LLM Applications & RAG          ████████░░░░░░░░░░░░  exploring
 ```
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:161b22,100:21262d&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
 
-## `~/contributions`
+### `contributions`
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=aloktripathi1&bg_color=0d1117&color=6e7681&line=30363d&point=c9d1d9&area=true&area_color=161b22&hide_border=true&custom_title=contribution%20graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=aloktripathi1&bg_color=0d1117&color=e3b341&line=6e7681&point=e3b341&area=true&area_color=1c1a10&hide_border=true&radius=6&custom_title=activity" />
 
 <br/>
 
-<!-- Snake animation — run the GitHub Action below first -->
 <picture>
-  <source media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/aloktripathi1/aloktripathi1/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/aloktripathi1/aloktripathi1/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aloktripathi1/aloktripathi1/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aloktripathi1/aloktripathi1/output/github-contribution-grid-snake.svg" />
   <img alt="contribution snake" src="https://raw.githubusercontent.com/aloktripathi1/aloktripathi1/output/github-contribution-grid-snake-dark.svg" />
 </picture>
 
 </div>
 
-<br/>
-
 <div align="center">
-<sub><i>"Stay curious. Keep shipping."</i></sub>
+<br/>
+<sub><code>stay curious · keep shipping</code></sub>
 <br/><br/>
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:21262d,50:161b22,100:0d1117&height=100&section=footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:161b22,100:0d1117&height=90&section=footer" />
 </div>
