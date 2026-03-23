@@ -12,7 +12,7 @@
 &nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=c9d1d9&labelColor=161b22)](https://www.linkedin.com/in/aloktripathi1)
 &nbsp;
-[![GitHub followers](https://img.shields.io/github/followers/aloktripathi1?style=flat-square&logo=github&logoColor=c9d1d9&label=follow&labelColor=161b22&color=0d1117)](https://github.com/aloktripathi1)
+[![GitHub followers](https://img.shields.io/github/followers/aloktripathi1?style=flat-square&logo=github&logoColor=c9d1d9&label=followers&labelColor=161b22&color=0d1117)](https://github.com/aloktripathi1)
 &nbsp;
 [![Views](https://komarev.com/ghpvc/?username=aloktripathi1&style=flat-square&color=161b22&label=views)](https://github.com/aloktripathi1)
 
