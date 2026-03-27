@@ -1,20 +1,20 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:0d1117,100:161b22&height=140&section=header&animation=fadeIn" />
+<br/>
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=38&duration=2800&pause=900&color=C9D1D9&center=true&vCenter=true&width=950&lines=Hey%2C+I'm+Alok+Tripathi+%F0%9F%91%8B;Data+Science+%40+IIT+Madras;AI+%2F+ML+%C2%B7+Backend+%C2%B7+Data+Engineering;I+build+things+that+scale+and+ship." />
-</a>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=2000&pause=900&color=F7EE00&center=true&vCenter=true&width=700&lines=Hey+there!+%F0%9F%91%8B+I'm+Alok;Data+Science+%40+IIT+Madras;AI+%2F+ML+%C2%B7+Backend+%C2%B7+Data+Engineering;I+build+things+that+scale+and+ship." alt="Typing SVG" />
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-0d1117?style=flat-square&logo=vercel&logoColor=c9d1d9&labelColor=161b22)](https://aloktripathi.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-ffffff?style=flat-square&logo=vercel&logoColor=000000&labelColor=ffffff&color=0d1117)](https://aloktripathi.vercel.app)
 &nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=c9d1d9&labelColor=161b22)](https://www.linkedin.com/in/aloktripathi1)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0a66c2?style=flat-square&logo=linkedin&logoColor=fff&labelColor=0a66c2)](https://www.linkedin.com/in/aloktripathi1)
 &nbsp;
-[![GitHub followers](https://img.shields.io/github/followers/aloktripathi1?style=flat-square&logo=github&logoColor=c9d1d9&label=followers&labelColor=161b22&color=0d1117)](https://github.com/aloktripathi1)
+[![GitHub followers](https://img.shields.io/github/followers/aloktripathi1?style=flat-square&logo=github&logoColor=fff&label=follow&labelColor=238636&color=238636)](https://github.com/aloktripathi1)
 &nbsp;
-[![Views](https://komarev.com/ghpvc/?username=aloktripathi1&style=flat-square&color=161b22&label=views)](https://github.com/aloktripathi1)
+[![Views](https://komarev.com/ghpvc/?username=aloktripathi1&style=flat-square&color=e3b341&label=views)](https://github.com/aloktripathi1)
+
+</div>
 
 </div>
 
@@ -62,8 +62,8 @@ class Alok:
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=aloktripathi1&show_icons=true&theme=github_dark&hide_border=true&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&bg_color=0d1117&rank_icon=github&card_width=420&border_radius=6" height="155"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aloktripathi1&layout=compact&theme=github_dark&hide_border=true&title_color=c9d1d9&text_color=8b949e&bg_color=0d1117&langs_count=6&card_width=280&border_radius=6" height="155"/>
+<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=aloktripathi1&show_icons=true&theme=github_dark&hide_border=true&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&bg_color=0d1117&rank_icon=github&card_width=420&border_radius=6" height="155"/>
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=aloktripathi1&layout=compact&theme=github_dark&hide_border=true&title_color=c9d1d9&text_color=8b949e&bg_color=0d1117&langs_count=6&card_width=280&border_radius=6" height="155"/>
 
 <br/>
 
