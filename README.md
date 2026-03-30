@@ -42,11 +42,11 @@ class Alok:
 
 <div align="center">
 
-[![deadline-intel](https://github-readme-stats.vercel.app/api/pin/?username=aloktripathi1&repo=deadline-intel&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&border_radius=6)](https://github.com/aloktripathi1/deadline-intel)
-[![Medihub](https://github-readme-stats.vercel.app/api/pin/?username=aloktripathi1&repo=Medihub&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&border_radius=6)](https://github.com/aloktripathi1/Medihub)
+[![deadline-intel](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=aloktripathi1&repo=deadline-intel&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&border_radius=6)](https://github.com/aloktripathi1/deadline-intel)
+[![Medihub](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=aloktripathi1&repo=Medihub&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&border_radius=6)](https://github.com/aloktripathi1/Medihub)
 
-[![Learnsy](https://github-readme-stats.vercel.app/api/pin/?username=aloktripathi1&repo=Learnsy&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&border_radius=6)](https://github.com/aloktripathi1/Learnsy)
-[![tds-jan-2026](https://github-readme-stats.vercel.app/api/pin/?username=aloktripathi1&repo=tds-jan-2026&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&border_radius=6)](https://github.com/aloktripathi1/tds-jan-2026)
+[![Learnsy](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=aloktripathi1&repo=Learnsy&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&border_radius=6)](https://github.com/aloktripathi1/Learnsy)
+[![tds-jan-2026](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=aloktripathi1&repo=tds-jan-2026&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&icon_color=6e7681&text_color=8b949e&border_radius=6)](https://github.com/aloktripathi1/tds-jan-2026)
 
 </div>
 
