@@ -2,15 +2,13 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&duration=2000&pause=900&color=F7EE00&center=true&vCenter=true&width=700&lines=Hey+there!+%F0%9F%91%8B+I'm+Alok;Data+Science+%40+IIT+Madras;AI+%2F+ML+%C2%B7+Backend+%C2%B7+Data+Engineering;I+build+things+that+scale+and+ship." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=2000&pause=900&color=F7EE00&center=true&vCenter=true&width=700&lines=Hey+there!+%F0%9F%91%8B+I'm+Alok;Data+Science+%40+IIT+Madras;AI+%2F+ML+%C2%B7+Backend+%C2%B7+Data+Engineering;I+build+things+that+scale+and+ship." alt="Typing SVG" />
 
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-ffffff?style=flat-square&logo=vercel&logoColor=000000&labelColor=ffffff&color=0d1117)](https://aloktripathi.vercel.app)
 &nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0a66c2?style=flat-square&logo=linkedin&logoColor=fff&labelColor=0a66c2)](https://www.linkedin.com/in/aloktripathi1)
-&nbsp;
-[![GitHub followers](https://img.shields.io/github/followers/aloktripathi1?style=flat-square&logo=github&logoColor=fff&label=follow&labelColor=238636&color=238636)](https://github.com/aloktripathi1)
 &nbsp;
 [![Views](https://komarev.com/ghpvc/?username=aloktripathi1&style=flat-square&color=e3b341&label=views)](https://github.com/aloktripathi1)
 
