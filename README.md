@@ -8,8 +8,6 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-ffffff?style=flat-square&logo=vercel&logoColor=000000&labelColor=ffffff&color=0d1117)](https://aloktripathi.vercel.app)
 &nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0a66c2?style=flat-square&logo=linkedin&logoColor=fff&labelColor=0a66c2)](https://www.linkedin.com/in/aloktripathi1)
-&nbsp;
 [![Views](https://komarev.com/ghpvc/?username=aloktripathi1&style=flat-square&color=e3b341&label=views)](https://github.com/aloktripathi1)
 
 </div>
