@@ -88,7 +88,7 @@ LLM Applications & RAG          ████████░░░░░░░░
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=aloktripathi1&bg_color=0d1117&color=e3b341&line=6e7681&point=e3b341&area=true&area_color=1c1a10&hide_border=true&radius=6&custom_title=activity" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=aloktripathi1&bg_color=0d1117&color=e3b341&line=e3b341&point=ffffff&area=true&area_color=1c1a10&hide_border=true&radius=6&custom_title=activity" />
 
 <br/>
 
