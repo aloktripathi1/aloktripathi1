@@ -2,13 +2,13 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=2000&pause=900&color=F7EE00&center=true&vCenter=true&width=700&lines=Hey+there!+%F0%9F%91%8B+I'm+Alok;Data+Science+%40+IIT+Madras;AI+%2F+ML+%C2%B7+Backend+%C2%B7+Data+Engineering;I+build+things+that+scale+and+ship." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Space+Mono&weight=700&size=28&duration=2000&pause=900&color=F7EE00&center=true&vCenter=true&width=700&lines=Hey+there!+%F0%9F%91%8B+I'm+Alok;Data+Science+%40+IIT+Madras;AI+%2F+ML+%C2%B7+Backend+%C2%B7+Data+Engineering;I+build+things+that+scale+and+ship." alt="Typing SVG" />
 
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-ffffff?style=flat-square&logo=vercel&logoColor=000000&labelColor=ffffff&color=0d1117)](https://aloktripathi.vercel.app)
 &nbsp;
-[![Views](https://komarev.com/ghpvc/?username=aloktripathi1&style=flat-square&color=e3b341&label=views)](https://github.com/aloktripathi1)
+[![Views](https://komarev.com/ghpvc/?username=aloktripathi1&style=flat-square&color=58A6FF&label=profile_views)](https://github.com/aloktripathi1)
 
 </div>
 
