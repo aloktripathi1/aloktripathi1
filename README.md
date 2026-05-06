@@ -6,8 +6,8 @@
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-ffffff?style=flat-square&logo=vercel&logoColor=000000&labelColor=ffffff&color=0d1117)](https://aloktripathi.vercel.app)
-&nbsp;
+<!-- [![Portfolio](https://img.shields.io/badge/Portfolio-ffffff?style=flat-square&logo=vercel&logoColor=000000&labelColor=ffffff&color=0d1117)](https://aloktripathi.vercel.app)
+&nbsp; -->
 [![Views](https://komarev.com/ghpvc/?username=aloktripathi1&style=flat-square&color=58A6FF&label=profile_views)](https://github.com/aloktripathi1)
 
 </div>
