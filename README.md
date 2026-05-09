@@ -21,7 +21,6 @@ class Alok:
     institution = "IIT Madras  ·  B.S. Data Science"
     building    = "tools that are useful, fast, and actually ship"
     interests   = ["ML Systems", "Backend Engineering", "Data Pipelines"]
-    open_to     = ["Internships", "Research", "Open Source"]
 ```
 
 <br/>
