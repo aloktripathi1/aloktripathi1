@@ -4,9 +4,9 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
 
-I'm pursuing a bachelor's in Data Science & Applications at IIT Madras (Class of '27). My work sits at the seam between machine learning and backend engineering, taking a model from a notebook to something a real user can actually depend on, with all the messy plumbing that involves.
+I'm a Data Science student at IIT Madras (Class of '27). My work sits at the intersection of ML and AI engineering, turning models from notebooks into production systems that actually work.
 
-I've built everything from RAG chatbots for the IITM student handbook to fact-verification systems, music genre classifiers, super-resolution pipelines, and tools used daily by fellow students. The common thread: things that are useful, fast, and actually ship.
+I've built RAG systems, agentic AI, and deployed ML products. I learn by building and shipping: hackathons, competitions, tools people use daily. I care about systems that are useful and work in practice.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
 
