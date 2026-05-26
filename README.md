@@ -13,15 +13,16 @@ I've built RAG systems, agentic AI, and deployed ML products. I learn by buildin
 ### `stack`
 
 <div align="center">
-<br/>
 
 | | |
 |:---|:---|
-| **Languages** | <img src="https://skillicons.dev/icons?i=python,typescript,javascript&theme=dark" /> |
-| **ML / Data** | <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv&theme=dark" /> |
-| **Backend & Infra** | <img src="https://skillicons.dev/icons?i=flask,fastapi,redis,docker,sqlite&theme=dark" /> |
-| **Frontend** | <img src="https://skillicons.dev/icons?i=vue,react&theme=dark" /> |
-| **Tools** | <img src="https://skillicons.dev/icons?i=git,linux,vscode&theme=dark" /> |
+| **Languages** | <img src="https://skillicons.dev/icons?i=python,typescript,javascript&theme=dark&perline=3" height="24" /> |
+| **ML / Data** | <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv&theme=dark&perline=4" height="24" /> |
+| **Backend & Infra** | <img src="https://skillicons.dev/icons?i=flask,fastapi,redis,docker,sqlite&theme=dark&perline=5" height="24" /> |
+| **Frontend** | <img src="https://skillicons.dev/icons?i=vue,react&theme=dark&perline=2" height="24" /> |
+| **Tools** | <img src="https://skillicons.dev/icons?i=git,linux,vscode&theme=dark&perline=3" height="24" /> |
+
+</div>
 
 <br/>
 </div>
