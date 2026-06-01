@@ -2,6 +2,8 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=2000&pause=99999&color=F7EE00&center=true&vCenter=true&repeat=false&width=600&lines=Hi!+%F0%9F%91%8B+I'm+Alok+Tripathi" alt="Typing SVG" />
 </p>
 
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=aloktripathi1&label=Profile%20views&color=0e75b6&style=flat" alt="aloktripathi1" /> </p>
+
 <img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
 
 I'm a Data Science student at IIT Madras (Class of '27). My work sits at the intersection of ML and AI engineering, turning models from notebooks into production systems that actually work.
@@ -40,5 +42,5 @@ I've built RAG systems, agentic AI, and deployed ML products. I learn by buildin
 <br/>
 <sub><code>stay curious · keep shipping</code></sub>
 <br/><br/>
-<img src="https://komarev.com/ghpvc/?username=aloktripathi1&style=flat-square&color=58A6FF&label=views" />
-</div>
+<!-- <img src="https://komarev.com/ghpvc/?username=aloktripathi1&style=flat-square&color=58A6FF&label=views" />
+</div> -->
