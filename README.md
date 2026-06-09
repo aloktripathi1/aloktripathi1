@@ -6,9 +6,9 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
 
-I'm a Data Science student at IIT Madras (Class of '27). My work sits at the intersection of ML and AI engineering, turning models from notebooks into production systems that actually work.
+I'm a Data Science student at IIT Madras (Class of '27) focused on building practical AI systems. I work with machine learning, RAG pipelines, agentic workflows and full-stack applications turning ideas into products that solve real problems.
 
-I've built RAG systems, agentic AI, and deployed ML products. I learn by building and shipping: hackathons, competitions, tools people use daily. I care about systems that are useful and work in practice.
+I learn by building, shipping projects, participating in hackathons and exploring how AI systems move from experiments to real-world applications. I'm particularly interested in AI engineering, machine learning, and scalable software systems.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
 
