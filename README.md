@@ -6,9 +6,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
 
-I'm a Data Science student at IIT Madras (Class of '27) focused on building practical AI systems. I work with machine learning, RAG pipelines, agentic workflows and full-stack applications turning ideas into products that solve real problems.
-
-I learn by building, shipping projects, participating in hackathons and exploring how AI systems move from experiments to real-world applications. I'm particularly interested in AI engineering, machine learning, and scalable software systems.
+I'm a Data Science student at IIT Madras, building AI/ML systems, agentic pipelines, and applied research projects. My work spans machine learning, RAG pipelines, and full-stack applications, turning ideas into products that solve real problems.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
 
@@ -27,18 +25,25 @@ I learn by building, shipping projects, participating in hackathons and explorin
 </div>
 
 <br/>
-</div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
 
 ### `stats`
-
 <div align="center">
 <br/>
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=aloktripathi1&show_icons=true&theme=github_dark&hide_border=true&title_color=F7EE00&icon_color=6e7681&text_color=8b949e&bg_color=0d1117&rank_icon=github&card_width=420&border_radius=6" height="155"/>
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=aloktripathi1&layout=compact&theme=github_dark&hide_border=true&title_color=F7EE00&text_color=8b949e&bg_color=0d1117&langs_count=6&card_width=280&border_radius=6" height="155"/>
+<table>
+  <tr>
+    <td align="center">
+      <img height="195px" src="https://github-readme-stats-one-bice.vercel.app/api?username=aloktripathi1&show_icons=true&include_all_commits=true&count_private=true&theme=transparent&hide_border=true&title_color=F7EE00&icon_color=F7EE00&text_color=c9d1d9&bg_color=0d1117&ring_color=F7EE00&custom_title=Alok's%20GitHub%20Stats" />
+    </td>
+    <td align="center">
+      <img height="195px" src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=aloktripathi1&layout=compact&hide_border=true&title_color=F7EE00&text_color=c9d1d9&bg_color=0d1117&langs_count=6&custom_title=Most%20Used%20Languages" />
+    </td>
+  </tr>
+
+</table>
 <br/><br/>
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=aloktripathi1&bg_color=0d1117&color=F7EE00&line=F7EE00&point=ffffff&area=true&area_color=1c1a10&hide_border=true&radius=6&custom_title=activity" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=aloktripathi1&custom_title=Alok's%20GitHub%20Activity%20Graph&bg_color=0D1117&color=F7EE00&line=F7EE00&point=FFFFFF&area_color=FFFFFF&area=true&hide_border=true" />
 <br/>
 <sub><code>stay curious · keep shipping</code></sub>
 <br/><br/>
