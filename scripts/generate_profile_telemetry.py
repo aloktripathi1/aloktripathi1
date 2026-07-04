@@ -740,7 +740,7 @@ def render_profile(stats):
     trend_arrow = "▲" if velocity_trend >= 0 else "▼"
 
     # --- Vitals strip --------------------------------------------------------
-    strip_y = 300
+    strip_y = 320
     fields = [
         ("all commits", fmt_num(stats["commitTotal"]), f'across {stats["reposAnalyzed"]} repos', LIME),
         ("30d velocity", fmt_num(stats["velocity30d"]), f'{trend_arrow} {trend_sign}{velocity_trend:.0f}% vs prior 30', trend_color),

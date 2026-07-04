@@ -41,12 +41,12 @@
 <line x1="470" y1="114" x2="1056" y2="114" stroke="#242424" stroke-dasharray="2 4"/>
 <text x="464" y="118" fill="#4a4a44" font-size="9" text-anchor="end">133</text>
 <text x="464" y="257" fill="#4a4a44" font-size="9" text-anchor="end">0</text>
-    <polygon points="470,254 470.00,254.00 523.27,218.21 576.55,209.79 629.82,240.32 683.09,228.74 736.36,199.26 789.64,159.26 842.91,114.00 896.18,143.47 949.45,168.74 1002.73,196.11 1056.00,232.95 1056,254" fill="url(#limeFade)"/>
-    <polyline points="470.00,254.00 523.27,218.21 576.55,209.79 629.82,240.32 683.09,228.74 736.36,199.26 789.64,159.26 842.91,114.00 896.18,143.47 949.45,168.74 1002.73,196.11 1056.00,232.95" fill="none" stroke="#F7EE00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="470,254 470.00,254.00 523.27,218.21 576.55,209.79 629.82,240.32 683.09,228.74 736.36,199.26 789.64,159.26 842.91,114.00 896.18,143.47 949.45,168.74 1002.73,196.11 1056.00,231.89 1056,254" fill="url(#limeFade)"/>
+    <polyline points="470.00,254.00 523.27,218.21 576.55,209.79 629.82,240.32 683.09,228.74 736.36,199.26 789.64,159.26 842.91,114.00 896.18,143.47 949.45,168.74 1002.73,196.11 1056.00,231.89" fill="none" stroke="#F7EE00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="842.9" cy="114.0" r="4" fill="#ff8a3d" stroke="#0a0a0a" stroke-width="2"/>
 <text x="848.9" y="106.0" fill="#ff8a3d" font-size="10" font-weight="700" text-anchor="start">peak · 133</text>
-<circle cx="1056.0" cy="232.9" r="4" fill="#F7EE00" stroke="#0a0a0a" stroke-width="2"/>
-<text x="1050.0" y="224.9" fill="#F7EE00" font-size="10" font-weight="700" text-anchor="end">now · 20</text>
+<circle cx="1056.0" cy="231.9" r="4" fill="#F7EE00" stroke="#0a0a0a" stroke-width="2"/>
+<text x="1050.0" y="223.9" fill="#F7EE00" font-size="10" font-weight="700" text-anchor="end">now · 21</text>
     <text x="470.0" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Aug</text>
 <text x="576.5" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Oct</text>
 <text x="683.1" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Dec</text>
@@ -58,54 +58,54 @@
   <!-- Vitals -->
   <line x1="44" y1="280" x2="1056" y2="280" stroke="#242424"/>
   <text x="44" y="292" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="2">VITALS</text>
-  <text x="44.0" y="300" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ALL COMMITS</text>
-<text x="44.0" y="320" fill="#F7EE00" font-size="24" font-weight="800" letter-spacing="-1">649</text>
-<text x="44.0" y="338" fill="#4a4a44" font-size="11">across 19 repos</text>
-<text x="246.4" y="300" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">30D VELOCITY</text>
-<text x="246.4" y="320" fill="#ff5f5f" font-size="24" font-weight="800" letter-spacing="-1">67</text>
-<text x="246.4" y="338" fill="#4a4a44" font-size="11">▼ -25% vs prior 30</text>
-<line x1="236.4" y1="296" x2="236.4" y2="350" stroke="#242424"/>
-<text x="448.8" y="300" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ACTIVE DAYS</text>
-<text x="448.8" y="320" fill="#5fd4d0" font-size="24" font-weight="800" letter-spacing="-1">36%</text>
-<text x="448.8" y="338" fill="#4a4a44" font-size="11">mean gap 2.2d</text>
-<line x1="438.8" y1="296" x2="438.8" y2="350" stroke="#242424"/>
-<text x="651.2" y="300" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">OSS PRS MERGED</text>
-<text x="651.2" y="320" fill="#9d8cff" font-size="24" font-weight="800" letter-spacing="-1">11</text>
-<text x="651.2" y="338" fill="#4a4a44" font-size="11">across 7 external repos</text>
-<line x1="641.2" y1="296" x2="641.2" y2="350" stroke="#242424"/>
-<text x="853.6" y="300" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">PULL REQUESTS</text>
-<text x="853.6" y="320" fill="#ff5f8f" font-size="24" font-weight="800" letter-spacing="-1">29</text>
-<text x="853.6" y="338" fill="#4a4a44" font-size="11">83% merged</text>
-<line x1="843.6" y1="296" x2="843.6" y2="350" stroke="#242424"/>
+  <text x="44.0" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ALL COMMITS</text>
+<text x="44.0" y="340" fill="#F7EE00" font-size="24" font-weight="800" letter-spacing="-1">650</text>
+<text x="44.0" y="358" fill="#4a4a44" font-size="11">across 19 repos</text>
+<text x="246.4" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">30D VELOCITY</text>
+<text x="246.4" y="340" fill="#ff5f5f" font-size="24" font-weight="800" letter-spacing="-1">68</text>
+<text x="246.4" y="358" fill="#4a4a44" font-size="11">▼ -24% vs prior 30</text>
+<line x1="236.4" y1="316" x2="236.4" y2="370" stroke="#242424"/>
+<text x="448.8" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ACTIVE DAYS</text>
+<text x="448.8" y="340" fill="#5fd4d0" font-size="24" font-weight="800" letter-spacing="-1">36%</text>
+<text x="448.8" y="358" fill="#4a4a44" font-size="11">mean gap 2.2d</text>
+<line x1="438.8" y1="316" x2="438.8" y2="370" stroke="#242424"/>
+<text x="651.2" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">OSS PRS MERGED</text>
+<text x="651.2" y="340" fill="#9d8cff" font-size="24" font-weight="800" letter-spacing="-1">11</text>
+<text x="651.2" y="358" fill="#4a4a44" font-size="11">across 7 external repos</text>
+<line x1="641.2" y1="316" x2="641.2" y2="370" stroke="#242424"/>
+<text x="853.6" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">PULL REQUESTS</text>
+<text x="853.6" y="340" fill="#ff5f8f" font-size="24" font-weight="800" letter-spacing="-1">29</text>
+<text x="853.6" y="358" fill="#4a4a44" font-size="11">83% merged</text>
+<line x1="843.6" y1="316" x2="843.6" y2="370" stroke="#242424"/>
 
   <!-- Language treemap -->
   <line x1="44" y1="404" x2="1056" y2="404" stroke="#242424"/>
   <text x="44" y="416" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">LANGUAGE MIX</text>
-  <rect x="46.00" y="428.00" width="418.04" height="126.00" rx="4" fill="#3178c6" opacity="0.92"><title>TypeScript · 41.7%</title></rect>
+  <rect x="46.00" y="428.00" width="419.21" height="126.00" rx="4" fill="#3178c6" opacity="0.92"><title>TypeScript · 41.8%</title></rect>
 <text x="54.00" y="446.00" fill="#f8fafc" font-size="12" font-weight="800" class="sans">TypeScript</text>
-<text x="54.00" y="460.00" fill="#f8fafc" font-size="10" opacity="0.85">41.7%</text>
-<rect x="468.04" y="428.00" width="394.16" height="126.00" rx="4" fill="#3572A5" opacity="0.92"><title>Python · 39.3%</title></rect>
-<text x="476.04" y="446.00" fill="#f8fafc" font-size="12" font-weight="800" class="sans">Python</text>
-<text x="476.04" y="460.00" fill="#f8fafc" font-size="10" opacity="0.85">39.3%</text>
-<rect x="866.20" y="428.00" width="74.17" height="126.00" rx="4" fill="#41b883" opacity="0.92"><title>Vue · 7.7%</title></rect>
-<text x="874.20" y="446.00" fill="#f8fafc" font-size="12" font-weight="800" class="sans">Vue</text>
-<text x="874.20" y="460.00" fill="#f8fafc" font-size="10" opacity="0.85">7.7%</text>
-<rect x="944.37" y="428.00" width="109.63" height="57.69" rx="4" fill="#f1e05a" opacity="0.92"><title>JavaScript · 5.3%</title></rect>
-<text x="952.37" y="446.00" fill="#0b1320" font-size="12" font-weight="800" class="sans">JavaScript</text>
-<text x="952.37" y="460.00" fill="#0b1320" font-size="10" opacity="0.85">5.3%</text>
-<rect x="944.37" y="489.69" width="76.28" height="64.31" rx="4" fill="#a855f7" opacity="0.92"><title>CSS · 4.2%</title></rect>
-<text x="952.37" y="507.69" fill="#f8fafc" font-size="12" font-weight="800" class="sans">CSS</text>
-<text x="952.37" y="521.69" fill="#f8fafc" font-size="10" opacity="0.85">4.2%</text>
-<rect x="1024.65" y="489.69" width="29.35" height="46.46" rx="4" fill="#e34c26" opacity="0.92"><title>HTML · 1.3%</title></rect>
-<rect x="1024.65" y="540.16" width="29.35" height="13.84" rx="4" fill="#475569" opacity="0.92"><title>Other · 0.5%</title></rect>
+<text x="54.00" y="460.00" fill="#f8fafc" font-size="10" opacity="0.85">41.8%</text>
+<rect x="469.21" y="428.00" width="392.46" height="126.00" rx="4" fill="#3572A5" opacity="0.92"><title>Python · 39.2%</title></rect>
+<text x="477.21" y="446.00" fill="#f8fafc" font-size="12" font-weight="800" class="sans">Python</text>
+<text x="477.21" y="460.00" fill="#f8fafc" font-size="10" opacity="0.85">39.2%</text>
+<rect x="865.67" y="428.00" width="74.38" height="126.00" rx="4" fill="#41b883" opacity="0.92"><title>Vue · 7.7%</title></rect>
+<text x="873.67" y="446.00" fill="#f8fafc" font-size="12" font-weight="800" class="sans">Vue</text>
+<text x="873.67" y="460.00" fill="#f8fafc" font-size="10" opacity="0.85">7.7%</text>
+<rect x="944.05" y="428.00" width="109.95" height="57.69" rx="4" fill="#f1e05a" opacity="0.92"><title>JavaScript · 5.3%</title></rect>
+<text x="952.05" y="446.00" fill="#0b1320" font-size="12" font-weight="800" class="sans">JavaScript</text>
+<text x="952.05" y="460.00" fill="#0b1320" font-size="10" opacity="0.85">5.3%</text>
+<rect x="944.05" y="489.69" width="76.51" height="64.31" rx="4" fill="#a855f7" opacity="0.92"><title>CSS · 4.2%</title></rect>
+<text x="952.05" y="507.69" fill="#f8fafc" font-size="12" font-weight="800" class="sans">CSS</text>
+<text x="952.05" y="521.69" fill="#f8fafc" font-size="10" opacity="0.85">4.2%</text>
+<rect x="1024.56" y="489.69" width="29.44" height="46.46" rx="4" fill="#e34c26" opacity="0.92"><title>HTML · 1.3%</title></rect>
+<rect x="1024.56" y="540.16" width="29.44" height="13.84" rx="4" fill="#475569" opacity="0.92"><title>Other · 0.5%</title></rect>
 
   <!-- Work categories -->
   <text x="44" y="600" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">WORK CATEGORIES</text>
 <text x="1056" y="600" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">FOCUS TOP-3 45%</text>
-  <rect x="44.00" y="612" width="422.14" height="12" rx="3" fill="#F7EE00"><title>Web Apps · 272</title></rect>
-<rect x="468.14" y="612" width="197.59" height="12" rx="3" fill="#5fd4d0"><title>AI / Agents · 128</title></rect>
-<rect x="667.73" y="612" width="194.47" height="12" rx="3" fill="#ff8a3d"><title>Other · 126</title></rect>
-<rect x="864.20" y="612" width="189.80" height="12" rx="3" fill="#9d8cff"><title>Competitive ML · 123</title></rect>
+  <rect x="44.00" y="612" width="423.04" height="12" rx="3" fill="#F7EE00"><title>Web Apps · 273</title></rect>
+<rect x="469.04" y="612" width="197.29" height="12" rx="3" fill="#5fd4d0"><title>AI / Agents · 128</title></rect>
+<rect x="668.33" y="612" width="194.17" height="12" rx="3" fill="#ff8a3d"><title>Other · 126</title></rect>
+<rect x="864.50" y="612" width="189.50" height="12" rx="3" fill="#9d8cff"><title>Competitive ML · 123</title></rect>
   <rect x="44.0" y="637" width="10" height="10" rx="2" fill="#F7EE00"/>
 <text x="60.0" y="646" fill="#c9c9c0" font-size="11">Web Apps</text>
 <text x="60.0" y="661" fill="#7a7a72" font-size="10">42%</text>
@@ -128,18 +128,18 @@
   <text x="44" y="714" fill="#c9c9c0" font-size="12" font-weight="600">aloktripathi1</text>
 <rect x="174" y="706" width="270" height="6" rx="1" fill="#242424"/>
 <rect x="174" y="706" width="270.0" height="6" rx="1" fill="#F7EE00"/>
-<text x="490" y="714" fill="#7a7a72" font-size="11" text-anchor="end">13</text>
+<text x="490" y="714" fill="#7a7a72" font-size="11" text-anchor="end">14</text>
 <text x="44" y="736" fill="#c9c9c0" font-size="12" font-weight="600">thirsty-ai</text>
 <rect x="174" y="728" width="270" height="6" rx="1" fill="#242424"/>
-<rect x="174" y="728" width="145.4" height="6" rx="1" fill="#F7EE00"/>
+<rect x="174" y="728" width="135.0" height="6" rx="1" fill="#F7EE00"/>
 <text x="490" y="736" fill="#7a7a72" font-size="11" text-anchor="end">7</text>
 <text x="44" y="758" fill="#c9c9c0" font-size="12" font-weight="600">SachCheck</text>
 <rect x="174" y="750" width="270" height="6" rx="1" fill="#242424"/>
-<rect x="174" y="750" width="41.5" height="6" rx="1" fill="#F7EE00"/>
+<rect x="174" y="750" width="38.6" height="6" rx="1" fill="#F7EE00"/>
 <text x="490" y="758" fill="#7a7a72" font-size="11" text-anchor="end">2</text>
 <text x="44" y="780" fill="#c9c9c0" font-size="12" font-weight="600">Plant-leaves-Super-Resolution-Challenge</text>
 <rect x="174" y="772" width="270" height="6" rx="1" fill="#242424"/>
-<rect x="174" y="772" width="20.8" height="6" rx="1" fill="#F7EE00"/>
+<rect x="174" y="772" width="19.3" height="6" rx="1" fill="#F7EE00"/>
 <text x="490" y="780" fill="#7a7a72" font-size="11" text-anchor="end">1</text>
   <text x="554" y="714" fill="#c9c9c0" font-size="12" font-weight="600">Khushi-Choudhary11/SachCheck</text>
 <text x="1056" y="714" fill="#F7EE00" font-size="11" font-weight="700" text-anchor="end">7/7 merged</text>
