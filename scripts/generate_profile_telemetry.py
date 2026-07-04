@@ -844,8 +844,7 @@ def render_telemetry(stats):
             status = "merged" if merged_n else "open"
             color = LIME if merged_n else TEXT_DIM
             out.append(f'<text x="{x}" y="{ry}" fill="{TEXT}" font-size="12" font-weight="600">{esc(repo)}</text>')
-            out.append(f'<circle cx="{x + w - 60}" cy="{ry - 4}" r="3" fill="{color}"/>')
-            out.append(f'<text x="{x + w - 30}" y="{ry}" fill="{TEXT_MUTED}" font-size="11" text-anchor="end">{merged_n}/{total_n} {status}</text>')
+            out.append(f'<text x="{x + w}" y="{ry}" fill="{color}" font-size="11" font-weight="700" text-anchor="end">{merged_n}/{total_n} {status}</text>')
         return "\n".join(out)
 
     return f"""<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc">
@@ -857,7 +856,7 @@ def render_telemetry(stats):
 
   <!-- Header -->
   <text x="{pad}" y="56" fill="{TEXT_HI}" font-size="26" font-weight="800" letter-spacing="-0.5" class="sans">build telemetry</text>
-  <text x="{pad}" y="76" fill="{TEXT_MUTED}" font-size="11" letter-spacing="1">TRAILING {stats["windowDays"]} DAYS · {stats["reposPublic"]} PUBLIC + {stats["reposPrivate"]} PRIVATE · {esc(stats["generated"]).upper()}</text>
+  <text x="{pad}" y="76" fill="{TEXT_MUTED}" font-size="11" letter-spacing="1">AI/ML ENGINEERING · AGENTIC SYSTEMS · {stats["windowDays"]}D TRAILING · {esc(stats["generated"]).upper()}</text>
   {hairline(pad, 86, W - pad, HAIRLINE_BRIGHT)}
 
   <!-- Hero: streak + trajectory -->
@@ -1025,7 +1024,7 @@ def render_distribution(stats):
 
   <!-- Header -->
   <text x="{pad}" y="56" fill="{TEXT_HI}" font-size="26" font-weight="800" letter-spacing="-0.5" class="sans">codebase composition</text>
-  <text x="{pad}" y="76" fill="{TEXT_MUTED}" font-size="11" letter-spacing="1">{stats["reposPublic"]} PUBLIC + {stats["reposPrivate"]} PRIVATE REPOS · {len(stats["languages"])} LANGUAGES · {esc(stats["generated"]).upper()}</text>
+  <text x="{pad}" y="76" fill="{TEXT_MUTED}" font-size="11" letter-spacing="1">AI/ML ENGINEERING · AGENTIC SYSTEMS · {len(stats["languages"])} LANGUAGES · {esc(stats["generated"]).upper()}</text>
   {hairline(pad, 86, W - pad, HAIRLINE_BRIGHT)}
 
   <!-- Language treemap -->

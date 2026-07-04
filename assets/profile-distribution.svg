@@ -26,51 +26,51 @@
 
   <!-- Header -->
   <text x="44" y="56" fill="#f5f5f0" font-size="26" font-weight="800" letter-spacing="-0.5" class="sans">codebase composition</text>
-  <text x="44" y="76" fill="#7a7a72" font-size="11" letter-spacing="1">20 PUBLIC + 0 PRIVATE REPOS · 12 LANGUAGES · 2026-07-04</text>
+  <text x="44" y="76" fill="#7a7a72" font-size="11" letter-spacing="1">AI/ML ENGINEERING · AGENTIC SYSTEMS · 12 LANGUAGES · 2026-07-04</text>
   <line x1="44" y1="86" x2="1056" y2="86" stroke="#333333"/>
 
   <!-- Language treemap -->
   <text x="44" y="110" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">LANGUAGE TREEMAP · BYTES</text>
 <text x="1056" y="110" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">JUPYTER EXCLUDED · TOP 9 OF 12</text>
-  <rect x="46.00" y="122.00" width="417.92" height="276.00" rx="4" fill="#3178c6" opacity="0.92"><title>TypeScript · 41.7%</title></rect>
+  <rect x="46.00" y="122.00" width="418.02" height="276.00" rx="4" fill="#3178c6" opacity="0.92"><title>TypeScript · 41.7%</title></rect>
 <text x="56.00" y="144.00" fill="#f8fafc" font-size="14" font-weight="800" class="sans">TypeScript</text>
 <text x="56.00" y="160.00" fill="#f8fafc" font-size="11" opacity="0.85">41.7%</text>
-<rect x="467.92" y="122.00" width="394.34" height="276.00" rx="4" fill="#3572A5" opacity="0.92"><title>Python · 39.4%</title></rect>
-<text x="477.92" y="144.00" fill="#f8fafc" font-size="14" font-weight="800" class="sans">Python</text>
-<text x="477.92" y="160.00" fill="#f8fafc" font-size="11" opacity="0.85">39.4%</text>
-<rect x="866.26" y="122.00" width="187.74" height="110.11" rx="4" fill="#41b883" opacity="0.92"><title>Vue · 7.7%</title></rect>
-<text x="876.26" y="144.00" fill="#f8fafc" font-size="14" font-weight="800" class="sans">Vue</text>
-<text x="876.26" y="160.00" fill="#f8fafc" font-size="11" opacity="0.85">7.7%</text>
-<rect x="866.26" y="236.11" width="87.00" height="161.89" rx="4" fill="#f1e05a" opacity="0.92"><title>JavaScript · 5.3%</title></rect>
-<text x="876.26" y="258.11" fill="#0b1320" font-size="14" font-weight="800" class="sans">JavaScript</text>
-<text x="876.26" y="274.11" fill="#0b1320" font-size="11" opacity="0.85">5.3%</text>
-<rect x="957.25" y="236.11" width="96.75" height="113.20" rx="4" fill="#a855f7" opacity="0.92"><title>CSS · 4.2%</title></rect>
-<text x="967.25" y="258.11" fill="#f8fafc" font-size="14" font-weight="800" class="sans">CSS</text>
-<text x="967.25" y="274.11" fill="#f8fafc" font-size="11" opacity="0.85">4.2%</text>
-<rect x="957.25" y="353.32" width="70.43" height="44.68" rx="4" fill="#e34c26" opacity="0.92"><title>HTML · 1.3%</title></rect>
-<text x="967.25" y="375.32" fill="#f8fafc" font-size="14" font-weight="800" class="sans">HTML</text>
-<text x="967.25" y="391.32" fill="#f8fafc" font-size="11" opacity="0.85">1.3%</text>
-<rect x="1031.68" y="353.32" width="22.32" height="32.06" rx="4" fill="#F7EE00" opacity="0.92"><title>PLpgSQL · 0.3%</title></rect>
-<rect x="1031.68" y="389.38" width="7.42" height="8.62" rx="4" fill="#384d54" opacity="0.92"><title>Dockerfile · 0.1%</title></rect>
+<rect x="468.02" y="122.00" width="394.19" height="276.00" rx="4" fill="#3572A5" opacity="0.92"><title>Python · 39.3%</title></rect>
+<text x="478.02" y="144.00" fill="#f8fafc" font-size="14" font-weight="800" class="sans">Python</text>
+<text x="478.02" y="160.00" fill="#f8fafc" font-size="11" opacity="0.85">39.3%</text>
+<rect x="866.21" y="122.00" width="187.79" height="110.11" rx="4" fill="#41b883" opacity="0.92"><title>Vue · 7.7%</title></rect>
+<text x="876.21" y="144.00" fill="#f8fafc" font-size="14" font-weight="800" class="sans">Vue</text>
+<text x="876.21" y="160.00" fill="#f8fafc" font-size="11" opacity="0.85">7.7%</text>
+<rect x="866.21" y="236.11" width="87.02" height="161.89" rx="4" fill="#f1e05a" opacity="0.92"><title>JavaScript · 5.3%</title></rect>
+<text x="876.21" y="258.11" fill="#0b1320" font-size="14" font-weight="800" class="sans">JavaScript</text>
+<text x="876.21" y="274.11" fill="#0b1320" font-size="11" opacity="0.85">5.3%</text>
+<rect x="957.23" y="236.11" width="96.77" height="113.20" rx="4" fill="#a855f7" opacity="0.92"><title>CSS · 4.2%</title></rect>
+<text x="967.23" y="258.11" fill="#f8fafc" font-size="14" font-weight="800" class="sans">CSS</text>
+<text x="967.23" y="274.11" fill="#f8fafc" font-size="11" opacity="0.85">4.2%</text>
+<rect x="957.23" y="353.32" width="70.44" height="44.68" rx="4" fill="#e34c26" opacity="0.92"><title>HTML · 1.3%</title></rect>
+<text x="967.23" y="375.32" fill="#f8fafc" font-size="14" font-weight="800" class="sans">HTML</text>
+<text x="967.23" y="391.32" fill="#f8fafc" font-size="11" opacity="0.85">1.3%</text>
+<rect x="1031.67" y="353.32" width="22.33" height="32.06" rx="4" fill="#F7EE00" opacity="0.92"><title>PLpgSQL · 0.3%</title></rect>
+<rect x="1031.67" y="389.38" width="7.42" height="8.62" rx="4" fill="#384d54" opacity="0.92"><title>Dockerfile · 0.1%</title></rect>
 <rect x="1043.10" y="389.38" width="10.90" height="8.62" rx="4" fill="#475569" opacity="0.92"><title>Other · 0.1%</title></rect>
 
   <!-- Categories -->
   <line x1="44" y1="430" x2="1056" y2="430" stroke="#242424"/>
   <text x="44" y="444" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">WORK CATEGORIES · COMMITS</text>
 <text x="1056" y="444" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">FOCUS TOP-3 45% · BALANCED · ENTROPY 0.84</text>
-  <rect x="44.00" y="486" width="419.41" height="14" rx="3" fill="#F7EE00"><title>Web Apps · 269</title></rect>
-<rect x="465.41" y="486" width="198.52" height="14" rx="3" fill="#5fd4d0"><title>AI / Agents · 128</title></rect>
-<rect x="665.93" y="486" width="195.39" height="14" rx="3" fill="#ff8a3d"><title>Other · 126</title></rect>
-<rect x="863.31" y="486" width="190.69" height="14" rx="3" fill="#9d8cff"><title>Competitive ML · 123</title></rect>
+  <rect x="44.00" y="486" width="420.32" height="14" rx="3" fill="#F7EE00"><title>Web Apps · 270</title></rect>
+<rect x="466.32" y="486" width="198.21" height="14" rx="3" fill="#5fd4d0"><title>AI / Agents · 128</title></rect>
+<rect x="666.53" y="486" width="195.08" height="14" rx="3" fill="#ff8a3d"><title>Other · 126</title></rect>
+<rect x="863.61" y="486" width="190.39" height="14" rx="3" fill="#9d8cff"><title>Competitive ML · 123</title></rect>
   <rect x="44" y="521" width="10" height="10" rx="2" fill="#F7EE00"/>
 <text x="62" y="530" fill="#c9c9c0" font-size="12">Web Apps</text>
-<text x="364" y="530" fill="#7a7a72" font-size="11" text-anchor="end">269  ·  42%</text>
+<text x="364" y="530" fill="#7a7a72" font-size="11" text-anchor="end">270  ·  42%</text>
 <rect x="384" y="521" width="10" height="10" rx="2" fill="#5fd4d0"/>
 <text x="402" y="530" fill="#c9c9c0" font-size="12">AI / Agents</text>
 <text x="704" y="530" fill="#7a7a72" font-size="11" text-anchor="end">128  ·  20%</text>
 <rect x="724" y="521" width="10" height="10" rx="2" fill="#ff8a3d"/>
 <text x="742" y="530" fill="#c9c9c0" font-size="12">Other</text>
-<text x="1044" y="530" fill="#7a7a72" font-size="11" text-anchor="end">126  ·  20%</text>
+<text x="1044" y="530" fill="#7a7a72" font-size="11" text-anchor="end">126  ·  19%</text>
 <rect x="44" y="547" width="10" height="10" rx="2" fill="#9d8cff"/>
 <text x="62" y="556" fill="#c9c9c0" font-size="12">Competitive ML</text>
 <text x="364" y="556" fill="#7a7a72" font-size="11" text-anchor="end">123  ·  19%</text>
@@ -110,8 +110,8 @@
 <text x="44" y="706" fill="#4a4a44" font-size="11" font-weight="700"> 6</text>
 <text x="70" y="706" fill="#c9c9c0" font-size="12">aloktripathi1</text>
 <rect x="214" y="698" width="300.0" height="6" rx="1" fill="#242424"/>
-<rect x="214" y="698" width="120.0" height="6" rx="1" fill="#5eead4"/>
-<text x="544" y="706" fill="#7a7a72" font-size="11" text-anchor="end">46</text>
+<rect x="214" y="698" width="122.6" height="6" rx="1" fill="#5eead4"/>
+<text x="544" y="706" fill="#7a7a72" font-size="11" text-anchor="end">47</text>
 <text x="44" y="724" fill="#4a4a44" font-size="11" font-weight="700"> 7</text>
 <text x="70" y="724" fill="#c9c9c0" font-size="12">Learnsy</text>
 <rect x="214" y="716" width="300.0" height="6" rx="1" fill="#242424"/>
