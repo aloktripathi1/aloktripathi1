@@ -1,6 +1,6 @@
-<svg width="1100" height="730" viewBox="0 0 1100 730" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc">
+<svg width="1100" height="806" viewBox="0 0 1100 806" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc">
   <title id="ttl">Alok build telemetry</title>
-  <desc id="desc">Streak hero, twelve-month commit trajectory, weekday pulse, hour-of-day distribution, and top projects.</desc>
+  <desc id="desc">Streak hero, trajectory, vitals, language mix, work categories, top projects, and OSS contributions.</desc>
   <style>text { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; } .sans { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }</style>
   <defs>
   <linearGradient id="bgGrad" x1="0" x2="1" y1="0" y2="1">
@@ -19,152 +19,134 @@
     <stop offset="1" stop-color="#5fd4d0" stop-opacity="0"/>
   </linearGradient>
 </defs>
-  <rect width="1100" height="730" rx="10" fill="url(#bgGrad)"/>
-<rect width="1100" height="730" rx="10" fill="url(#dots)"/>
-<rect x="0.5" y="0.5" width="1099" height="729" rx="9.5" fill="none" stroke="#333333"/>
+  <rect width="1100" height="806" rx="10" fill="url(#bgGrad)"/>
+<rect width="1100" height="806" rx="10" fill="url(#dots)"/>
+<rect x="0.5" y="0.5" width="1099" height="805" rx="9.5" fill="none" stroke="#333333"/>
 
 
   <!-- Header -->
   <text x="44" y="56" fill="#f5f5f0" font-size="26" font-weight="800" letter-spacing="-0.5" class="sans">build telemetry</text>
-  <text x="44" y="76" fill="#7a7a72" font-size="11" letter-spacing="1">AI/ML ENGINEERING · AGENTIC SYSTEMS · 366D TRAILING · 2026-07-04</text>
+  <text x="44" y="76" fill="#7a7a72" font-size="11" letter-spacing="1">AI/ML ENGINEERING · AGENTIC SYSTEMS · 2026-07-04</text>
   <line x1="44" y1="86" x2="1056" y2="86" stroke="#333333"/>
 
   <!-- Hero: streak + trajectory -->
   <g>
     <text x="44" y="108" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="2">CURRENT STREAK</text>
     <text x="44" y="201" fill="#F7EE00" font-size="118" font-weight="900" letter-spacing="-6" class="sans">41<tspan font-size="40" fill="#f5f5f0" font-weight="800">d</tspan></text>
-    <text x="44" y="234" fill="#c9c9c0" font-size="13">longest run 41d  ·  longest quiet stretch 81d</text>
-    <text x="44" y="264" fill="#4a4a44" font-size="11">avg commit size 5164 lines · code growth 53% additions</text>
+    <text x="44" y="234" fill="#c9c9c0" font-size="13">longest run 41d · quiet stretch 81d</text>
   </g>
   <g>
     <text x="470" y="108" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="2">12-MONTH TRAJECTORY</text>
-    <line x1="470" y1="264" x2="1056" y2="264" stroke="#242424"/>
+    <line x1="470" y1="254" x2="1056" y2="254" stroke="#242424"/>
 <line x1="470" y1="114" x2="1056" y2="114" stroke="#242424" stroke-dasharray="2 4"/>
 <text x="464" y="118" fill="#4a4a44" font-size="9" text-anchor="end">133</text>
-<text x="464" y="267" fill="#4a4a44" font-size="9" text-anchor="end">0</text>
-    <polygon points="470,264 470.00,264.00 523.27,225.65 576.55,216.63 629.82,249.34 683.09,236.93 736.36,205.35 789.64,162.50 842.91,114.00 896.18,145.58 949.45,172.65 1002.73,201.97 1056.00,243.70 1056,264" fill="url(#limeFade)"/>
-    <polyline points="470.00,264.00 523.27,225.65 576.55,216.63 629.82,249.34 683.09,236.93 736.36,205.35 789.64,162.50 842.91,114.00 896.18,145.58 949.45,172.65 1002.73,201.97 1056.00,243.70" fill="none" stroke="#F7EE00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="464" y="257" fill="#4a4a44" font-size="9" text-anchor="end">0</text>
+    <polygon points="470,254 470.00,254.00 523.27,218.21 576.55,209.79 629.82,240.32 683.09,228.74 736.36,199.26 789.64,159.26 842.91,114.00 896.18,143.47 949.45,168.74 1002.73,196.11 1056.00,232.95 1056,254" fill="url(#limeFade)"/>
+    <polyline points="470.00,254.00 523.27,218.21 576.55,209.79 629.82,240.32 683.09,228.74 736.36,199.26 789.64,159.26 842.91,114.00 896.18,143.47 949.45,168.74 1002.73,196.11 1056.00,232.95" fill="none" stroke="#F7EE00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="842.9" cy="114.0" r="4" fill="#ff8a3d" stroke="#0a0a0a" stroke-width="2"/>
 <text x="848.9" y="106.0" fill="#ff8a3d" font-size="10" font-weight="700" text-anchor="start">peak · 133</text>
-<circle cx="1056.0" cy="243.7" r="4" fill="#F7EE00" stroke="#0a0a0a" stroke-width="2"/>
-<text x="1050.0" y="235.7" fill="#F7EE00" font-size="10" font-weight="700" text-anchor="end">now · 18</text>
-    <text x="470.0" y="280" fill="#4a4a44" font-size="10" text-anchor="middle">Aug</text>
-<text x="576.5" y="280" fill="#4a4a44" font-size="10" text-anchor="middle">Oct</text>
-<text x="683.1" y="280" fill="#4a4a44" font-size="10" text-anchor="middle">Dec</text>
-<text x="789.6" y="280" fill="#4a4a44" font-size="10" text-anchor="middle">Feb</text>
-<text x="896.2" y="280" fill="#4a4a44" font-size="10" text-anchor="middle">Apr</text>
-<text x="1002.7" y="280" fill="#4a4a44" font-size="10" text-anchor="middle">Jun</text>
+<circle cx="1056.0" cy="232.9" r="4" fill="#F7EE00" stroke="#0a0a0a" stroke-width="2"/>
+<text x="1050.0" y="224.9" fill="#F7EE00" font-size="10" font-weight="700" text-anchor="end">now · 20</text>
+    <text x="470.0" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Aug</text>
+<text x="576.5" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Oct</text>
+<text x="683.1" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Dec</text>
+<text x="789.6" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Feb</text>
+<text x="896.2" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Apr</text>
+<text x="1002.7" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Jun</text>
   </g>
 
-  <!-- Hairline + Number strip -->
-  <line x1="44" y1="300" x2="1056" y2="300" stroke="#242424"/>
-  <text x="44" y="312" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="2">VITALS</text>
-  <text x="44.0" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ALL COMMITS</text>
-<text x="44.0" y="340" fill="#F7EE00" font-size="24" font-weight="800" letter-spacing="-1">647</text>
-<text x="44.0" y="358" fill="#4a4a44" font-size="11">across 19 repos</text>
-<text x="212.66666666666666" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">30D VELOCITY</text>
-<text x="212.66666666666666" y="340" fill="#ff5f5f" font-size="24" font-weight="800" letter-spacing="-1">65</text>
-<text x="212.66666666666666" y="358" fill="#4a4a44" font-size="11">▼ -27% vs prior 30</text>
-<line x1="202.66666666666666" y1="316" x2="202.66666666666666" y2="370" stroke="#242424"/>
-<text x="381.3333333333333" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ACTIVE DAYS</text>
-<text x="381.3333333333333" y="340" fill="#5fd4d0" font-size="24" font-weight="800" letter-spacing="-1">36%</text>
-<text x="381.3333333333333" y="358" fill="#4a4a44" font-size="11">mean gap 2.2d</text>
-<line x1="371.3333333333333" y1="316" x2="371.3333333333333" y2="370" stroke="#242424"/>
-<text x="550.0" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">BIGGEST DAY</text>
-<text x="550.0" y="340" fill="#ff8a3d" font-size="24" font-weight="800" letter-spacing="-1">32</text>
-<text x="550.0" y="358" fill="#4a4a44" font-size="11">on 2026-05-28</text>
-<line x1="540.0" y1="316" x2="540.0" y2="370" stroke="#242424"/>
-<text x="718.6666666666666" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">OSS PRS MERGED</text>
-<text x="718.6666666666666" y="340" fill="#9d8cff" font-size="24" font-weight="800" letter-spacing="-1">11</text>
-<text x="718.6666666666666" y="358" fill="#4a4a44" font-size="11">across 7 external repos</text>
-<line x1="708.6666666666666" y1="316" x2="708.6666666666666" y2="370" stroke="#242424"/>
-<text x="887.3333333333333" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">PULL REQUESTS</text>
-<text x="887.3333333333333" y="340" fill="#ff5f8f" font-size="24" font-weight="800" letter-spacing="-1">29</text>
-<text x="887.3333333333333" y="358" fill="#4a4a44" font-size="11">83% merged · 10 active wks</text>
-<line x1="877.3333333333333" y1="316" x2="877.3333333333333" y2="370" stroke="#242424"/>
+  <!-- Vitals -->
+  <line x1="44" y1="280" x2="1056" y2="280" stroke="#242424"/>
+  <text x="44" y="292" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="2">VITALS</text>
+  <text x="44.0" y="300" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ALL COMMITS</text>
+<text x="44.0" y="320" fill="#F7EE00" font-size="24" font-weight="800" letter-spacing="-1">649</text>
+<text x="44.0" y="338" fill="#4a4a44" font-size="11">across 19 repos</text>
+<text x="246.4" y="300" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">30D VELOCITY</text>
+<text x="246.4" y="320" fill="#ff5f5f" font-size="24" font-weight="800" letter-spacing="-1">67</text>
+<text x="246.4" y="338" fill="#4a4a44" font-size="11">▼ -25% vs prior 30</text>
+<line x1="236.4" y1="296" x2="236.4" y2="350" stroke="#242424"/>
+<text x="448.8" y="300" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ACTIVE DAYS</text>
+<text x="448.8" y="320" fill="#5fd4d0" font-size="24" font-weight="800" letter-spacing="-1">36%</text>
+<text x="448.8" y="338" fill="#4a4a44" font-size="11">mean gap 2.2d</text>
+<line x1="438.8" y1="296" x2="438.8" y2="350" stroke="#242424"/>
+<text x="651.2" y="300" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">OSS PRS MERGED</text>
+<text x="651.2" y="320" fill="#9d8cff" font-size="24" font-weight="800" letter-spacing="-1">11</text>
+<text x="651.2" y="338" fill="#4a4a44" font-size="11">across 7 external repos</text>
+<line x1="641.2" y1="296" x2="641.2" y2="350" stroke="#242424"/>
+<text x="853.6" y="300" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">PULL REQUESTS</text>
+<text x="853.6" y="320" fill="#ff5f8f" font-size="24" font-weight="800" letter-spacing="-1">29</text>
+<text x="853.6" y="338" fill="#4a4a44" font-size="11">83% merged</text>
+<line x1="843.6" y1="296" x2="843.6" y2="350" stroke="#242424"/>
 
-  <!-- Section row -->
-  <line x1="44" y1="412" x2="1056" y2="412" stroke="#242424"/>
-  <text x="44" y="432" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">WEEKDAY PULSE</text>
-<text x="514" y="432" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">LOUDEST FRI · QUIETEST TUE</text>
-<text x="580" y="432" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">HOUR OF DAY (IST)</text>
-<text x="1056" y="432" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">PEAK 17:00 · 647 COMMITS</text>
-<line x1="44" y1="444" x2="514" y2="444" stroke="#242424"/>
-<line x1="580" y1="444" x2="1056" y2="444" stroke="#242424"/>
-  <rect x="52" y="493.1" width="42" height="90.9" rx="2" fill="#F7EE00" opacity="0.78"/>
-<text x="73.0" y="600" fill="#7a7a72" font-size="10.5" text-anchor="middle">Mon</text>
-<text x="73.0" y="487.1" fill="#c9c9c0" font-size="10" text-anchor="middle">1.7</text>
-<rect x="112" y="505.2" width="42" height="78.8" rx="2" fill="#4a4a44" opacity="0.4"/>
-<text x="133.0" y="600" fill="#7a7a72" font-size="10.5" text-anchor="middle">Tue</text>
-<text x="133.0" y="499.2" fill="#c9c9c0" font-size="10" text-anchor="middle">1.5</text>
-<rect x="172" y="497.1" width="42" height="86.9" rx="2" fill="#F7EE00" opacity="0.78"/>
-<text x="193.0" y="600" fill="#7a7a72" font-size="10.5" text-anchor="middle">Wed</text>
-<text x="193.0" y="491.1" fill="#c9c9c0" font-size="10" text-anchor="middle">1.7</text>
-<rect x="232" y="482.0" width="42" height="102.0" rx="2" fill="#F7EE00" opacity="0.78"/>
-<text x="253.0" y="600" fill="#7a7a72" font-size="10.5" text-anchor="middle">Thu</text>
-<text x="253.0" y="476.0" fill="#c9c9c0" font-size="10" text-anchor="middle">1.9</text>
-<rect x="292" y="474.0" width="42" height="110.0" rx="2" fill="#ff8a3d" opacity="1.0"/>
-<text x="313.0" y="600" fill="#7a7a72" font-size="10.5" text-anchor="middle">Fri</text>
-<text x="313.0" y="468.0" fill="#c9c9c0" font-size="10" text-anchor="middle">2.1</text>
-<rect x="352" y="504.7" width="42" height="79.3" rx="2" fill="#F7EE00" opacity="0.78"/>
-<text x="373.0" y="600" fill="#7a7a72" font-size="10.5" text-anchor="middle">Sat</text>
-<text x="373.0" y="498.7" fill="#c9c9c0" font-size="10" text-anchor="middle">1.5</text>
-<rect x="412" y="482.0" width="42" height="102.0" rx="2" fill="#F7EE00" opacity="0.78"/>
-<text x="433.0" y="600" fill="#7a7a72" font-size="10.5" text-anchor="middle">Sun</text>
-<text x="433.0" y="476.0" fill="#c9c9c0" font-size="10" text-anchor="middle">1.9</text>
-  <rect x="580.0" y="572.0" width="17.9" height="12.0" rx="1" fill="#9d8cff" opacity="0.7"/>
-<rect x="599.9" y="568.5" width="17.9" height="15.5" rx="1" fill="#9d8cff" opacity="0.7"/>
-<rect x="619.8" y="582.5" width="17.9" height="1.5" rx="1" fill="#9d8cff" opacity="0.7"/>
-<rect x="639.8" y="578.8" width="17.9" height="5.2" rx="1" fill="#9d8cff" opacity="0.7"/>
-<rect x="659.7" y="582.5" width="17.9" height="1.5" rx="1" fill="#9d8cff" opacity="0.7"/>
-<rect x="679.6" y="578.8" width="17.9" height="5.2" rx="1" fill="#9d8cff" opacity="0.7"/>
-<rect x="699.5" y="575.4" width="17.9" height="8.6" rx="1" fill="#5fd4d0" opacity="0.7"/>
-<rect x="719.4" y="523.8" width="17.9" height="60.2" rx="1" fill="#5fd4d0" opacity="0.7"/>
-<rect x="739.3" y="523.8" width="17.9" height="60.2" rx="1" fill="#5fd4d0" opacity="0.7"/>
-<rect x="759.2" y="539.3" width="17.9" height="44.7" rx="1" fill="#5fd4d0" opacity="0.7"/>
-<rect x="779.2" y="480.9" width="17.9" height="103.1" rx="1" fill="#5fd4d0" opacity="0.7"/>
-<rect x="799.1" y="504.9" width="17.9" height="79.1" rx="1" fill="#5fd4d0" opacity="0.7"/>
-<rect x="819.0" y="539.3" width="17.9" height="44.7" rx="1" fill="#F7EE00" opacity="0.7"/>
-<rect x="838.9" y="544.5" width="17.9" height="39.5" rx="1" fill="#F7EE00" opacity="0.7"/>
-<rect x="858.8" y="520.4" width="17.9" height="63.6" rx="1" fill="#F7EE00" opacity="0.7"/>
-<rect x="878.8" y="510.1" width="17.9" height="73.9" rx="1" fill="#F7EE00" opacity="0.7"/>
-<rect x="898.7" y="513.5" width="17.9" height="70.5" rx="1" fill="#F7EE00" opacity="0.7"/>
-<rect x="918.6" y="474.0" width="17.9" height="110.0" rx="1" fill="#f5f5f0" opacity="0.95"/>
-<rect x="938.5" y="523.8" width="17.9" height="60.2" rx="1" fill="#ff8a3d" opacity="0.7"/>
-<rect x="958.4" y="532.4" width="17.9" height="51.6" rx="1" fill="#ff8a3d" opacity="0.7"/>
-<rect x="978.3" y="547.9" width="17.9" height="36.1" rx="1" fill="#ff8a3d" opacity="0.7"/>
-<rect x="998.2" y="534.2" width="17.9" height="49.8" rx="1" fill="#ff8a3d" opacity="0.7"/>
-<rect x="1018.2" y="527.3" width="17.9" height="56.7" rx="1" fill="#ff8a3d" opacity="0.7"/>
-<rect x="1038.1" y="522.1" width="17.9" height="61.9" rx="1" fill="#ff8a3d" opacity="0.7"/>
-<text x="580.0" y="600" fill="#4a4a44" font-size="10" text-anchor="middle">00</text>
-<text x="699.5" y="600" fill="#4a4a44" font-size="10" text-anchor="middle">06</text>
-<text x="819.0" y="600" fill="#4a4a44" font-size="10" text-anchor="middle">12</text>
-<text x="938.5" y="600" fill="#4a4a44" font-size="10" text-anchor="middle">18</text>
-<text x="1038.1" y="600" fill="#4a4a44" font-size="10" text-anchor="middle">23</text>
-<line x1="580" y1="584" x2="1056" y2="584" stroke="#242424"/>
+  <!-- Language treemap -->
+  <line x1="44" y1="404" x2="1056" y2="404" stroke="#242424"/>
+  <text x="44" y="416" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">LANGUAGE MIX</text>
+  <rect x="46.00" y="428.00" width="418.04" height="126.00" rx="4" fill="#3178c6" opacity="0.92"><title>TypeScript · 41.7%</title></rect>
+<text x="54.00" y="446.00" fill="#f8fafc" font-size="12" font-weight="800" class="sans">TypeScript</text>
+<text x="54.00" y="460.00" fill="#f8fafc" font-size="10" opacity="0.85">41.7%</text>
+<rect x="468.04" y="428.00" width="394.16" height="126.00" rx="4" fill="#3572A5" opacity="0.92"><title>Python · 39.3%</title></rect>
+<text x="476.04" y="446.00" fill="#f8fafc" font-size="12" font-weight="800" class="sans">Python</text>
+<text x="476.04" y="460.00" fill="#f8fafc" font-size="10" opacity="0.85">39.3%</text>
+<rect x="866.20" y="428.00" width="74.17" height="126.00" rx="4" fill="#41b883" opacity="0.92"><title>Vue · 7.7%</title></rect>
+<text x="874.20" y="446.00" fill="#f8fafc" font-size="12" font-weight="800" class="sans">Vue</text>
+<text x="874.20" y="460.00" fill="#f8fafc" font-size="10" opacity="0.85">7.7%</text>
+<rect x="944.37" y="428.00" width="109.63" height="57.69" rx="4" fill="#f1e05a" opacity="0.92"><title>JavaScript · 5.3%</title></rect>
+<text x="952.37" y="446.00" fill="#0b1320" font-size="12" font-weight="800" class="sans">JavaScript</text>
+<text x="952.37" y="460.00" fill="#0b1320" font-size="10" opacity="0.85">5.3%</text>
+<rect x="944.37" y="489.69" width="76.28" height="64.31" rx="4" fill="#a855f7" opacity="0.92"><title>CSS · 4.2%</title></rect>
+<text x="952.37" y="507.69" fill="#f8fafc" font-size="12" font-weight="800" class="sans">CSS</text>
+<text x="952.37" y="521.69" fill="#f8fafc" font-size="10" opacity="0.85">4.2%</text>
+<rect x="1024.65" y="489.69" width="29.35" height="46.46" rx="4" fill="#e34c26" opacity="0.92"><title>HTML · 1.3%</title></rect>
+<rect x="1024.65" y="540.16" width="29.35" height="13.84" rx="4" fill="#475569" opacity="0.92"><title>Other · 0.5%</title></rect>
 
-  <!-- Bottom: Top projects -->
-  <text x="44" y="632" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">TOP PROJECTS · 7D</text>
-<text x="580" y="632" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">OSS CONTRIBUTIONS</text>
-<text x="1056" y="632" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">11 MERGED · 7 REPOS</text>
-<line x1="44" y1="644" x2="514" y2="644" stroke="#242424"/>
-<line x1="580" y1="644" x2="1056" y2="644" stroke="#242424"/>
-  <text x="44" y="656" fill="#c9c9c0" font-size="12" font-weight="600">aloktripathi1</text>
-<rect x="194" y="648" width="240" height="6" rx="1" fill="#242424"/>
-<rect x="194" y="648" width="240.0" height="6" rx="1" fill="#F7EE00"/>
-<text x="484" y="656" fill="#7a7a72" font-size="11" text-anchor="end">11</text>
-<text x="44" y="674" fill="#c9c9c0" font-size="12" font-weight="600">thirsty-ai</text>
-<rect x="194" y="666" width="240" height="6" rx="1" fill="#242424"/>
-<rect x="194" y="666" width="152.7" height="6" rx="1" fill="#F7EE00"/>
-<text x="484" y="674" fill="#7a7a72" font-size="11" text-anchor="end">7</text>
-<text x="44" y="692" fill="#c9c9c0" font-size="12" font-weight="600">SachCheck</text>
-<rect x="194" y="684" width="240" height="6" rx="1" fill="#242424"/>
-<rect x="194" y="684" width="43.6" height="6" rx="1" fill="#F7EE00"/>
-<text x="484" y="692" fill="#7a7a72" font-size="11" text-anchor="end">2</text>
-  <text x="580" y="656" fill="#c9c9c0" font-size="12" font-weight="600">Khushi-Choudhary11/SachCheck</text>
-<text x="1056" y="656" fill="#F7EE00" font-size="11" font-weight="700" text-anchor="end">7/7 merged</text>
-<text x="580" y="674" fill="#c9c9c0" font-size="12" font-weight="600">mem0ai/mem0</text>
-<text x="1056" y="674" fill="#F7EE00" font-size="11" font-weight="700" text-anchor="end">2/4 merged</text>
-<text x="580" y="692" fill="#c9c9c0" font-size="12" font-weight="600">run-llama/llama_index</text>
-<text x="1056" y="692" fill="#F7EE00" font-size="11" font-weight="700" text-anchor="end">1/1 merged</text>
+  <!-- Work categories -->
+  <text x="44" y="600" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">WORK CATEGORIES</text>
+<text x="1056" y="600" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">FOCUS TOP-3 45%</text>
+  <rect x="44.00" y="612" width="422.14" height="12" rx="3" fill="#F7EE00"><title>Web Apps · 272</title></rect>
+<rect x="468.14" y="612" width="197.59" height="12" rx="3" fill="#5fd4d0"><title>AI / Agents · 128</title></rect>
+<rect x="667.73" y="612" width="194.47" height="12" rx="3" fill="#ff8a3d"><title>Other · 126</title></rect>
+<rect x="864.20" y="612" width="189.80" height="12" rx="3" fill="#9d8cff"><title>Competitive ML · 123</title></rect>
+  <rect x="44.0" y="637" width="10" height="10" rx="2" fill="#F7EE00"/>
+<text x="60.0" y="646" fill="#c9c9c0" font-size="11">Web Apps</text>
+<text x="60.0" y="661" fill="#7a7a72" font-size="10">42%</text>
+<rect x="297.0" y="637" width="10" height="10" rx="2" fill="#5fd4d0"/>
+<text x="313.0" y="646" fill="#c9c9c0" font-size="11">AI / Agents</text>
+<text x="313.0" y="661" fill="#7a7a72" font-size="10">20%</text>
+<rect x="550.0" y="637" width="10" height="10" rx="2" fill="#ff8a3d"/>
+<text x="566.0" y="646" fill="#c9c9c0" font-size="11">Other</text>
+<text x="566.0" y="661" fill="#7a7a72" font-size="10">19%</text>
+<rect x="803.0" y="637" width="10" height="10" rx="2" fill="#9d8cff"/>
+<text x="819.0" y="646" fill="#c9c9c0" font-size="11">Competitive ML</text>
+<text x="819.0" y="661" fill="#7a7a72" font-size="10">19%</text>
+
+  <!-- Bottom: top projects + OSS -->
+  <text x="44" y="688" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">TOP PROJECTS · 7D</text>
+<text x="554" y="688" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">OSS CONTRIBUTIONS</text>
+<text x="1056" y="688" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">11/16 MERGED</text>
+<line x1="44" y1="700" x2="514" y2="700" stroke="#242424"/>
+<line x1="554" y1="700" x2="1056" y2="700" stroke="#242424"/>
+  <text x="44" y="714" fill="#c9c9c0" font-size="12" font-weight="600">aloktripathi1</text>
+<rect x="174" y="706" width="270" height="6" rx="1" fill="#242424"/>
+<rect x="174" y="706" width="270.0" height="6" rx="1" fill="#F7EE00"/>
+<text x="490" y="714" fill="#7a7a72" font-size="11" text-anchor="end">13</text>
+<text x="44" y="736" fill="#c9c9c0" font-size="12" font-weight="600">thirsty-ai</text>
+<rect x="174" y="728" width="270" height="6" rx="1" fill="#242424"/>
+<rect x="174" y="728" width="145.4" height="6" rx="1" fill="#F7EE00"/>
+<text x="490" y="736" fill="#7a7a72" font-size="11" text-anchor="end">7</text>
+<text x="44" y="758" fill="#c9c9c0" font-size="12" font-weight="600">SachCheck</text>
+<rect x="174" y="750" width="270" height="6" rx="1" fill="#242424"/>
+<rect x="174" y="750" width="41.5" height="6" rx="1" fill="#F7EE00"/>
+<text x="490" y="758" fill="#7a7a72" font-size="11" text-anchor="end">2</text>
+<text x="44" y="780" fill="#c9c9c0" font-size="12" font-weight="600">Plant-leaves-Super-Resolution-Challenge</text>
+<rect x="174" y="772" width="270" height="6" rx="1" fill="#242424"/>
+<rect x="174" y="772" width="20.8" height="6" rx="1" fill="#F7EE00"/>
+<text x="490" y="780" fill="#7a7a72" font-size="11" text-anchor="end">1</text>
+  <text x="554" y="714" fill="#c9c9c0" font-size="12" font-weight="600">Khushi-Choudhary11/SachCheck</text>
+<text x="1056" y="714" fill="#F7EE00" font-size="11" font-weight="700" text-anchor="end">7/7 merged</text>
+<text x="554" y="736" fill="#c9c9c0" font-size="12" font-weight="600">mem0ai/mem0</text>
+<text x="1056" y="736" fill="#F7EE00" font-size="11" font-weight="700" text-anchor="end">2/4 merged</text>
+<text x="554" y="758" fill="#c9c9c0" font-size="12" font-weight="600">run-llama/llama_index</text>
+<text x="1056" y="758" fill="#F7EE00" font-size="11" font-weight="700" text-anchor="end">1/1 merged</text>
+<text x="554" y="780" fill="#c9c9c0" font-size="12" font-weight="600">qdrant/qdrant-client</text>
+<text x="1056" y="780" fill="#F7EE00" font-size="11" font-weight="700" text-anchor="end">1/1 merged</text>
 </svg>
