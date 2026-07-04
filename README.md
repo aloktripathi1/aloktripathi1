@@ -4,7 +4,11 @@
 
 > crafting intelligence from chaos.
 
-I'm a Data Science student at IIT Madras, building AI/ML systems, agentic pipelines, and applied research projects. My work spans machine learning, RAG pipelines, and full-stack applications, turning ideas into products that solve real problems.
+<div align="center">
+  <img width="100%" src="./assets/profile-telemetry.svg" alt="build telemetry" />
+  <br /><br />
+  <img width="100%" src="./assets/profile-distribution.svg" alt="codebase composition" />
+</div>
 
 ## Projects
 
@@ -13,7 +17,7 @@ I'm a Data Science student at IIT Madras, building AI/ML systems, agentic pipeli
 - **PRism** - PR review agent.
 - **[LumenAI](https://github.com/aloktripathi1/LumenAI)** - RAG over ML papers, Qdrant, sentence-transformers.
 
-### `stack`
+## Tech Stack
 
 <div align="center">
 
@@ -26,33 +30,3 @@ I'm a Data Science student at IIT Madras, building AI/ML systems, agentic pipeli
 | **Tools** | <img src="https://skillicons.dev/icons?i=git,linux,vscode&theme=dark&perline=3" height="24" /> |
 
 </div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=1" width="100%"/>
-
-### `stats`
-
-<div align="center">
-<br/>
-<table>
-  <tr>
-    <td align="center">
-      <img height="195px" src="https://github-readme-stats-one-bice.vercel.app/api?username=aloktripathi1&show_icons=true&include_all_commits=true&count_private=true&theme=transparent&hide_border=true&title_color=F7EE00&icon_color=F7EE00&text_color=c9d1d9&bg_color=0d1117&ring_color=F7EE00&custom_title=Alok's%20GitHub%20Stats" />
-    </td>
-    <td align="center">
-      <img height="195px" src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=aloktripathi1&layout=compact&hide_border=true&title_color=F7EE00&text_color=c9d1d9&bg_color=0d1117&langs_count=6&custom_title=Most%20Used%20Languages" />
-    </td>
-  </tr>
-</table>
-<br/><br/>
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=aloktripathi1&custom_title=Alok's%20GitHub%20Activity%20Graph&bg_color=0D1117&color=F7EE00&line=F7EE00&point=FFFFFF&area_color=FFFFFF&area=true&hide_border=true" />
-<br/><br/>
-<img width="100%" src="./assets/profile-telemetry.svg" alt="build telemetry" />
-<br/><br/>
-<img width="100%" src="./assets/profile-distribution.svg" alt="codebase composition" />
-<br/>
-<sub><code>stay curious · keep shipping</code></sub>
-<br/><br/>
-<!-- <img src="https://komarev.com/ghpvc/?username=aloktripathi1&style=flat-square&color=58A6FF&label=views" />
-</div> -->
