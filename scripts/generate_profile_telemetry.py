@@ -367,20 +367,22 @@ def collect():
 
     days = [SINCE + dt.timedelta(days=i) for i in range((TODAY - SINCE).days + 1)]
     daily_values = [daily[day] for day in days]
+    contribution_values = [contribution_daily[day] for day in days]
     active_days_set = {d for d, c in daily.items() if c > 0}
     contribution_active_days = {d for d, c in contribution_daily.items() if c > 0}
     active_values = [v for v in daily_values if v > 0]
+    contribution_active_values = [v for v in contribution_values if v > 0]
     current_streak, longest_streak = streaks(contribution_active_days or active_days_set)
 
-    # Weekday pulse: mean commits per occurrence of each weekday.
+    # Weekday pulse: mean GitHub contributions per occurrence of each weekday.
     weekday_total = [0] * 7
     weekday_count = [0] * 7
     weekday_active = [0] * 7
     for day in days:
         wd = day.weekday()
         weekday_count[wd] += 1
-        weekday_total[wd] += daily[day]
-        if daily[day] > 0:
+        weekday_total[wd] += contribution_daily[day]
+        if contribution_daily[day] > 0:
             weekday_active[wd] += 1
     weekday_mean = [t / c if c else 0 for t, c in zip(weekday_total, weekday_count)]
     best_weekday = max(range(7), key=lambda i: weekday_mean[i])
@@ -395,7 +397,7 @@ def collect():
             next_month = dt.date(start.year + 1, 1, 1)
         else:
             next_month = dt.date(start.year, start.month + 1, 1)
-        total = sum(c for d, c in daily.items() if start <= d < next_month)
+        total = sum(c for d, c in contribution_daily.items() if start <= d < next_month)
         monthly.append((start.isoformat(), total))
         if start.month == 1:
             cursor_month = dt.date(start.year - 1, 12, 1)
@@ -412,26 +414,26 @@ def collect():
     top_year = sorted(((n, sum(repo_daily[n].values())) for n in repo_daily), key=lambda x: x[1], reverse=True)
     top_year = [(n, c) for n, c in top_year if c > 0]
 
-    # Velocity trend: last 30d versus the prior 30d.
-    last_30 = sum(c for d, c in daily.items() if d > TODAY - dt.timedelta(days=30))
-    prev_30 = sum(c for d, c in daily.items() if TODAY - dt.timedelta(days=60) < d <= TODAY - dt.timedelta(days=30))
+    # Velocity trend: GitHub contribution calendar, last 30d versus the prior 30d.
+    last_30 = sum(c for d, c in contribution_daily.items() if d > TODAY - dt.timedelta(days=30))
+    prev_30 = sum(c for d, c in contribution_daily.items() if TODAY - dt.timedelta(days=60) < d <= TODAY - dt.timedelta(days=30))
     velocity_trend = ((last_30 - prev_30) / prev_30 * 100) if prev_30 else 0.0
-    momentum_7d = sum(c for d, c in daily.items() if d > TODAY - dt.timedelta(days=7))
+    momentum_7d = sum(c for d, c in contribution_daily.items() if d > TODAY - dt.timedelta(days=7))
 
-    # Largest single day, burst days, longest quiet stretch.
-    biggest_day = max(daily.items(), key=lambda x: x[1], default=(TODAY, 0))
-    burst_threshold = percentile(active_values, 90) if active_values else 0
-    burst_days = sum(1 for d, c in daily.items() if c >= max(1, burst_threshold))
+    # Largest single day, burst days, longest quiet stretch from contribution calendar.
+    biggest_day = max(contribution_daily.items(), key=lambda x: x[1], default=(TODAY, 0))
+    burst_threshold = percentile(contribution_active_values, 90) if contribution_active_values else 0
+    burst_days = sum(1 for d, c in contribution_daily.items() if c >= max(1, burst_threshold))
     longest_gap = 0
     gap = 0
     for d in days:
-        if daily[d] == 0:
+        if contribution_daily[d] == 0:
             gap += 1
             longest_gap = max(longest_gap, gap)
         else:
             gap = 0
-    # Mean gap between consecutive active days.
-    sorted_active = sorted(active_days_set)
+    # Mean gap between consecutive active contribution days.
+    sorted_active = sorted(contribution_active_days or active_days_set)
     if len(sorted_active) >= 2:
         gaps = [(sorted_active[i] - sorted_active[i - 1]).days for i in range(1, len(sorted_active))]
         mean_gap = statistics.mean(gaps)
@@ -474,8 +476,8 @@ def collect():
         pr_recent.append((wk.isoformat(), pr_weekly.get(wk, 0)))
 
     momentum_score = min(100, round(
-        len(active_values) / len(days) * 100 * 0.40
-        + min(sum(daily_values) / 18, 35)
+        len(contribution_active_values) / len(days) * 100 * 0.40
+        + min(sum(contribution_values) / 18, 35)
         + min(len(prs) / 4, 15)
         + min(max(velocity_trend, 0) / 4, 10)
     ))
@@ -517,7 +519,9 @@ def collect():
         "prPrev4w": pr_prev_4w,
         "prTrendPct": pr_trend,
         "daily": {d.isoformat(): daily[d] for d in days},
-        "activeDaysPct": len(active_values) / len(days) * 100,
+        "contributionsDaily": {d.isoformat(): contribution_daily[d] for d in days},
+        "activeDaysPct": len(contribution_active_values) / len(days) * 100,
+        "contributionTotal": sum(contribution_values),
         "commitTotal": sum(daily_values),
         "commitMean": statistics.mean(daily_values),
         "commitMedian": statistics.median(daily_values),
@@ -742,7 +746,7 @@ def render_profile(stats):
     # --- Vitals strip --------------------------------------------------------
     strip_y = 320
     fields = [
-        ("all commits", fmt_num(stats["commitTotal"]), f'across {stats["reposAnalyzed"]} repos', LIME),
+        ("all contributions", fmt_num(stats["contributionTotal"]), "GitHub calendar", LIME),
         ("30d velocity", fmt_num(stats["velocity30d"]), f'{trend_arrow} {trend_sign}{velocity_trend:.0f}% vs prior 30', trend_color),
         ("active days", pct(stats["activeDaysPct"]), f'mean gap {stats["meanGapDays"]:.1f}d', CYAN),
         ("oss prs merged", fmt_num(stats["externalPrsMerged"]), f'across {stats["externalReposCount"]} external repos', VIOLET),
