@@ -1,6 +1,6 @@
 <svg width="1100" height="760" viewBox="0 0 1100 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc">
   <title id="ttl">Alok codebase composition</title>
-  <desc id="desc">Work category mix, language treemap, PR rhythm, and top projects.</desc>
+  <desc id="desc">Language treemap, work category mix, top projects, PR rhythm with extended statistics.</desc>
   <style>text { font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; } .sans { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }</style>
   <defs>
   <linearGradient id="bgGrad" x1="0" x2="1" y1="0" y2="1">
@@ -25,142 +25,142 @@
 
 
   <!-- Header -->
-  <text x="44" y="56" fill="#f5f5f0" font-size="24" font-weight="800" letter-spacing="-0.5" class="sans">codebase composition</text>
+  <text x="44" y="56" fill="#f5f5f0" font-size="26" font-weight="800" letter-spacing="-0.5" class="sans">codebase composition</text>
   <text x="44" y="76" fill="#7a7a72" font-size="11" letter-spacing="1">20 PUBLIC + 0 PRIVATE REPOS · 12 LANGUAGES · 2026-07-04</text>
   <line x1="44" y1="86" x2="1056" y2="86" stroke="#333333"/>
 
-  <!-- Categories -->
-  <text x="44" y="108" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">WORK CATEGORIES · COMMITS</text>
-<text x="1056" y="108" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">FOCUS TOP-3 46% · BALANCED · ENTROPY 0.84</text>
-  <rect x="44.00" y="122" width="414.80" height="14" rx="3" fill="#F7EE00"><title>Web Apps · 264</title></rect>
-<rect x="460.80" y="122" width="200.08" height="14" rx="3" fill="#5fd4d0"><title>AI / Agents · 128</title></rect>
-<rect x="662.88" y="122" width="196.93" height="14" rx="3" fill="#ff8a3d"><title>Other · 126</title></rect>
-<rect x="861.81" y="122" width="192.19" height="14" rx="3" fill="#9d8cff"><title>Competitive ML · 123</title></rect>
-  <rect x="44.0" y="153" width="10" height="10" rx="2" fill="#F7EE00"/>
-<text x="60.0" y="162" fill="#c9c9c0" font-size="11.5">Web Apps</text>
-<text x="60.0" y="178" fill="#7a7a72" font-size="10.5">264 · 41%</text>
-<rect x="297.0" y="153" width="10" height="10" rx="2" fill="#5fd4d0"/>
-<text x="313.0" y="162" fill="#c9c9c0" font-size="11.5">AI / Agents</text>
-<text x="313.0" y="178" fill="#7a7a72" font-size="10.5">128 · 20%</text>
-<rect x="550.0" y="153" width="10" height="10" rx="2" fill="#ff8a3d"/>
-<text x="566.0" y="162" fill="#c9c9c0" font-size="11.5">Other</text>
-<text x="566.0" y="178" fill="#7a7a72" font-size="10.5">126 · 20%</text>
-<rect x="803.0" y="153" width="10" height="10" rx="2" fill="#9d8cff"/>
-<text x="819.0" y="162" fill="#c9c9c0" font-size="11.5">Competitive ML</text>
-<text x="819.0" y="178" fill="#7a7a72" font-size="10.5">123 · 19%</text>
-
   <!-- Language treemap -->
-  <line x1="44" y1="204" x2="1056" y2="204" stroke="#242424"/>
-  <text x="44" y="218" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">LANGUAGE TREEMAP · BYTES</text>
-<text x="1056" y="218" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">JUPYTER EXCLUDED · TOP 9 OF 12</text>
-  <rect x="46.00" y="226.00" width="424.30" height="276.00" rx="4" fill="#3178c6" opacity="0.92"><title>TypeScript · 42.3%</title></rect>
-<text x="56.00" y="248.00" fill="#f8fafc" font-size="14" font-weight="800" class="sans">TypeScript</text>
-<text x="56.00" y="264.00" fill="#f8fafc" font-size="11" opacity="0.85">42.3%</text>
-<rect x="474.30" y="226.00" width="385.06" height="276.00" rx="4" fill="#3572A5" opacity="0.92"><title>Python · 38.4%</title></rect>
-<text x="484.30" y="248.00" fill="#f8fafc" font-size="14" font-weight="800" class="sans">Python</text>
-<text x="484.30" y="264.00" fill="#f8fafc" font-size="11" opacity="0.85">38.4%</text>
-<rect x="863.36" y="226.00" width="190.64" height="110.11" rx="4" fill="#41b883" opacity="0.92"><title>Vue · 7.8%</title></rect>
-<text x="873.36" y="248.00" fill="#f8fafc" font-size="14" font-weight="800" class="sans">Vue</text>
-<text x="873.36" y="264.00" fill="#f8fafc" font-size="11" opacity="0.85">7.8%</text>
-<rect x="863.36" y="340.11" width="88.37" height="161.89" rx="4" fill="#f1e05a" opacity="0.92"><title>JavaScript · 5.4%</title></rect>
-<text x="873.36" y="362.11" fill="#0b1320" font-size="14" font-weight="800" class="sans">JavaScript</text>
-<text x="873.36" y="378.11" fill="#0b1320" font-size="11" opacity="0.85">5.4%</text>
-<rect x="955.73" y="340.11" width="98.27" height="113.20" rx="4" fill="#a855f7" opacity="0.92"><title>CSS · 4.2%</title></rect>
-<text x="965.73" y="362.11" fill="#f8fafc" font-size="14" font-weight="800" class="sans">CSS</text>
-<text x="965.73" y="378.11" fill="#f8fafc" font-size="11" opacity="0.85">4.2%</text>
-<rect x="955.73" y="457.32" width="71.55" height="44.68" rx="4" fill="#e34c26" opacity="0.92"><title>HTML · 1.3%</title></rect>
-<text x="965.73" y="479.32" fill="#f8fafc" font-size="14" font-weight="800" class="sans">HTML</text>
-<text x="965.73" y="495.32" fill="#f8fafc" font-size="11" opacity="0.85">1.3%</text>
-<rect x="1031.28" y="457.32" width="22.72" height="32.06" rx="4" fill="#F7EE00" opacity="0.92"><title>PLpgSQL · 0.3%</title></rect>
-<rect x="1031.28" y="493.38" width="7.59" height="8.62" rx="4" fill="#384d54" opacity="0.92"><title>Dockerfile · 0.1%</title></rect>
-<rect x="1042.88" y="493.38" width="11.12" height="8.62" rx="4" fill="#475569" opacity="0.92"><title>Other · 0.1%</title></rect>
+  <text x="44" y="110" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">LANGUAGE TREEMAP · BYTES</text>
+<text x="1056" y="110" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">JUPYTER EXCLUDED · TOP 9 OF 12</text>
+  <rect x="46.00" y="122.00" width="417.92" height="276.00" rx="4" fill="#3178c6" opacity="0.92"><title>TypeScript · 41.7%</title></rect>
+<text x="56.00" y="144.00" fill="#f8fafc" font-size="14" font-weight="800" class="sans">TypeScript</text>
+<text x="56.00" y="160.00" fill="#f8fafc" font-size="11" opacity="0.85">41.7%</text>
+<rect x="467.92" y="122.00" width="394.34" height="276.00" rx="4" fill="#3572A5" opacity="0.92"><title>Python · 39.4%</title></rect>
+<text x="477.92" y="144.00" fill="#f8fafc" font-size="14" font-weight="800" class="sans">Python</text>
+<text x="477.92" y="160.00" fill="#f8fafc" font-size="11" opacity="0.85">39.4%</text>
+<rect x="866.26" y="122.00" width="187.74" height="110.11" rx="4" fill="#41b883" opacity="0.92"><title>Vue · 7.7%</title></rect>
+<text x="876.26" y="144.00" fill="#f8fafc" font-size="14" font-weight="800" class="sans">Vue</text>
+<text x="876.26" y="160.00" fill="#f8fafc" font-size="11" opacity="0.85">7.7%</text>
+<rect x="866.26" y="236.11" width="87.00" height="161.89" rx="4" fill="#f1e05a" opacity="0.92"><title>JavaScript · 5.3%</title></rect>
+<text x="876.26" y="258.11" fill="#0b1320" font-size="14" font-weight="800" class="sans">JavaScript</text>
+<text x="876.26" y="274.11" fill="#0b1320" font-size="11" opacity="0.85">5.3%</text>
+<rect x="957.25" y="236.11" width="96.75" height="113.20" rx="4" fill="#a855f7" opacity="0.92"><title>CSS · 4.2%</title></rect>
+<text x="967.25" y="258.11" fill="#f8fafc" font-size="14" font-weight="800" class="sans">CSS</text>
+<text x="967.25" y="274.11" fill="#f8fafc" font-size="11" opacity="0.85">4.2%</text>
+<rect x="957.25" y="353.32" width="70.43" height="44.68" rx="4" fill="#e34c26" opacity="0.92"><title>HTML · 1.3%</title></rect>
+<text x="967.25" y="375.32" fill="#f8fafc" font-size="14" font-weight="800" class="sans">HTML</text>
+<text x="967.25" y="391.32" fill="#f8fafc" font-size="11" opacity="0.85">1.3%</text>
+<rect x="1031.68" y="353.32" width="22.32" height="32.06" rx="4" fill="#F7EE00" opacity="0.92"><title>PLpgSQL · 0.3%</title></rect>
+<rect x="1031.68" y="389.38" width="7.42" height="8.62" rx="4" fill="#384d54" opacity="0.92"><title>Dockerfile · 0.1%</title></rect>
+<rect x="1043.10" y="389.38" width="10.90" height="8.62" rx="4" fill="#475569" opacity="0.92"><title>Other · 0.1%</title></rect>
 
-  <!-- Bottom: PR rhythm + Top projects -->
-  <line x1="44" y1="534" x2="1056" y2="534" stroke="#242424"/>
-  <text x="44" y="548" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">PR RHYTHM · 26W + SIGNALS</text>
-<text x="574" y="548" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">MEAN 2.9/WK</text>
-  <text x="614" y="548" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">TOP PROJECTS · 365D</text>
-  <line x1="44" y1="554" x2="574" y2="554" stroke="#242424"/>
-  <line x1="614" y1="554" x2="1056" y2="554" stroke="#242424"/>
-  <line x1="44" y1="664" x2="574" y2="664" stroke="#242424"/>
-  <rect x="44.00" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="64.50" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="85.00" y="655.11" width="17.50" height="8.89" rx="1" fill="#9d8cff"/>
-<rect x="105.50" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="126.00" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="146.50" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="167.00" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="187.50" y="637.33" width="17.50" height="26.67" rx="1" fill="#9d8cff"/>
-<rect x="208.00" y="628.44" width="17.50" height="35.56" rx="1" fill="#ff5f8f"/>
-<rect x="228.50" y="655.11" width="17.50" height="8.89" rx="1" fill="#9d8cff"/>
-<rect x="249.00" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="269.50" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="290.00" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="310.50" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="331.00" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="351.50" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="372.00" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="392.50" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="413.00" y="646.22" width="17.50" height="17.78" rx="1" fill="#9d8cff"/>
-<rect x="433.50" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="454.00" y="584.00" width="17.50" height="80.00" rx="1" fill="#ff5f8f"/>
-<rect x="474.50" y="637.33" width="17.50" height="26.67" rx="1" fill="#9d8cff"/>
-<rect x="495.00" y="662.00" width="17.50" height="2.00" rx="1" fill="#1c2940"/>
-<rect x="515.50" y="655.11" width="17.50" height="8.89" rx="1" fill="#9d8cff"/>
-<rect x="536.00" y="628.44" width="17.50" height="35.56" rx="1" fill="#ff5f8f"/>
-<rect x="556.50" y="655.11" width="17.50" height="8.89" rx="1" fill="#9d8cff"/>
-  <text x="44" y="678" fill="#4a4a44" font-size="10">Jan 05</text>
-  <text x="574" y="678" fill="#4a4a44" font-size="10" text-anchor="end">Jun 29</text>
-  <text x="44" y="700" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">MERGE RATIO</text>
-<text x="44" y="718" fill="#F7EE00" font-size="22" font-weight="800" letter-spacing="-1">83%</text>
-<text x="44" y="736" fill="#4a4a44" font-size="11">24/29 merged</text>
-<text x="176.5" y="700" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ACTIVE WKS</text>
-<text x="176.5" y="718" fill="#5fd4d0" font-size="22" font-weight="800" letter-spacing="-1">10</text>
-<text x="176.5" y="736" fill="#4a4a44" font-size="11">of 53</text>
-<text x="309.0" y="700" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">P95 / WK</text>
-<text x="309.0" y="718" fill="#ff8a3d" font-size="22" font-weight="800" letter-spacing="-1">7</text>
-<text x="309.0" y="736" fill="#4a4a44" font-size="11">max 9</text>
-<text x="441.5" y="700" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">4W TREND</text>
-<text x="441.5" y="718" fill="#ff5f5f" font-size="22" font-weight="800" letter-spacing="-1">-57%</text>
-<text x="441.5" y="736" fill="#4a4a44" font-size="11">▼ 6 vs 14</text>
-  <text x="614" y="584" fill="#4a4a44" font-size="11" font-weight="700"> 1</text>
-<text x="638" y="584" fill="#c9c9c0" font-size="12">Medihub</text>
-<rect x="714" y="576" width="292.0" height="6" rx="1" fill="#242424"/>
-<rect x="714" y="576" width="292.0" height="6" rx="1" fill="#F7EE00"/>
-<text x="1052" y="584" fill="#7a7a72" font-size="11" text-anchor="end">115</text>
-<text x="614" y="602" fill="#4a4a44" font-size="11" font-weight="700"> 2</text>
-<text x="638" y="602" fill="#c9c9c0" font-size="12">Messy-Mashup-Classifier</text>
-<rect x="714" y="594" width="292.0" height="6" rx="1" fill="#242424"/>
-<rect x="714" y="594" width="274.2" height="6" rx="1" fill="#5fd4d0"/>
-<text x="1052" y="602" fill="#7a7a72" font-size="11" text-anchor="end">108</text>
-<text x="614" y="620" fill="#4a4a44" font-size="11" font-weight="700"> 3</text>
-<text x="638" y="620" fill="#c9c9c0" font-size="12">SachCheck</text>
-<rect x="714" y="612" width="292.0" height="6" rx="1" fill="#242424"/>
-<rect x="714" y="612" width="175.2" height="6" rx="1" fill="#ff8a3d"/>
-<text x="1052" y="620" fill="#7a7a72" font-size="11" text-anchor="end">69</text>
-<text x="614" y="638" fill="#4a4a44" font-size="11" font-weight="700"> 4</text>
-<text x="638" y="638" fill="#c9c9c0" font-size="12">tds-jan-2026</text>
-<rect x="714" y="630" width="292.0" height="6" rx="1" fill="#242424"/>
-<rect x="714" y="630" width="167.6" height="6" rx="1" fill="#9d8cff"/>
-<text x="1052" y="638" fill="#7a7a72" font-size="11" text-anchor="end">66</text>
-<text x="614" y="656" fill="#4a4a44" font-size="11" font-weight="700"> 5</text>
-<text x="638" y="656" fill="#c9c9c0" font-size="12">deadline-intel</text>
-<rect x="714" y="648" width="292.0" height="6" rx="1" fill="#242424"/>
-<rect x="714" y="648" width="162.5" height="6" rx="1" fill="#ff5f8f"/>
-<text x="1052" y="656" fill="#7a7a72" font-size="11" text-anchor="end">64</text>
-<text x="614" y="674" fill="#4a4a44" font-size="11" font-weight="700"> 6</text>
-<text x="638" y="674" fill="#c9c9c0" font-size="12">aloktripathi1</text>
-<rect x="714" y="666" width="292.0" height="6" rx="1" fill="#242424"/>
-<rect x="714" y="666" width="104.1" height="6" rx="1" fill="#5eead4"/>
-<text x="1052" y="674" fill="#7a7a72" font-size="11" text-anchor="end">41</text>
-<text x="614" y="692" fill="#4a4a44" font-size="11" font-weight="700"> 7</text>
-<text x="638" y="692" fill="#c9c9c0" font-size="12">Learnsy</text>
-<rect x="714" y="684" width="292.0" height="6" rx="1" fill="#242424"/>
-<rect x="714" y="684" width="83.8" height="6" rx="1" fill="#fde68a"/>
-<text x="1052" y="692" fill="#7a7a72" font-size="11" text-anchor="end">33</text>
-<text x="614" y="710" fill="#4a4a44" font-size="11" font-weight="700"> 8</text>
-<text x="638" y="710" fill="#c9c9c0" font-size="12">tds-analytics</text>
-<rect x="714" y="702" width="292.0" height="6" rx="1" fill="#242424"/>
-<rect x="714" y="702" width="71.1" height="6" rx="1" fill="#94a3b8"/>
-<text x="1052" y="710" fill="#7a7a72" font-size="11" text-anchor="end">28</text>
+  <!-- Categories -->
+  <line x1="44" y1="430" x2="1056" y2="430" stroke="#242424"/>
+  <text x="44" y="444" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">WORK CATEGORIES · COMMITS</text>
+<text x="1056" y="444" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">FOCUS TOP-3 45% · BALANCED · ENTROPY 0.84</text>
+  <rect x="44.00" y="486" width="418.49" height="14" rx="3" fill="#F7EE00"><title>Web Apps · 268</title></rect>
+<rect x="464.49" y="486" width="198.83" height="14" rx="3" fill="#5fd4d0"><title>AI / Agents · 128</title></rect>
+<rect x="665.32" y="486" width="195.69" height="14" rx="3" fill="#ff8a3d"><title>Other · 126</title></rect>
+<rect x="863.01" y="486" width="190.99" height="14" rx="3" fill="#9d8cff"><title>Competitive ML · 123</title></rect>
+  <rect x="44" y="521" width="10" height="10" rx="2" fill="#F7EE00"/>
+<text x="62" y="530" fill="#c9c9c0" font-size="12">Web Apps</text>
+<text x="364" y="530" fill="#7a7a72" font-size="11" text-anchor="end">268  ·  42%</text>
+<rect x="384" y="521" width="10" height="10" rx="2" fill="#5fd4d0"/>
+<text x="402" y="530" fill="#c9c9c0" font-size="12">AI / Agents</text>
+<text x="704" y="530" fill="#7a7a72" font-size="11" text-anchor="end">128  ·  20%</text>
+<rect x="724" y="521" width="10" height="10" rx="2" fill="#ff8a3d"/>
+<text x="742" y="530" fill="#c9c9c0" font-size="12">Other</text>
+<text x="1044" y="530" fill="#7a7a72" font-size="11" text-anchor="end">126  ·  20%</text>
+<rect x="44" y="547" width="10" height="10" rx="2" fill="#9d8cff"/>
+<text x="62" y="556" fill="#c9c9c0" font-size="12">Competitive ML</text>
+<text x="364" y="556" fill="#7a7a72" font-size="11" text-anchor="end">123  ·  19%</text>
+
+  <!-- Bottom -->
+  <line x1="44" y1="570" x2="1056" y2="570" stroke="#242424"/>
+  <text x="44" y="584" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">TOP PROJECTS · 365D</text>
+  <text x="600" y="584" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">PR RHYTHM · 26W + SIGNALS</text>
+<text x="1056" y="584" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">MEAN 2.9/WK</text>
+  <line x1="44" y1="590" x2="574" y2="590" stroke="#242424"/>
+  <line x1="600" y1="590" x2="1056" y2="590" stroke="#242424"/>
+  <text x="44" y="616" fill="#4a4a44" font-size="11" font-weight="700"> 1</text>
+<text x="70" y="616" fill="#c9c9c0" font-size="12">Medihub</text>
+<rect x="214" y="608" width="300.0" height="6" rx="1" fill="#242424"/>
+<rect x="214" y="608" width="300.0" height="6" rx="1" fill="#F7EE00"/>
+<text x="544" y="616" fill="#7a7a72" font-size="11" text-anchor="end">115</text>
+<text x="44" y="634" fill="#4a4a44" font-size="11" font-weight="700"> 2</text>
+<text x="70" y="634" fill="#c9c9c0" font-size="12">Messy-Mashup-Classifier</text>
+<rect x="214" y="626" width="300.0" height="6" rx="1" fill="#242424"/>
+<rect x="214" y="626" width="281.7" height="6" rx="1" fill="#5fd4d0"/>
+<text x="544" y="634" fill="#7a7a72" font-size="11" text-anchor="end">108</text>
+<text x="44" y="652" fill="#4a4a44" font-size="11" font-weight="700"> 3</text>
+<text x="70" y="652" fill="#c9c9c0" font-size="12">SachCheck</text>
+<rect x="214" y="644" width="300.0" height="6" rx="1" fill="#242424"/>
+<rect x="214" y="644" width="180.0" height="6" rx="1" fill="#ff8a3d"/>
+<text x="544" y="652" fill="#7a7a72" font-size="11" text-anchor="end">69</text>
+<text x="44" y="670" fill="#4a4a44" font-size="11" font-weight="700"> 4</text>
+<text x="70" y="670" fill="#c9c9c0" font-size="12">tds-jan-2026</text>
+<rect x="214" y="662" width="300.0" height="6" rx="1" fill="#242424"/>
+<rect x="214" y="662" width="172.2" height="6" rx="1" fill="#9d8cff"/>
+<text x="544" y="670" fill="#7a7a72" font-size="11" text-anchor="end">66</text>
+<text x="44" y="688" fill="#4a4a44" font-size="11" font-weight="700"> 5</text>
+<text x="70" y="688" fill="#c9c9c0" font-size="12">deadline-intel</text>
+<rect x="214" y="680" width="300.0" height="6" rx="1" fill="#242424"/>
+<rect x="214" y="680" width="167.0" height="6" rx="1" fill="#ff5f8f"/>
+<text x="544" y="688" fill="#7a7a72" font-size="11" text-anchor="end">64</text>
+<text x="44" y="706" fill="#4a4a44" font-size="11" font-weight="700"> 6</text>
+<text x="70" y="706" fill="#c9c9c0" font-size="12">aloktripathi1</text>
+<rect x="214" y="698" width="300.0" height="6" rx="1" fill="#242424"/>
+<rect x="214" y="698" width="117.4" height="6" rx="1" fill="#5eead4"/>
+<text x="544" y="706" fill="#7a7a72" font-size="11" text-anchor="end">45</text>
+<text x="44" y="724" fill="#4a4a44" font-size="11" font-weight="700"> 7</text>
+<text x="70" y="724" fill="#c9c9c0" font-size="12">Learnsy</text>
+<rect x="214" y="716" width="300.0" height="6" rx="1" fill="#242424"/>
+<rect x="214" y="716" width="86.1" height="6" rx="1" fill="#fde68a"/>
+<text x="544" y="724" fill="#7a7a72" font-size="11" text-anchor="end">33</text>
+<text x="44" y="742" fill="#4a4a44" font-size="11" font-weight="700"> 8</text>
+<text x="70" y="742" fill="#c9c9c0" font-size="12">tds-analytics</text>
+<rect x="214" y="734" width="300.0" height="6" rx="1" fill="#242424"/>
+<rect x="214" y="734" width="73.0" height="6" rx="1" fill="#94a3b8"/>
+<text x="544" y="742" fill="#7a7a72" font-size="11" text-anchor="end">28</text>
+  <line x1="600" y1="696" x2="1056" y2="696" stroke="#242424"/>
+  <rect x="600.00" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="617.65" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="635.31" y="687.11" width="14.65" height="8.89" rx="1" fill="#9d8cff"/>
+<rect x="652.96" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="670.62" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="688.27" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="705.92" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="723.58" y="669.33" width="14.65" height="26.67" rx="1" fill="#9d8cff"/>
+<rect x="741.23" y="660.44" width="14.65" height="35.56" rx="1" fill="#ff5f8f"/>
+<rect x="758.88" y="687.11" width="14.65" height="8.89" rx="1" fill="#9d8cff"/>
+<rect x="776.54" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="794.19" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="811.85" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="829.50" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="847.15" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="864.81" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="882.46" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="900.12" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="917.77" y="678.22" width="14.65" height="17.78" rx="1" fill="#9d8cff"/>
+<rect x="935.42" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="953.08" y="616.00" width="14.65" height="80.00" rx="1" fill="#ff5f8f"/>
+<rect x="970.73" y="669.33" width="14.65" height="26.67" rx="1" fill="#9d8cff"/>
+<rect x="988.38" y="694.00" width="14.65" height="2.00" rx="1" fill="#1c2940"/>
+<rect x="1006.04" y="687.11" width="14.65" height="8.89" rx="1" fill="#9d8cff"/>
+<rect x="1023.69" y="660.44" width="14.65" height="35.56" rx="1" fill="#ff5f8f"/>
+<rect x="1041.35" y="687.11" width="14.65" height="8.89" rx="1" fill="#9d8cff"/>
+  <text x="600" y="710" fill="#4a4a44" font-size="10">Jan 05</text>
+  <text x="1056" y="710" fill="#4a4a44" font-size="10" text-anchor="end">Jun 29</text>
+  <text x="600" y="732" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">MERGE RATIO</text>
+<text x="600" y="750" fill="#F7EE00" font-size="22" font-weight="800" letter-spacing="-1">83%</text>
+<text x="600" y="768" fill="#4a4a44" font-size="11">24/29 merged</text>
+<text x="730" y="732" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ACTIVE WEEKS</text>
+<text x="730" y="750" fill="#5fd4d0" font-size="22" font-weight="800" letter-spacing="-1">10</text>
+<text x="730" y="768" fill="#4a4a44" font-size="11">of 53 (19%)</text>
+<text x="860" y="732" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">P95 / WEEK</text>
+<text x="860" y="750" fill="#ff8a3d" font-size="22" font-weight="800" letter-spacing="-1">7</text>
+<text x="860" y="768" fill="#4a4a44" font-size="11">max 9/wk</text>
+<text x="990" y="732" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">4W TREND</text>
+<text x="990" y="750" fill="#ff5f5f" font-size="22" font-weight="800" letter-spacing="-1">-57%</text>
+<text x="990" y="768" fill="#4a4a44" font-size="11">▼ 6 vs prior 14</text>
 </svg>
