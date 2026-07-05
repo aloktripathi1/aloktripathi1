@@ -1,18 +1,57 @@
 {
-  "generated": "2026-07-04",
+  "generated": "2026-07-05",
   "windowDays": 366,
   "repos": [
+    {
+      "name": "Reed",
+      "description": "Memory-first AI mentor that proactively brings up goals, patterns, and commitments across conversations.",
+      "url": "https://github.com/aloktripathi1/Reed",
+      "pushedAt": "2026-07-05T04:33:56Z",
+      "isPrivate": false,
+      "primaryLanguage": "TypeScript",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 92152,
+          "node": {
+            "name": "TypeScript",
+            "color": "#3178c6"
+          }
+        },
+        {
+          "size": 35357,
+          "node": {
+            "name": "CSS",
+            "color": "#663399"
+          }
+        },
+        {
+          "size": 5547,
+          "node": {
+            "name": "PLpgSQL",
+            "color": "#336790"
+          }
+        },
+        {
+          "size": 231,
+          "node": {
+            "name": "JavaScript",
+            "color": "#f1e05a"
+          }
+        }
+      ]
+    },
     {
       "name": "aloktripathi1",
       "description": "My GitHub profile README, built with love and way too many iterations.",
       "url": "https://github.com/aloktripathi1/aloktripathi1",
-      "pushedAt": "2026-07-04T13:18:25Z",
+      "pushedAt": "2026-07-04T13:37:53Z",
       "isPrivate": false,
       "primaryLanguage": "Python",
       "defaultBranch": "main",
       "languages": [
         {
-          "size": 36928,
+          "size": 37486,
           "node": {
             "name": "Python",
             "color": "#3572A5"
@@ -112,45 +151,6 @@
           "node": {
             "name": "Python",
             "color": "#3572A5"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Reed",
-      "description": "Memory-first AI mentor that proactively brings up goals, patterns, and commitments across conversations.",
-      "url": "https://github.com/aloktripathi1/Reed",
-      "pushedAt": "2026-06-25T12:56:45Z",
-      "isPrivate": false,
-      "primaryLanguage": "TypeScript",
-      "defaultBranch": "main",
-      "languages": [
-        {
-          "size": 84009,
-          "node": {
-            "name": "TypeScript",
-            "color": "#3178c6"
-          }
-        },
-        {
-          "size": 30176,
-          "node": {
-            "name": "CSS",
-            "color": "#663399"
-          }
-        },
-        {
-          "size": 5547,
-          "node": {
-            "name": "PLpgSQL",
-            "color": "#336790"
-          }
-        },
-        {
-          "size": 231,
-          "node": {
-            "name": "JavaScript",
-            "color": "#f1e05a"
           }
         }
       ]
@@ -637,8 +637,8 @@
   },
   "burstDays": 20,
   "burstThreshold": 17.0,
-  "longestGap": 62,
-  "meanGapDays": 1.664835164835165,
+  "longestGap": 61,
+  "meanGapDays": 1.6612021857923498,
   "hourDistribution": [
     7,
     9,
@@ -650,7 +650,7 @@
     35,
     35,
     26,
-    60,
+    61,
     46,
     26,
     23,
@@ -658,8 +658,8 @@
     43,
     41,
     64,
-    38,
-    30,
+    39,
+    32,
     21,
     29,
     33,
@@ -668,18 +668,17 @@
   "peakHour": 17,
   "hourBuckets": {
     "night (00\u201306)": 22,
-    "morning (06\u201312)": 207,
+    "morning (06\u201312)": 208,
     "afternoon (12\u201318)": 234,
-    "evening (18\u201324)": 187
+    "evening (18\u201324)": 190
   },
-  "additionsPct": 53.32427307754568,
-  "avgCommitSize": 5141.6446153846155,
+  "additionsPct": 53.33645799901953,
+  "avgCommitSize": 5112.065749235474,
   "prActiveWeeks": 10,
   "prThis4w": 6,
   "prPrev4w": 14,
   "prTrendPct": -57.14285714285714,
   "daily": {
-    "2025-07-04": 0,
     "2025-07-05": 0,
     "2025-07-06": 0,
     "2025-07-07": 0,
@@ -1044,10 +1043,10 @@
     "2026-07-01": 3,
     "2026-07-02": 4,
     "2026-07-03": 5,
-    "2026-07-04": 9
+    "2026-07-04": 12,
+    "2026-07-05": 1
   },
   "contributionsDaily": {
-    "2025-07-04": 0,
     "2025-07-05": 0,
     "2025-07-06": 0,
     "2025-07-07": 0,
@@ -1398,8 +1397,8 @@
     "2026-06-17": 14,
     "2026-06-18": 12,
     "2026-06-19": 9,
-    "2026-06-20": 12,
-    "2026-06-21": 16,
+    "2026-06-20": 13,
+    "2026-06-21": 15,
     "2026-06-22": 1,
     "2026-06-23": 11,
     "2026-06-24": 13,
@@ -1407,25 +1406,26 @@
     "2026-06-26": 1,
     "2026-06-27": 3,
     "2026-06-28": 4,
-    "2026-06-29": 2,
-    "2026-06-30": 2,
+    "2026-06-29": 3,
+    "2026-06-30": 1,
     "2026-07-01": 4,
     "2026-07-02": 17,
     "2026-07-03": 7,
-    "2026-07-04": 13
+    "2026-07-04": 16,
+    "2026-07-05": 1
   },
-  "activeDaysPct": 50.0,
-  "contributionTotal": 1779,
-  "commitTotal": 650,
-  "commitMean": 1.7759562841530054,
+  "activeDaysPct": 50.27322404371585,
+  "contributionTotal": 1783,
+  "commitTotal": 654,
+  "commitMean": 1.7868852459016393,
   "commitMedian": 0.0,
   "commitP95": 9.0,
-  "commitActiveMean": 4.887218045112782,
+  "commitActiveMean": 4.880597014925373,
   "commitMax": 32,
-  "currentStreak": 41,
-  "longestStreak": 41,
-  "additions": 1782134,
-  "deletions": 1559935,
+  "currentStreak": 42,
+  "longestStreak": 42,
+  "additions": 1783193,
+  "deletions": 1560098,
   "prs": 29,
   "mergedPrs": 24,
   "externalPrsTotal": 16,
@@ -1577,29 +1577,25 @@
   "topWeek": [
     [
       "aloktripathi1",
-      14
+      17
     ],
     [
       "thirsty-ai",
       7
     ],
     [
-      "SachCheck",
-      2
-    ],
-    [
-      "Plant-leaves-Super-Resolution-Challenge",
+      "Reed",
       1
     ]
   ],
   "topMonth": [
     [
       "Reed",
-      23
+      24
     ],
     [
       "aloktripathi1",
-      15
+      18
     ],
     [
       "thirsty-ai",
@@ -1637,7 +1633,7 @@
     ],
     [
       "aloktripathi1",
-      50
+      53
     ],
     [
       "Learnsy",
@@ -1649,7 +1645,7 @@
     ],
     [
       "Reed",
-      23
+      24
     ],
     [
       "notetmp",
@@ -1695,11 +1691,11 @@
   "languages": [
     [
       "TypeScript",
-      1299750
+      1307893
     ],
     [
       "Python",
-      1217613
+      1218171
     ],
     [
       "Vue",
@@ -1711,7 +1707,7 @@
     ],
     [
       "CSS",
-      129911
+      135092
     ],
     [
       "HTML",
@@ -1745,11 +1741,11 @@
   "categories": [
     [
       "Web Apps",
-      273
+      276
     ],
     [
       "AI / Agents",
-      128
+      129
     ],
     [
       "Other",
@@ -1761,13 +1757,13 @@
     ]
   ],
   "weekdayMean": [
-    3.3653846153846154,
-    4.615384615384615,
+    3.3846153846153846,
+    4.596153846153846,
     5.134615384615385,
     7.115384615384615,
-    5.320754716981132,
-    4.09433962264151,
-    4.384615384615385
+    5.423076923076923,
+    4.169811320754717,
+    4.30188679245283
   ],
   "weekdayActive": [
     20,
@@ -1776,7 +1772,7 @@
     30,
     28,
     26,
-    23
+    24
   ],
   "bestWeekday": 3,
   "quietWeekday": 0,
@@ -1827,18 +1823,18 @@
     ],
     [
       "2026-07-01",
-      41
+      45
     ]
   ],
-  "velocity30d": 247,
-  "velocityPrev30d": 324,
-  "velocityTrendPct": -23.765432098765434,
+  "velocity30d": 248,
+  "velocityPrev30d": 299,
+  "velocityTrendPct": -17.05685618729097,
   "momentum7d": 49,
   "momentumScore": 62,
-  "shipping7d": 4,
+  "shipping7d": 3,
   "shipping30d": 10,
-  "focusTop3Pct": 44.92307692307692,
-  "hhi": 0.10487100591715977,
-  "entropy": 3.5827542333338753,
-  "entropyNormalized": 0.8434122809288507
+  "focusTop3Pct": 44.64831804281346,
+  "hhi": 0.10442443116460455,
+  "entropy": 3.5849721494898685,
+  "entropyNormalized": 0.8439343981610714
 }
