@@ -1,25 +1,43 @@
 {
-  "generated": "2026-07-05",
+  "generated": "2026-07-06",
   "windowDays": 366,
   "repos": [
+    {
+      "name": "aloktripathi1",
+      "description": "My GitHub profile README, built with love and way too many iterations.",
+      "url": "https://github.com/aloktripathi1/aloktripathi1",
+      "pushedAt": "2026-07-05T05:54:24Z",
+      "isPrivate": false,
+      "primaryLanguage": "Python",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 37486,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
+          }
+        }
+      ]
+    },
     {
       "name": "Reed",
       "description": "Memory-first AI mentor that proactively brings up goals, patterns, and commitments across conversations.",
       "url": "https://github.com/aloktripathi1/Reed",
-      "pushedAt": "2026-07-05T04:33:56Z",
+      "pushedAt": "2026-07-05T05:45:06Z",
       "isPrivate": false,
       "primaryLanguage": "TypeScript",
       "defaultBranch": "main",
       "languages": [
         {
-          "size": 92152,
+          "size": 81454,
           "node": {
             "name": "TypeScript",
             "color": "#3178c6"
           }
         },
         {
-          "size": 35357,
+          "size": 54533,
           "node": {
             "name": "CSS",
             "color": "#663399"
@@ -37,24 +55,6 @@
           "node": {
             "name": "JavaScript",
             "color": "#f1e05a"
-          }
-        }
-      ]
-    },
-    {
-      "name": "aloktripathi1",
-      "description": "My GitHub profile README, built with love and way too many iterations.",
-      "url": "https://github.com/aloktripathi1/aloktripathi1",
-      "pushedAt": "2026-07-04T13:37:53Z",
-      "isPrivate": false,
-      "primaryLanguage": "Python",
-      "defaultBranch": "main",
-      "languages": [
-        {
-          "size": 37486,
-          "node": {
-            "name": "Python",
-            "color": "#3572A5"
           }
         }
       ]
@@ -386,9 +386,9 @@
       ]
     },
     {
-      "name": "iitm-handbook-rag",
+      "name": "Ask-IITMBS-",
       "description": "RAG chatbot for IITM BS Degree students, answers questions from the handbook and grading documents using OpenRouter LLMs",
-      "url": "https://github.com/aloktripathi1/iitm-handbook-rag",
+      "url": "https://github.com/aloktripathi1/Ask-IITMBS-",
       "pushedAt": "2026-05-20T18:42:33Z",
       "isPrivate": false,
       "primaryLanguage": "HTML",
@@ -637,8 +637,8 @@
   },
   "burstDays": 20,
   "burstThreshold": 17.0,
-  "longestGap": 61,
-  "meanGapDays": 1.6612021857923498,
+  "longestGap": 60,
+  "meanGapDays": 1.6576086956521738,
   "hourDistribution": [
     7,
     9,
@@ -650,8 +650,8 @@
     35,
     35,
     26,
-    61,
-    46,
+    65,
+    48,
     26,
     23,
     37,
@@ -665,21 +665,20 @@
     33,
     36
   ],
-  "peakHour": 17,
+  "peakHour": 10,
   "hourBuckets": {
     "night (00\u201306)": 22,
-    "morning (06\u201312)": 208,
+    "morning (06\u201312)": 214,
     "afternoon (12\u201318)": 234,
     "evening (18\u201324)": 190
   },
-  "additionsPct": 53.33645799901953,
-  "avgCommitSize": 5112.065749235474,
+  "additionsPct": 53.3458398047747,
+  "avgCommitSize": 5068.890909090909,
   "prActiveWeeks": 10,
   "prThis4w": 6,
-  "prPrev4w": 14,
-  "prTrendPct": -57.14285714285714,
+  "prPrev4w": 12,
+  "prTrendPct": -50.0,
   "daily": {
-    "2025-07-05": 0,
     "2025-07-06": 0,
     "2025-07-07": 0,
     "2025-07-08": 0,
@@ -1044,10 +1043,10 @@
     "2026-07-02": 4,
     "2026-07-03": 5,
     "2026-07-04": 12,
-    "2026-07-05": 1
+    "2026-07-05": 7,
+    "2026-07-06": 0
   },
   "contributionsDaily": {
-    "2025-07-05": 0,
     "2025-07-06": 0,
     "2025-07-07": 0,
     "2025-07-08": 0,
@@ -1412,20 +1411,21 @@
     "2026-07-02": 17,
     "2026-07-03": 7,
     "2026-07-04": 16,
-    "2026-07-05": 1
+    "2026-07-05": 7,
+    "2026-07-06": 2
   },
-  "activeDaysPct": 50.27322404371585,
-  "contributionTotal": 1783,
-  "commitTotal": 654,
-  "commitMean": 1.7868852459016393,
+  "activeDaysPct": 50.54644808743169,
+  "contributionTotal": 1791,
+  "commitTotal": 660,
+  "commitMean": 1.8032786885245902,
   "commitMedian": 0.0,
   "commitP95": 9.0,
-  "commitActiveMean": 4.880597014925373,
+  "commitActiveMean": 4.925373134328358,
   "commitMax": 32,
-  "currentStreak": 42,
-  "longestStreak": 42,
-  "additions": 1783193,
-  "deletions": 1560098,
+  "currentStreak": 43,
+  "longestStreak": 43,
+  "additions": 1784668,
+  "deletions": 1560800,
   "prs": 29,
   "mergedPrs": 24,
   "externalPrsTotal": 16,
@@ -1469,10 +1469,6 @@
   "prWeeklyP95": 6.749999999999995,
   "prWeeklyMax": 9,
   "prRecent": [
-    [
-      "2026-01-05",
-      0
-    ],
     [
       "2026-01-12",
       0
@@ -1572,27 +1568,13 @@
     [
       "2026-06-29",
       1
+    ],
+    [
+      "2026-07-06",
+      0
     ]
   ],
   "topWeek": [
-    [
-      "aloktripathi1",
-      17
-    ],
-    [
-      "thirsty-ai",
-      7
-    ],
-    [
-      "Reed",
-      1
-    ]
-  ],
-  "topMonth": [
-    [
-      "Reed",
-      24
-    ],
     [
       "aloktripathi1",
       18
@@ -1602,11 +1584,29 @@
       7
     ],
     [
-      "Messy-Mashup-Classifier",
+      "Reed",
       6
+    ]
+  ],
+  "topMonth": [
+    [
+      "Reed",
+      29
+    ],
+    [
+      "aloktripathi1",
+      19
+    ],
+    [
+      "thirsty-ai",
+      7
     ],
     [
       "Plant-leaves-Super-Resolution-Challenge",
+      4
+    ],
+    [
+      "Latent",
       4
     ]
   ],
@@ -1633,19 +1633,19 @@
     ],
     [
       "aloktripathi1",
-      53
+      54
     ],
     [
       "Learnsy",
       33
     ],
     [
-      "tds-analytics",
-      28
+      "Reed",
+      29
     ],
     [
-      "Reed",
-      24
+      "tds-analytics",
+      28
     ],
     [
       "notetmp",
@@ -1668,7 +1668,7 @@
       7
     ],
     [
-      "iitm-handbook-rag",
+      "Ask-IITMBS-",
       7
     ],
     [
@@ -1691,7 +1691,7 @@
   "languages": [
     [
       "TypeScript",
-      1307893
+      1297195
     ],
     [
       "Python",
@@ -1707,7 +1707,7 @@
     ],
     [
       "CSS",
-      135092
+      154268
     ],
     [
       "HTML",
@@ -1741,11 +1741,11 @@
   "categories": [
     [
       "Web Apps",
-      276
+      277
     ],
     [
       "AI / Agents",
-      129
+      134
     ],
     [
       "Other",
@@ -1757,16 +1757,16 @@
     ]
   ],
   "weekdayMean": [
-    3.3846153846153846,
+    3.358490566037736,
     4.596153846153846,
     5.134615384615385,
     7.115384615384615,
     5.423076923076923,
-    4.169811320754717,
-    4.30188679245283
+    4.25,
+    4.415094339622642
   ],
   "weekdayActive": [
-    20,
+    21,
     27,
     29,
     30,
@@ -1823,18 +1823,18 @@
     ],
     [
       "2026-07-01",
-      45
+      53
     ]
   ],
-  "velocity30d": 248,
-  "velocityPrev30d": 299,
-  "velocityTrendPct": -17.05685618729097,
-  "momentum7d": 49,
+  "velocity30d": 246,
+  "velocityPrev30d": 304,
+  "velocityTrendPct": -19.078947368421055,
+  "momentum7d": 54,
   "momentumScore": 62,
   "shipping7d": 3,
   "shipping30d": 10,
-  "focusTop3Pct": 44.64831804281346,
-  "hhi": 0.10442443116460455,
-  "entropy": 3.5849721494898685,
-  "entropyNormalized": 0.8439343981610714
+  "focusTop3Pct": 44.24242424242424,
+  "hhi": 0.10338842975206612,
+  "entropy": 3.592969596100753,
+  "entropyNormalized": 0.8458170683774474
 }
