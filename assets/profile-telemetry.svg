@@ -39,14 +39,14 @@
     <text x="470" y="108" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="2">12-MONTH TRAJECTORY</text>
     <line x1="470" y1="254" x2="1056" y2="254" stroke="#242424"/>
 <line x1="470" y1="114" x2="1056" y2="114" stroke="#242424" stroke-dasharray="2 4"/>
-<text x="464" y="118" fill="#4a4a44" font-size="9" text-anchor="end">387</text>
+<text x="464" y="118" fill="#4a4a44" font-size="9" text-anchor="end">264</text>
 <text x="464" y="257" fill="#4a4a44" font-size="9" text-anchor="end">0</text>
-    <polygon points="470,254 470.00,254.00 523.27,224.70 576.55,207.70 629.82,233.74 683.09,219.63 736.36,192.14 789.64,155.96 842.91,198.65 896.18,196.12 949.45,114.00 1002.73,168.63 1056.00,234.83 1056,254" fill="url(#limeFade)"/>
-    <polyline points="470.00,254.00 523.27,224.70 576.55,207.70 629.82,233.74 683.09,219.63 736.36,192.14 789.64,155.96 842.91,198.65 896.18,196.12 949.45,114.00 1002.73,168.63 1056.00,234.83" fill="none" stroke="#F7EE00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="470,254 470.00,254.00 523.27,211.05 576.55,186.12 629.82,224.30 683.09,203.62 736.36,163.32 789.64,180.82 842.91,172.86 896.18,165.44 949.45,114.00 1002.73,119.30 1056.00,224.83 1056,254" fill="url(#limeFade)"/>
+    <polyline points="470.00,254.00 523.27,211.05 576.55,186.12 629.82,224.30 683.09,203.62 736.36,163.32 789.64,180.82 842.91,172.86 896.18,165.44 949.45,114.00 1002.73,119.30 1056.00,224.83" fill="none" stroke="#F7EE00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="949.5" cy="114.0" r="4" fill="#ff8a3d" stroke="#0a0a0a" stroke-width="2"/>
-<text x="955.5" y="106.0" fill="#ff8a3d" font-size="10" font-weight="700" text-anchor="start">peak · 387</text>
-<circle cx="1056.0" cy="234.8" r="4" fill="#F7EE00" stroke="#0a0a0a" stroke-width="2"/>
-<text x="1050.0" y="226.8" fill="#F7EE00" font-size="10" font-weight="700" text-anchor="end">now · 53</text>
+<text x="955.5" y="106.0" fill="#ff8a3d" font-size="10" font-weight="700" text-anchor="start">peak · 264</text>
+<circle cx="1056.0" cy="224.8" r="4" fill="#F7EE00" stroke="#0a0a0a" stroke-width="2"/>
+<text x="1050.0" y="216.8" fill="#F7EE00" font-size="10" font-weight="700" text-anchor="end">now · 55</text>
     <text x="470.0" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Aug</text>
 <text x="576.5" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Oct</text>
 <text x="683.1" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Dec</text>
@@ -59,14 +59,14 @@
   <line x1="44" y1="280" x2="1056" y2="280" stroke="#242424"/>
   <text x="44" y="292" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="2">VITALS</text>
   <text x="44.0" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ALL CONTRIBUTIONS</text>
-<text x="44.0" y="340" fill="#F7EE00" font-size="24" font-weight="800" letter-spacing="-1">1,791</text>
+<text x="44.0" y="340" fill="#F7EE00" font-size="24" font-weight="800" letter-spacing="-1">1,562</text>
 <text x="44.0" y="358" fill="#4a4a44" font-size="11">GitHub calendar</text>
 <text x="246.4" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">30D VELOCITY</text>
-<text x="246.4" y="340" fill="#ff5f5f" font-size="24" font-weight="800" letter-spacing="-1">246</text>
-<text x="246.4" y="358" fill="#4a4a44" font-size="11">▼ -19% vs prior 30</text>
+<text x="246.4" y="340" fill="#ff5f5f" font-size="24" font-weight="800" letter-spacing="-1">254</text>
+<text x="246.4" y="358" fill="#4a4a44" font-size="11">▼ -20% vs prior 30</text>
 <line x1="236.4" y1="316" x2="236.4" y2="370" stroke="#242424"/>
 <text x="448.8" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ACTIVE DAYS</text>
-<text x="448.8" y="340" fill="#5fd4d0" font-size="24" font-weight="800" letter-spacing="-1">51%</text>
+<text x="448.8" y="340" fill="#5fd4d0" font-size="24" font-weight="800" letter-spacing="-1">49%</text>
 <text x="448.8" y="358" fill="#4a4a44" font-size="11">mean gap 1.7d</text>
 <line x1="438.8" y1="316" x2="438.8" y2="370" stroke="#242424"/>
 <text x="651.2" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">OSS PRS MERGED</text>
@@ -99,23 +99,23 @@
 
   <!-- Work categories -->
   <text x="44" y="600" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">WORK CATEGORIES</text>
-<text x="1056" y="600" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">FOCUS TOP-3 44%</text>
-  <rect x="44.00" y="612" width="422.73" height="12" rx="3" fill="#F7EE00"><title>Web Apps · 277</title></rect>
-<rect x="468.73" y="612" width="203.47" height="12" rx="3" fill="#5fd4d0"><title>AI / Agents · 134</title></rect>
-<rect x="674.20" y="612" width="191.20" height="12" rx="3" fill="#ff8a3d"><title>Other · 126</title></rect>
-<rect x="867.40" y="612" width="186.60" height="12" rx="3" fill="#9d8cff"><title>Competitive ML · 123</title></rect>
+<text x="1056" y="600" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">FOCUS TOP-3 48%</text>
+  <rect x="44.00" y="612" width="465.99" height="12" rx="3" fill="#F7EE00"><title>Web Apps · 277</title></rect>
+<rect x="511.99" y="612" width="205.81" height="12" rx="3" fill="#5fd4d0"><title>Competitive ML · 123</title></rect>
+<rect x="719.79" y="612" width="188.91" height="12" rx="3" fill="#ff8a3d"><title>Other · 113</title></rect>
+<rect x="910.70" y="612" width="143.30" height="12" rx="3" fill="#9d8cff"><title>AI / Agents · 86</title></rect>
   <rect x="44.0" y="637" width="10" height="10" rx="2" fill="#F7EE00"/>
 <text x="60.0" y="646" fill="#c9c9c0" font-size="11">Web Apps</text>
-<text x="60.0" y="661" fill="#7a7a72" font-size="10">42%</text>
+<text x="60.0" y="661" fill="#7a7a72" font-size="10">46%</text>
 <rect x="297.0" y="637" width="10" height="10" rx="2" fill="#5fd4d0"/>
-<text x="313.0" y="646" fill="#c9c9c0" font-size="11">AI / Agents</text>
-<text x="313.0" y="661" fill="#7a7a72" font-size="10">20%</text>
+<text x="313.0" y="646" fill="#c9c9c0" font-size="11">Competitive ML</text>
+<text x="313.0" y="661" fill="#7a7a72" font-size="10">21%</text>
 <rect x="550.0" y="637" width="10" height="10" rx="2" fill="#ff8a3d"/>
 <text x="566.0" y="646" fill="#c9c9c0" font-size="11">Other</text>
 <text x="566.0" y="661" fill="#7a7a72" font-size="10">19%</text>
 <rect x="803.0" y="637" width="10" height="10" rx="2" fill="#9d8cff"/>
-<text x="819.0" y="646" fill="#c9c9c0" font-size="11">Competitive ML</text>
-<text x="819.0" y="661" fill="#7a7a72" font-size="10">19%</text>
+<text x="819.0" y="646" fill="#c9c9c0" font-size="11">AI / Agents</text>
+<text x="819.0" y="661" fill="#7a7a72" font-size="10">14%</text>
 
   <!-- Bottom: top projects + OSS -->
   <text x="44" y="688" fill="#f5f5f0" font-size="11" font-weight="700" letter-spacing="2">TOP PROJECTS · 7D</text>
@@ -135,6 +135,10 @@
 <rect x="174" y="750" width="270" height="6" rx="1" fill="#242424"/>
 <rect x="174" y="750" width="90.0" height="6" rx="1" fill="#F7EE00"/>
 <text x="490" y="758" fill="#7a7a72" font-size="11" text-anchor="end">6</text>
+<text x="44" y="780" fill="#c9c9c0" font-size="12" font-weight="600">tds-project-1</text>
+<rect x="174" y="772" width="270" height="6" rx="1" fill="#242424"/>
+<rect x="174" y="772" width="75.0" height="6" rx="1" fill="#F7EE00"/>
+<text x="490" y="780" fill="#7a7a72" font-size="11" text-anchor="end">5</text>
   <text x="554" y="714" fill="#c9c9c0" font-size="12" font-weight="600">Khushi-Choudhary11/SachCheck</text>
 <text x="1056" y="714" fill="#F7EE00" font-size="11" font-weight="700" text-anchor="end">7/7 merged</text>
 <text x="554" y="736" fill="#c9c9c0" font-size="12" font-weight="600">mem0ai/mem0</text>

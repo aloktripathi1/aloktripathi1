@@ -3,10 +3,81 @@
   "windowDays": 366,
   "repos": [
     {
+      "name": "SachCheck",
+      "description": "An AI-powered claim-level fact verification for articles, news, and images, built to fight misinformation in real time.",
+      "url": "https://github.com/aloktripathi1/SachCheck",
+      "pushedAt": "2026-07-06T14:28:55Z",
+      "isPrivate": false,
+      "primaryLanguage": "TypeScript",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 212222,
+          "node": {
+            "name": "TypeScript",
+            "color": "#3178c6"
+          }
+        },
+        {
+          "size": 140081,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
+          }
+        },
+        {
+          "size": 3483,
+          "node": {
+            "name": "CSS",
+            "color": "#663399"
+          }
+        },
+        {
+          "size": 2661,
+          "node": {
+            "name": "JavaScript",
+            "color": "#f1e05a"
+          }
+        },
+        {
+          "size": 947,
+          "node": {
+            "name": "HTML",
+            "color": "#e34c26"
+          }
+        },
+        {
+          "size": 58,
+          "node": {
+            "name": "Procfile",
+            "color": "#3B2F63"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tds-project-1",
+      "description": "Project 1 work for Tools in Data Science (Jan 2026)",
+      "url": "https://github.com/aloktripathi1/tds-project-1",
+      "pushedAt": "2026-07-06T13:12:34Z",
+      "isPrivate": false,
+      "primaryLanguage": "Python",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 53471,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
+          }
+        }
+      ]
+    },
+    {
       "name": "aloktripathi1",
       "description": "My GitHub profile README, built with love and way too many iterations.",
       "url": "https://github.com/aloktripathi1/aloktripathi1",
-      "pushedAt": "2026-07-05T05:54:24Z",
+      "pushedAt": "2026-07-06T04:53:23Z",
       "isPrivate": false,
       "primaryLanguage": "Python",
       "defaultBranch": "main",
@@ -80,59 +151,6 @@
           "node": {
             "name": "CSS",
             "color": "#663399"
-          }
-        }
-      ]
-    },
-    {
-      "name": "SachCheck",
-      "description": "An AI-powered claim-level fact verification for articles, news, and images, built to fight misinformation in real time.",
-      "url": "https://github.com/aloktripathi1/SachCheck",
-      "pushedAt": "2026-06-28T18:18:45Z",
-      "isPrivate": false,
-      "primaryLanguage": "TypeScript",
-      "defaultBranch": "main",
-      "languages": [
-        {
-          "size": 212222,
-          "node": {
-            "name": "TypeScript",
-            "color": "#3178c6"
-          }
-        },
-        {
-          "size": 140081,
-          "node": {
-            "name": "Python",
-            "color": "#3572A5"
-          }
-        },
-        {
-          "size": 3483,
-          "node": {
-            "name": "CSS",
-            "color": "#663399"
-          }
-        },
-        {
-          "size": 2661,
-          "node": {
-            "name": "JavaScript",
-            "color": "#f1e05a"
-          }
-        },
-        {
-          "size": 947,
-          "node": {
-            "name": "HTML",
-            "color": "#e34c26"
-          }
-        },
-        {
-          "size": 58,
-          "node": {
-            "name": "Procfile",
-            "color": "#3B2F63"
           }
         }
       ]
@@ -560,24 +578,6 @@
       ]
     },
     {
-      "name": "tds-project-1",
-      "description": "Project 1 work for Tools in Data Science (Jan 2026)",
-      "url": "https://github.com/aloktripathi1/tds-project-1",
-      "pushedAt": "2026-04-13T04:47:14Z",
-      "isPrivate": false,
-      "primaryLanguage": "Python",
-      "defaultBranch": "main",
-      "languages": [
-        {
-          "size": 53471,
-          "node": {
-            "name": "Python",
-            "color": "#3572A5"
-          }
-        }
-      ]
-    },
-    {
       "name": "Thoracic-Pathology-Detection-Xray",
       "description": "Automated chest X-ray pathology classification system using ConvNeXt, class-imbalance handling, and cost-sensitive deep learning.",
       "url": "https://github.com/aloktripathi1/Thoracic-Pathology-Detection-Xray",
@@ -633,47 +633,47 @@
   "reposPrivate": 0,
   "biggestDay": {
     "date": "2026-05-28",
-    "commits": 112
+    "commits": 140
   },
-  "burstDays": 20,
-  "burstThreshold": 17.0,
+  "burstDays": 18,
+  "burstThreshold": 15.200000000000017,
   "longestGap": 60,
-  "meanGapDays": 1.6576086956521738,
+  "meanGapDays": 1.7134831460674158,
   "hourDistribution": [
     7,
     9,
     0,
-    3,
+    2,
     0,
     3,
     5,
-    35,
-    35,
-    26,
-    65,
-    48,
-    26,
+    34,
+    22,
+    15,
+    57,
+    43,
+    19,
     23,
     37,
-    43,
+    40,
     41,
-    64,
-    39,
-    32,
+    60,
+    43,
+    25,
     21,
-    29,
-    33,
-    36
+    26,
+    32,
+    35
   ],
-  "peakHour": 10,
+  "peakHour": 17,
   "hourBuckets": {
-    "night (00\u201306)": 22,
-    "morning (06\u201312)": 214,
-    "afternoon (12\u201318)": 234,
-    "evening (18\u201324)": 190
+    "night (00\u201306)": 21,
+    "morning (06\u201312)": 176,
+    "afternoon (12\u201318)": 220,
+    "evening (18\u201324)": 182
   },
-  "additionsPct": 53.3458398047747,
-  "avgCommitSize": 5068.890909090909,
+  "additionsPct": 73.41528548620087,
+  "avgCommitSize": 702.6644407345576,
   "prActiveWeeks": 10,
   "prThis4w": 6,
   "prPrev4w": 12,
@@ -949,8 +949,8 @@
     "2026-03-30": 15,
     "2026-03-31": 6,
     "2026-04-01": 9,
-    "2026-04-02": 13,
-    "2026-04-03": 19,
+    "2026-04-02": 12,
+    "2026-04-03": 3,
     "2026-04-04": 1,
     "2026-04-05": 0,
     "2026-04-06": 0,
@@ -960,7 +960,7 @@
     "2026-04-10": 3,
     "2026-04-11": 0,
     "2026-04-12": 0,
-    "2026-04-13": 4,
+    "2026-04-13": 3,
     "2026-04-14": 0,
     "2026-04-15": 1,
     "2026-04-16": 0,
@@ -974,8 +974,8 @@
     "2026-04-24": 0,
     "2026-04-25": 0,
     "2026-04-26": 0,
-    "2026-04-27": 16,
-    "2026-04-28": 6,
+    "2026-04-27": 2,
+    "2026-04-28": 0,
     "2026-04-29": 0,
     "2026-04-30": 0,
     "2026-05-01": 0,
@@ -1005,10 +1005,10 @@
     "2026-05-25": 1,
     "2026-05-26": 2,
     "2026-05-27": 0,
-    "2026-05-28": 32,
+    "2026-05-28": 9,
     "2026-05-29": 1,
-    "2026-05-30": 2,
-    "2026-05-31": 8,
+    "2026-05-30": 0,
+    "2026-05-31": 5,
     "2026-06-01": 1,
     "2026-06-02": 0,
     "2026-06-03": 0,
@@ -1044,7 +1044,7 @@
     "2026-07-03": 5,
     "2026-07-04": 12,
     "2026-07-05": 7,
-    "2026-07-06": 0
+    "2026-07-06": 5
   },
   "contributionsDaily": {
     "2025-07-06": 0,
@@ -1267,18 +1267,18 @@
     "2026-02-08": 0,
     "2026-02-09": 1,
     "2026-02-10": 16,
-    "2026-02-11": 65,
-    "2026-02-12": 4,
+    "2026-02-11": 0,
+    "2026-02-12": 0,
     "2026-02-13": 1,
     "2026-02-14": 1,
     "2026-02-15": 15,
     "2026-02-16": 9,
-    "2026-02-17": 23,
+    "2026-02-17": 9,
     "2026-02-18": 1,
-    "2026-02-19": 48,
+    "2026-02-19": 4,
     "2026-02-20": 0,
     "2026-02-21": 6,
-    "2026-02-22": 16,
+    "2026-02-22": 10,
     "2026-02-23": 0,
     "2026-02-24": 0,
     "2026-02-25": 1,
@@ -1318,7 +1318,7 @@
     "2026-03-31": 6,
     "2026-04-01": 9,
     "2026-04-02": 14,
-    "2026-04-03": 36,
+    "2026-04-03": 41,
     "2026-04-04": 1,
     "2026-04-05": 0,
     "2026-04-06": 0,
@@ -1342,18 +1342,18 @@
     "2026-04-24": 0,
     "2026-04-25": 0,
     "2026-04-26": 0,
-    "2026-04-27": 36,
+    "2026-04-27": 38,
     "2026-04-28": 13,
     "2026-04-29": 0,
     "2026-04-30": 0,
-    "2026-05-01": 63,
-    "2026-05-02": 14,
-    "2026-05-03": 16,
+    "2026-05-01": 0,
+    "2026-05-02": 0,
+    "2026-05-03": 0,
     "2026-05-04": 0,
     "2026-05-05": 0,
-    "2026-05-06": 28,
-    "2026-05-07": 5,
-    "2026-05-08": 11,
+    "2026-05-06": 1,
+    "2026-05-07": 0,
+    "2026-05-08": 3,
     "2026-05-09": 1,
     "2026-05-10": 0,
     "2026-05-11": 0,
@@ -1361,26 +1361,26 @@
     "2026-05-13": 0,
     "2026-05-14": 0,
     "2026-05-15": 28,
-    "2026-05-16": 21,
+    "2026-05-16": 1,
     "2026-05-17": 2,
     "2026-05-18": 3,
     "2026-05-19": 3,
     "2026-05-20": 4,
-    "2026-05-21": 14,
+    "2026-05-21": 2,
     "2026-05-22": 0,
     "2026-05-23": 0,
     "2026-05-24": 0,
     "2026-05-25": 9,
     "2026-05-26": 1,
-    "2026-05-27": 10,
-    "2026-05-28": 112,
+    "2026-05-27": 7,
+    "2026-05-28": 140,
     "2026-05-29": 4,
     "2026-05-30": 11,
-    "2026-05-31": 27,
+    "2026-05-31": 44,
     "2026-06-01": 6,
     "2026-06-02": 3,
     "2026-06-03": 8,
-    "2026-06-04": 13,
+    "2026-06-04": 25,
     "2026-06-05": 3,
     "2026-06-06": 10,
     "2026-06-07": 9,
@@ -1404,7 +1404,7 @@
     "2026-06-25": 9,
     "2026-06-26": 1,
     "2026-06-27": 3,
-    "2026-06-28": 4,
+    "2026-06-28": 10,
     "2026-06-29": 3,
     "2026-06-30": 1,
     "2026-07-01": 4,
@@ -1412,20 +1412,20 @@
     "2026-07-03": 7,
     "2026-07-04": 16,
     "2026-07-05": 7,
-    "2026-07-06": 2
+    "2026-07-06": 4
   },
-  "activeDaysPct": 50.54644808743169,
-  "contributionTotal": 1791,
-  "commitTotal": 660,
-  "commitMean": 1.8032786885245902,
+  "activeDaysPct": 48.90710382513661,
+  "contributionTotal": 1562,
+  "commitTotal": 599,
+  "commitMean": 1.6366120218579234,
   "commitMedian": 0.0,
-  "commitP95": 9.0,
-  "commitActiveMean": 4.925373134328358,
-  "commitMax": 32,
+  "commitP95": 8.75,
+  "commitActiveMean": 4.503759398496241,
+  "commitMax": 18,
   "currentStreak": 43,
   "longestStreak": 43,
-  "additions": 1784668,
-  "deletions": 1560800,
+  "additions": 309002,
+  "deletions": 111894,
   "prs": 29,
   "mergedPrs": 24,
   "externalPrsTotal": 16,
@@ -1586,6 +1586,10 @@
     [
       "Reed",
       6
+    ],
+    [
+      "tds-project-1",
+      5
     ]
   ],
   "topMonth": [
@@ -1602,11 +1606,11 @@
       7
     ],
     [
-      "Plant-leaves-Super-Resolution-Challenge",
-      4
+      "tds-project-1",
+      5
     ],
     [
-      "Latent",
+      "Plant-leaves-Super-Resolution-Challenge",
       4
     ]
   ],
@@ -1618,10 +1622,6 @@
     [
       "Messy-Mashup-Classifier",
       108
-    ],
-    [
-      "SachCheck",
-      69
     ],
     [
       "tds-jan-2026",
@@ -1648,12 +1648,12 @@
       28
     ],
     [
-      "notetmp",
+      "SachCheck",
       21
     ],
     [
-      "tds-project-1",
-      19
+      "notetmp",
+      21
     ],
     [
       "Plant-leaves-Super-Resolution-Challenge",
@@ -1670,6 +1670,10 @@
     [
       "Ask-IITMBS-",
       7
+    ],
+    [
+      "tds-project-1",
+      6
     ],
     [
       "tds-project-2",
@@ -1744,38 +1748,38 @@
       277
     ],
     [
-      "AI / Agents",
-      134
+      "Competitive ML",
+      123
     ],
     [
       "Other",
-      126
+      113
     ],
     [
-      "Competitive ML",
-      123
+      "AI / Agents",
+      86
     ]
   ],
   "weekdayMean": [
-    3.358490566037736,
-    4.596153846153846,
-    5.134615384615385,
-    7.115384615384615,
-    5.423076923076923,
-    4.25,
-    4.415094339622642
+    3.4339622641509435,
+    4.326923076923077,
+    3.3076923076923075,
+    6.634615384615385,
+    4.153846153846154,
+    3.5961538461538463,
+    4.433962264150943
   ],
   "weekdayActive": [
     21,
     27,
-    29,
-    30,
     28,
-    26,
-    24
+    28,
+    27,
+    25,
+    23
   ],
   "bestWeekday": 3,
-  "quietWeekday": 0,
+  "quietWeekday": 2,
   "monthly": [
     [
       "2025-08-01",
@@ -1803,7 +1807,7 @@
     ],
     [
       "2026-02-01",
-      271
+      138
     ],
     [
       "2026-03-01",
@@ -1811,30 +1815,30 @@
     ],
     [
       "2026-04-01",
-      160
+      167
     ],
     [
       "2026-05-01",
-      387
+      264
     ],
     [
       "2026-06-01",
-      236
+      254
     ],
     [
       "2026-07-01",
-      53
+      55
     ]
   ],
-  "velocity30d": 246,
-  "velocityPrev30d": 304,
-  "velocityTrendPct": -19.078947368421055,
-  "momentum7d": 54,
+  "velocity30d": 254,
+  "velocityPrev30d": 318,
+  "velocityTrendPct": -20.125786163522015,
+  "momentum7d": 56,
   "momentumScore": 62,
-  "shipping7d": 3,
-  "shipping30d": 10,
-  "focusTop3Pct": 44.24242424242424,
-  "hhi": 0.10338842975206612,
-  "entropy": 3.592969596100753,
-  "entropyNormalized": 0.8458170683774474
+  "shipping7d": 4,
+  "shipping30d": 11,
+  "focusTop3Pct": 48.24707846410685,
+  "hhi": 0.11257215002187843,
+  "entropy": 3.523636969774928,
+  "entropyNormalized": 0.8294955501532297
 }
