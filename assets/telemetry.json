@@ -1,18 +1,17 @@
 {
-  "generated": "2026-07-06",
+  "generated": "2026-07-07",
   "windowDays": 366,
   "repos": [
     {
       "name": "aloktripathi1",
       "description": "My GitHub profile README, built with love and way too many iterations.",
       "url": "https://github.com/aloktripathi1/aloktripathi1",
-      "pushedAt": "2026-07-06T14:58:38Z",
       "isPrivate": false,
       "primaryLanguage": "Python",
       "defaultBranch": "main",
       "languages": [
         {
-          "size": 37486,
+          "size": 37401,
           "node": {
             "name": "Python",
             "color": "#3572A5"
@@ -24,7 +23,6 @@
       "name": "SachCheck",
       "description": "An AI-powered claim-level fact verification for articles, news, and images, built to fight misinformation in real time.",
       "url": "https://github.com/aloktripathi1/SachCheck",
-      "pushedAt": "2026-07-06T14:28:55Z",
       "isPrivate": false,
       "primaryLanguage": "TypeScript",
       "defaultBranch": "main",
@@ -77,7 +75,6 @@
       "name": "tds-project-1",
       "description": "Project 1 work for Tools in Data Science (Jan 2026)",
       "url": "https://github.com/aloktripathi1/tds-project-1",
-      "pushedAt": "2026-07-06T13:12:34Z",
       "isPrivate": false,
       "primaryLanguage": "Python",
       "defaultBranch": "main",
@@ -95,7 +92,6 @@
       "name": "Reed",
       "description": "Memory-first AI mentor that proactively brings up goals, patterns, and commitments across conversations.",
       "url": "https://github.com/aloktripathi1/Reed",
-      "pushedAt": "2026-07-05T05:45:06Z",
       "isPrivate": false,
       "primaryLanguage": "TypeScript",
       "defaultBranch": "main",
@@ -134,7 +130,6 @@
       "name": "thirsty-ai",
       "description": "browser extension that estimates water usage of your ai chats",
       "url": "https://github.com/aloktripathi1/thirsty-ai",
-      "pushedAt": "2026-07-02T08:33:29Z",
       "isPrivate": false,
       "primaryLanguage": "JavaScript",
       "defaultBranch": "main",
@@ -159,7 +154,6 @@
       "name": "Plant-leaves-Super-Resolution-Challenge",
       "description": "End-to-end deep learning pipeline for restoring high-resolution plant leaf images from degraded low-resolution inputs.",
       "url": "https://github.com/aloktripathi1/Plant-leaves-Super-Resolution-Challenge",
-      "pushedAt": "2026-06-28T17:59:29Z",
       "isPrivate": false,
       "primaryLanguage": "Python",
       "defaultBranch": "main",
@@ -177,7 +171,6 @@
       "name": "paper2code",
       "description": "ml research papers implementation from scratch",
       "url": "https://github.com/aloktripathi1/paper2code",
-      "pushedAt": "2026-06-25T04:04:04Z",
       "isPrivate": false,
       "primaryLanguage": null,
       "defaultBranch": "main",
@@ -187,7 +180,6 @@
       "name": "notetmp",
       "description": "NoteTmp is a minimalist tool for taking quick notes that auto-save to your browser's localStorage.",
       "url": "https://github.com/aloktripathi1/notetmp",
-      "pushedAt": "2026-06-23T17:30:11Z",
       "isPrivate": false,
       "primaryLanguage": "TypeScript",
       "defaultBranch": "main",
@@ -226,7 +218,6 @@
       "name": "tds-analytics",
       "description": "Student performance analytics for the IIT Madras Tools in Data Science course. Scores, patterns, and trends across 4 terms and all assignments.",
       "url": "https://github.com/aloktripathi1/tds-analytics",
-      "pushedAt": "2026-06-15T05:26:56Z",
       "isPrivate": false,
       "primaryLanguage": "JavaScript",
       "defaultBranch": "main",
@@ -258,7 +249,6 @@
       "name": "Latent",
       "description": "See how ML algorithms actually work, step by step.",
       "url": "https://github.com/aloktripathi1/Latent",
-      "pushedAt": "2026-06-11T14:37:22Z",
       "isPrivate": false,
       "primaryLanguage": "TypeScript",
       "defaultBranch": "main",
@@ -290,7 +280,6 @@
       "name": "Messy-Mashup-Classifier",
       "description": "Deep Learning pipeline for music genre classification from noisy audio mashups\u00a0",
       "url": "https://github.com/aloktripathi1/Messy-Mashup-Classifier",
-      "pushedAt": "2026-06-07T10:33:34Z",
       "isPrivate": false,
       "primaryLanguage": "Python",
       "defaultBranch": "main",
@@ -315,7 +304,6 @@
       "name": "LumenAI",
       "description": "An AI-powered research paper intelligence: ask questions, get citation-grounded answers.",
       "url": "https://github.com/aloktripathi1/LumenAI",
-      "pushedAt": "2026-05-29T09:20:40Z",
       "isPrivate": false,
       "primaryLanguage": "Python",
       "defaultBranch": "main",
@@ -368,7 +356,6 @@
       "name": "Learnsy",
       "description": "Learnsy is a distraction-free, YouTube-powered study platform designed for deep learning, habit-building, and knowledge retention. ",
       "url": "https://github.com/aloktripathi1/Learnsy",
-      "pushedAt": "2026-05-27T13:09:34Z",
       "isPrivate": false,
       "primaryLanguage": "TypeScript",
       "defaultBranch": "main",
@@ -407,7 +394,6 @@
       "name": "Ask-IITMBS",
       "description": "RAG chatbot for IITM BS Degree students, answers questions from the handbook and grading documents using OpenRouter LLMs",
       "url": "https://github.com/aloktripathi1/Ask-IITMBS",
-      "pushedAt": "2026-05-20T18:42:33Z",
       "isPrivate": false,
       "primaryLanguage": "HTML",
       "defaultBranch": "main",
@@ -432,7 +418,6 @@
       "name": "tds-jan-2026",
       "description": "All Coursework and projects from the Tools in Data Science course, focused on hands-on data engineering, reproducible workflows, and deployment.",
       "url": "https://github.com/aloktripathi1/tds-jan-2026",
-      "pushedAt": "2026-05-18T15:40:18Z",
       "isPrivate": false,
       "primaryLanguage": "Python",
       "defaultBranch": "main",
@@ -485,7 +470,6 @@
       "name": "deadline-intel",
       "description": "A deadline-tracking application designed for IIT Madras BS students to help them manage and monitor course deadlines effectively.",
       "url": "https://github.com/aloktripathi1/deadline-intel",
-      "pushedAt": "2026-05-16T05:14:17Z",
       "isPrivate": false,
       "primaryLanguage": "TypeScript",
       "defaultBranch": "main",
@@ -524,7 +508,6 @@
       "name": "Medihub",
       "description": "A hospital management web app for managing appointments, patient records, and doctor schedules. Built with Flask, Vue.js, SQLite, Redis and Celery.",
       "url": "https://github.com/aloktripathi1/Medihub",
-      "pushedAt": "2026-04-21T05:04:53Z",
       "isPrivate": false,
       "primaryLanguage": "Vue",
       "defaultBranch": "main",
@@ -556,7 +539,6 @@
       "name": "tds-project-2",
       "description": "Project 2 work for Tools in Data Science (Jan 2026)",
       "url": "https://github.com/aloktripathi1/tds-project-2",
-      "pushedAt": "2026-04-20T08:25:32Z",
       "isPrivate": false,
       "primaryLanguage": "Python",
       "defaultBranch": "main",
@@ -581,7 +563,6 @@
       "name": "Thoracic-Pathology-Detection-Xray",
       "description": "Automated chest X-ray pathology classification system using ConvNeXt, class-imbalance handling, and cost-sensitive deep learning.",
       "url": "https://github.com/aloktripathi1/Thoracic-Pathology-Detection-Xray",
-      "pushedAt": "2026-03-26T16:56:29Z",
       "isPrivate": false,
       "primaryLanguage": "Python",
       "defaultBranch": "main",
@@ -599,7 +580,6 @@
       "name": "latex2obsidian",
       "description": "LaTeX2Obsidian is a precision tool that converts messy ChatGPT-style LaTeX into clean, Obsidian-compatible MathJax syntax.",
       "url": "https://github.com/aloktripathi1/latex2obsidian",
-      "pushedAt": "2025-05-29T12:46:10Z",
       "isPrivate": false,
       "primaryLanguage": "TypeScript",
       "defaultBranch": "main",
@@ -637,8 +617,8 @@
   },
   "burstDays": 21,
   "burstThreshold": 15.0,
-  "longestGap": 60,
-  "meanGapDays": 1.7231638418079096,
+  "longestGap": 59,
+  "meanGapDays": 1.7191011235955056,
   "hourDistribution": [
     7,
     9,
@@ -649,7 +629,7 @@
     5,
     34,
     22,
-    15,
+    17,
     57,
     43,
     19,
@@ -668,18 +648,17 @@
   "peakHour": 17,
   "hourBuckets": {
     "night (00\u201306)": 21,
-    "morning (06\u201312)": 176,
+    "morning (06\u201312)": 178,
     "afternoon (12\u201318)": 220,
     "evening (18\u201324)": 182
   },
-  "additionsPct": 73.41528548620087,
-  "avgCommitSize": 702.6644407345576,
+  "additionsPct": 73.4139023051722,
+  "avgCommitSize": 700.3710482529118,
   "prActiveWeeks": 10,
   "prThis4w": 6,
   "prPrev4w": 12,
   "prTrendPct": -50.0,
   "daily": {
-    "2025-07-06": 0,
     "2025-07-07": 0,
     "2025-07-08": 0,
     "2025-07-09": 0,
@@ -1044,10 +1023,10 @@
     "2026-07-03": 5,
     "2026-07-04": 12,
     "2026-07-05": 7,
-    "2026-07-06": 5
+    "2026-07-06": 5,
+    "2026-07-07": 2
   },
   "contributionsDaily": {
-    "2025-07-06": 0,
     "2025-07-07": 0,
     "2025-07-08": 0,
     "2025-07-09": 0,
@@ -1412,20 +1391,21 @@
     "2026-07-03": 7,
     "2026-07-04": 16,
     "2026-07-05": 7,
-    "2026-07-06": 4
+    "2026-07-06": 4,
+    "2026-07-07": 2
   },
-  "activeDaysPct": 48.63387978142077,
-  "contributionTotal": 1285,
-  "commitTotal": 599,
-  "commitMean": 1.6366120218579234,
+  "activeDaysPct": 48.90710382513661,
+  "contributionTotal": 1287,
+  "commitTotal": 601,
+  "commitMean": 1.6420765027322404,
   "commitMedian": 0.0,
   "commitP95": 8.75,
-  "commitActiveMean": 4.503759398496241,
+  "commitActiveMean": 4.485074626865671,
   "commitMax": 18,
-  "currentStreak": 43,
-  "longestStreak": 43,
-  "additions": 309002,
-  "deletions": 111894,
+  "currentStreak": 44,
+  "longestStreak": 44,
+  "additions": 309016,
+  "deletions": 111907,
   "prs": 29,
   "mergedPrs": 24,
   "externalPrsTotal": 16,
@@ -1577,7 +1557,7 @@
   "topWeek": [
     [
       "aloktripathi1",
-      18
+      20
     ],
     [
       "thirsty-ai",
@@ -1599,7 +1579,7 @@
     ],
     [
       "aloktripathi1",
-      19
+      21
     ],
     [
       "thirsty-ai",
@@ -1610,7 +1590,7 @@
       5
     ],
     [
-      "Plant-leaves-Super-Resolution-Challenge",
+      "Latent",
       4
     ]
   ],
@@ -1633,7 +1613,7 @@
     ],
     [
       "aloktripathi1",
-      54
+      56
     ],
     [
       "Learnsy",
@@ -1699,7 +1679,7 @@
     ],
     [
       "Python",
-      1218171
+      1218086
     ],
     [
       "Vue",
@@ -1745,7 +1725,7 @@
   "categories": [
     [
       "Web Apps",
-      277
+      279
     ],
     [
       "Competitive ML",
@@ -1762,16 +1742,16 @@
   ],
   "weekdayMean": [
     2.8867924528301887,
-    3.5384615384615383,
+    3.509433962264151,
     3.1923076923076925,
     4.134615384615385,
     3.5961538461538463,
     3.480769230769231,
-    3.7547169811320753
+    3.826923076923077
   ],
   "weekdayActive": [
     21,
-    26,
+    27,
     28,
     28,
     27,
@@ -1827,18 +1807,18 @@
     ],
     [
       "2026-07-01",
-      55
+      57
     ]
   ],
-  "velocity30d": 248,
-  "velocityPrev30d": 148,
-  "velocityTrendPct": 67.56756756756756,
-  "momentum7d": 56,
+  "velocity30d": 241,
+  "velocityPrev30d": 154,
+  "velocityTrendPct": 56.493506493506494,
+  "momentum7d": 57,
   "momentumScore": 72,
   "shipping7d": 4,
-  "shipping30d": 11,
-  "focusTop3Pct": 48.24707846410685,
-  "hhi": 0.11257215002187843,
-  "entropy": 3.523636969774928,
-  "entropyNormalized": 0.8294955501532297
+  "shipping30d": 10,
+  "focusTop3Pct": 48.0865224625624,
+  "hhi": 0.11243324354030028,
+  "entropy": 3.5233837279596063,
+  "entropyNormalized": 0.8294359347726659
 }
