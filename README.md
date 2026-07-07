@@ -5,7 +5,7 @@
 > crafting intelligence from chaos.
 
 <div align="center">
-  <img width="100%" src="./assets/profile-telemetry.svg" alt="build telemetry" />
+  <img width="100%" src="./assets/telemetry.svg" alt="build telemetry" />
 </div>
 
 ## Projects

@@ -114,7 +114,6 @@ def fetch_repos():
             description
             isPrivate
             isArchived
-            pushedAt
             url
             primaryLanguage { name }
             defaultBranchRef { name }
@@ -138,7 +137,6 @@ def fetch_repos():
                 "name": node["name"],
                 "description": node["description"] or "",
                 "url": node["url"],
-                "pushedAt": node["pushedAt"],
                 "isPrivate": node["isPrivate"],
                 "primaryLanguage": (node["primaryLanguage"] or {}).get("name"),
                 "defaultBranch": node["defaultBranchRef"]["name"],
@@ -778,7 +776,7 @@ def render_profile(stats):
         cx_, cy_, cw_, ch_ = rx + gap, ry + gap, max(0, rw - gap * 2), max(0, rh - gap * 2)
         tm_parts.append(f'<rect x="{cx_:.2f}" y="{cy_:.2f}" width="{cw_:.2f}" height="{ch_:.2f}" rx="4" fill="{color}" opacity="0.92"><title>{esc(label)} · {pct_v:.1f}%</title></rect>')
         if cw_ > 55 and ch_ > 28:
-            text_color = "#0b1320" if color in ("#f1e05a", "#fbbf24", "#fde68a", "#a3e635", "#5eead4") else "#f8fafc"
+            text_color = "#0b1320" if color in ("#f1e05a", "#fbbf24", "#fde68a", "#a3e635", "#5eead4", LIME) else "#f8fafc"
             tm_parts.append(f'<text x="{cx_ + 8:.2f}" y="{cy_ + 18:.2f}" fill="{text_color}" font-size="12" font-weight="800" class="sans">{esc(label)}</text>')
             tm_parts.append(f'<text x="{cx_ + 8:.2f}" y="{cy_ + 32:.2f}" fill="{text_color}" font-size="10" opacity="0.85">{pct_v:.1f}%</text>')
 
@@ -903,9 +901,9 @@ def render_profile(stats):
 def main():
     ASSETS.mkdir(exist_ok=True)
     stats = collect()
-    (ASSETS / "profile-telemetry.json").write_text(json.dumps(stats, indent=2), encoding="utf-8")
-    (ASSETS / "profile-telemetry.svg").write_text(render_profile(stats), encoding="utf-8")
-    print(f"Generated {ASSETS / 'profile-telemetry.svg'}")
+    (ASSETS / "telemetry.json").write_text(json.dumps(stats, indent=2), encoding="utf-8")
+    (ASSETS / "telemetry.svg").write_text(render_profile(stats), encoding="utf-8")
+    print(f"Generated {ASSETS / 'telemetry.svg'}")
 
 
 if __name__ == "__main__":
