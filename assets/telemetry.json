@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-10",
+  "generated": "2026-07-11",
   "windowDays": 366,
   "repos": [
     {
@@ -615,10 +615,10 @@
     "date": "2025-09-30",
     "commits": 45
   },
-  "burstDays": 23,
-  "burstThreshold": 15,
-  "longestGap": 56,
-  "meanGapDays": 1.711111111111111,
+  "burstDays": 24,
+  "burstThreshold": 15.0,
+  "longestGap": 55,
+  "meanGapDays": 1.707182320441989,
   "hourDistribution": [
     7,
     9,
@@ -659,7 +659,6 @@
   "prPrev4w": 12,
   "prTrendPct": -41.66666666666667,
   "daily": {
-    "2025-07-10": 0,
     "2025-07-11": 0,
     "2025-07-12": 0,
     "2025-07-13": 0,
@@ -1024,10 +1023,10 @@
     "2026-07-07": 2,
     "2026-07-08": 0,
     "2026-07-09": 0,
-    "2026-07-10": 0
+    "2026-07-10": 0,
+    "2026-07-11": 0
   },
   "contributionsDaily": {
-    "2025-07-10": 0,
     "2025-07-11": 0,
     "2025-07-12": 0,
     "2025-07-13": 0,
@@ -1392,18 +1391,19 @@
     "2026-07-07": 21,
     "2026-07-08": 4,
     "2026-07-09": 21,
-    "2026-07-10": 0
+    "2026-07-10": 30,
+    "2026-07-11": 0
   },
-  "activeDaysPct": 49.45355191256831,
-  "contributionTotal": 1331,
+  "activeDaysPct": 49.72677595628415,
+  "contributionTotal": 1361,
   "commitTotal": 601,
   "commitMean": 1.6420765027322404,
   "commitMedian": 0.0,
   "commitP95": 8.75,
   "commitActiveMean": 4.485074626865671,
   "commitMax": 18,
-  "currentStreak": 46,
-  "longestStreak": 46,
+  "currentStreak": 47,
+  "longestStreak": 47,
   "additions": 309016,
   "deletions": 111907,
   "prs": 30,
@@ -1556,16 +1556,16 @@
   ],
   "topWeek": [
     [
-      "aloktripathi1",
-      15
-    ],
-    [
       "Reed",
       6
     ],
     [
       "tds-project-1",
       5
+    ],
+    [
+      "aloktripathi1",
+      3
     ]
   ],
   "topMonth": [
@@ -1586,8 +1586,8 @@
       5
     ],
     [
-      "Latent",
-      4
+      "paper2code",
+      3
     ]
   ],
   "topYear": [
@@ -1740,9 +1740,9 @@
     2.9423076923076925,
     3.9423076923076925,
     3.269230769230769,
-    4.452830188679245,
-    3.5283018867924527,
-    3.480769230769231,
+    4.538461538461538,
+    4.09433962264151,
+    3.4150943396226414,
     3.826923076923077
   ],
   "weekdayActive": [
@@ -1750,7 +1750,7 @@
     27,
     29,
     29,
-    27,
+    28,
     25,
     23
   ],
@@ -1803,16 +1803,16 @@
     ],
     [
       "2026-07-01",
-      101
+      131
     ]
   ],
-  "velocity30d": 271,
-  "velocityPrev30d": 167,
-  "velocityTrendPct": 62.27544910179641,
-  "momentum7d": 73,
+  "velocity30d": 289,
+  "velocityPrev30d": 179,
+  "velocityTrendPct": 61.452513966480446,
+  "momentum7d": 87,
   "momentumScore": 72,
   "shipping7d": 3,
-  "shipping30d": 10,
+  "shipping30d": 9,
   "focusTop3Pct": 48.0865224625624,
   "hhi": 0.11243324354030028,
   "entropy": 3.5233837279596063,
