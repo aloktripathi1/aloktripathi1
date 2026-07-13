@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-12",
+  "generated": "2026-07-13",
   "windowDays": 366,
   "repos": [
     {
@@ -617,8 +617,8 @@
   },
   "burstDays": 25,
   "burstThreshold": 15.0,
-  "longestGap": 54,
-  "meanGapDays": 1.7032967032967032,
+  "longestGap": 53,
+  "meanGapDays": 1.6994535519125684,
   "hourDistribution": [
     7,
     9,
@@ -656,10 +656,9 @@
   "avgCommitSize": 700.3710482529118,
   "prActiveWeeks": 11,
   "prThis4w": 7,
-  "prPrev4w": 12,
-  "prTrendPct": -41.66666666666667,
+  "prPrev4w": 13,
+  "prTrendPct": -46.15384615384615,
   "daily": {
-    "2025-07-12": 0,
     "2025-07-13": 0,
     "2025-07-14": 0,
     "2025-07-15": 0,
@@ -1024,10 +1023,10 @@
     "2026-07-09": 0,
     "2026-07-10": 0,
     "2026-07-11": 0,
-    "2026-07-12": 0
+    "2026-07-12": 0,
+    "2026-07-13": 0
   },
   "contributionsDaily": {
-    "2025-07-12": 0,
     "2025-07-13": 0,
     "2025-07-14": 0,
     "2025-07-15": 0,
@@ -1390,25 +1389,26 @@
     "2026-07-07": 21,
     "2026-07-08": 4,
     "2026-07-09": 21,
-    "2026-07-10": 35,
+    "2026-07-10": 36,
     "2026-07-11": 32,
-    "2026-07-12": 0
+    "2026-07-12": 9,
+    "2026-07-13": 0
   },
-  "activeDaysPct": 50.0,
-  "contributionTotal": 1398,
+  "activeDaysPct": 50.27322404371585,
+  "contributionTotal": 1408,
   "commitTotal": 601,
   "commitMean": 1.6420765027322404,
   "commitMedian": 0.0,
   "commitP95": 8.75,
   "commitActiveMean": 4.485074626865671,
   "commitMax": 18,
-  "currentStreak": 48,
-  "longestStreak": 48,
+  "currentStreak": 49,
+  "longestStreak": 49,
   "additions": 309016,
   "deletions": 111907,
-  "prs": 30,
+  "prs": 31,
   "mergedPrs": 24,
-  "externalPrsTotal": 17,
+  "externalPrsTotal": 18,
   "externalPrsMerged": 11,
   "externalReposCount": 7,
   "externalTop": [
@@ -1425,7 +1425,7 @@
     [
       "run-llama/llama_index",
       1,
-      1
+      2
     ],
     [
       "qdrant/qdrant-client",
@@ -1443,16 +1443,12 @@
       1
     ]
   ],
-  "prMergeRatio": 80.0,
-  "prWeeklyMean": 2.727272727272727,
+  "prMergeRatio": 77.41935483870968,
+  "prWeeklyMean": 2.8181818181818183,
   "prWeeklyMedian": 2,
   "prWeeklyP95": 6.5,
   "prWeeklyMax": 9,
   "prRecent": [
-    [
-      "2026-01-12",
-      0
-    ],
     [
       "2026-01-19",
       1
@@ -1551,14 +1547,14 @@
     ],
     [
       "2026-07-06",
-      1
+      2
+    ],
+    [
+      "2026-07-13",
+      0
     ]
   ],
   "topWeek": [
-    [
-      "tds-project-1",
-      5
-    ],
     [
       "aloktripathi1",
       2
@@ -1733,13 +1729,13 @@
     ]
   ],
   "weekdayMean": [
-    2.9423076923076925,
+    2.8867924528301887,
     3.9423076923076925,
     3.269230769230769,
     4.538461538461538,
-    4.269230769230769,
-    4.018867924528302,
-    3.7547169811320753
+    4.288461538461538,
+    4.096153846153846,
+    3.9245283018867925
   ],
   "weekdayActive": [
     21,
@@ -1748,7 +1744,7 @@
     29,
     28,
     26,
-    23
+    24
   ],
   "bestWeekday": 3,
   "quietWeekday": 0,
@@ -1799,15 +1795,15 @@
     ],
     [
       "2026-07-01",
-      168
+      178
     ]
   ],
-  "velocity30d": 321,
-  "velocityPrev30d": 184,
-  "velocityTrendPct": 74.45652173913044,
-  "momentum7d": 117,
-  "momentumScore": 72,
-  "shipping7d": 2,
+  "velocity30d": 328,
+  "velocityPrev30d": 187,
+  "velocityTrendPct": 75.40106951871658,
+  "momentum7d": 123,
+  "momentumScore": 73,
+  "shipping7d": 1,
   "shipping30d": 9,
   "focusTop3Pct": 48.0865224625624,
   "hhi": 0.11243324354030028,
