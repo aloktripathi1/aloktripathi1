@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Alok's profile telemetry SVGs from GitHub data.
+"""Generate Snehit's profile telemetry SVGs from GitHub data.
 
 Pulls repos (public + private, with archived/forks excluded), default-branch
 commits, and authored PRs via the GitHub GraphQL/REST API (through `gh`),
@@ -13,7 +13,6 @@ import os
 import statistics
 import subprocess
 import sys
-import time
 import xml.sax.saxutils as xml
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -80,18 +79,12 @@ MONTH_NAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "O
 # ---------------------------------------------------------------------------
 
 def gh_json(args):
-    for attempt in range(1, 5):
-        proc = subprocess.run(["gh", "api", *args], cwd=ROOT, text=True, capture_output=True)
-        if proc.returncode == 0:
-            return json.loads(proc.stdout)
-        if attempt < 4:
-            wait = attempt * 3
-            print(f"retrying gh api after failure ({attempt}/4), waiting {wait}s", file=sys.stderr)
-            time.sleep(wait)
-            continue
+    proc = subprocess.run(["gh", "api", *args], cwd=ROOT, text=True, capture_output=True)
+    if proc.returncode != 0:
         print("failed: gh api " + " ".join(args), file=sys.stderr)
         print(proc.stderr, file=sys.stderr)
         raise SystemExit(proc.returncode)
+    return json.loads(proc.stdout)
 
 
 def gh_graphql(query, **fields):
@@ -114,6 +107,7 @@ def fetch_repos():
             description
             isPrivate
             isArchived
+            pushedAt
             url
             primaryLanguage { name }
             defaultBranchRef { name }
@@ -137,6 +131,7 @@ def fetch_repos():
                 "name": node["name"],
                 "description": node["description"] or "",
                 "url": node["url"],
+                "pushedAt": node["pushedAt"],
                 "isPrivate": node["isPrivate"],
                 "primaryLanguage": (node["primaryLanguage"] or {}).get("name"),
                 "defaultBranch": node["defaultBranchRef"]["name"],
@@ -195,6 +190,24 @@ def fetch_commits(repo):
         cursor = history["pageInfo"]["endCursor"]
 
 
+def fetch_contribution_total():
+    query = """
+    query($login: String!, $from: DateTime!, $to: DateTime!) {
+      user(login: $login) {
+        contributionsCollection(from: $from, to: $to) {
+          totalCommitContributions
+        }
+      }
+    }
+    """
+    data = gh_graphql(
+        query,
+        login=USER,
+        **{"from": SINCE.isoformat() + "T00:00:00Z", "to": TODAY.isoformat() + "T23:59:59Z"},
+    )
+    return data["data"]["user"]["contributionsCollection"]["totalCommitContributions"]
+
+
 def fetch_prs():
     query = f"author:{USER} type:pr created:>={SINCE.isoformat()}"
     items = []
@@ -205,39 +218,6 @@ def fetch_prs():
         if len(items) >= data.get("total_count", 0) or not data.get("items"):
             return items
         page += 1
-
-
-def fetch_contribution_days():
-    query = """
-    query($login: String!, $from: DateTime!, $to: DateTime!) {
-      user(login: $login) {
-        contributionsCollection(from: $from, to: $to) {
-          contributionCalendar {
-            weeks {
-              contributionDays {
-                date
-                contributionCount
-              }
-            }
-          }
-        }
-      }
-    }
-    """
-    data = gh_graphql(
-        query,
-        login=USER,
-        **{
-            "from": SINCE.isoformat() + "T00:00:00Z",
-            "to": (TODAY + dt.timedelta(days=1)).isoformat() + "T00:00:00Z",
-        },
-    )
-    days = Counter()
-    weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
-    for week in weeks:
-        for day in week["contributionDays"]:
-            days[dt.date.fromisoformat(day["date"])] = day["contributionCount"]
-    return days
 
 
 # ---------------------------------------------------------------------------
@@ -336,7 +316,6 @@ def collect():
             deletions += commit.get("deletions") or 0
 
     prs = fetch_prs()
-    contribution_daily = fetch_contribution_days()
     pr_weekly = Counter()
     merged = 0
     external_repo_counts = Counter()
@@ -365,22 +344,19 @@ def collect():
 
     days = [SINCE + dt.timedelta(days=i) for i in range((TODAY - SINCE).days + 1)]
     daily_values = [daily[day] for day in days]
-    contribution_values = [contribution_daily[day] for day in days]
     active_days_set = {d for d, c in daily.items() if c > 0}
-    contribution_active_days = {d for d, c in contribution_daily.items() if c > 0}
     active_values = [v for v in daily_values if v > 0]
-    contribution_active_values = [v for v in contribution_values if v > 0]
-    current_streak, longest_streak = streaks(contribution_active_days or active_days_set)
+    current_streak, longest_streak = streaks(active_days_set)
 
-    # Weekday pulse: mean GitHub contributions per occurrence of each weekday.
+    # Weekday pulse: mean commits per occurrence of each weekday.
     weekday_total = [0] * 7
     weekday_count = [0] * 7
     weekday_active = [0] * 7
     for day in days:
         wd = day.weekday()
         weekday_count[wd] += 1
-        weekday_total[wd] += contribution_daily[day]
-        if contribution_daily[day] > 0:
+        weekday_total[wd] += daily[day]
+        if daily[day] > 0:
             weekday_active[wd] += 1
     weekday_mean = [t / c if c else 0 for t, c in zip(weekday_total, weekday_count)]
     best_weekday = max(range(7), key=lambda i: weekday_mean[i])
@@ -395,7 +371,7 @@ def collect():
             next_month = dt.date(start.year + 1, 1, 1)
         else:
             next_month = dt.date(start.year, start.month + 1, 1)
-        total = sum(c for d, c in contribution_daily.items() if start <= d < next_month)
+        total = sum(c for d, c in daily.items() if start <= d < next_month)
         monthly.append((start.isoformat(), total))
         if start.month == 1:
             cursor_month = dt.date(start.year - 1, 12, 1)
@@ -412,26 +388,26 @@ def collect():
     top_year = sorted(((n, sum(repo_daily[n].values())) for n in repo_daily), key=lambda x: x[1], reverse=True)
     top_year = [(n, c) for n, c in top_year if c > 0]
 
-    # Velocity trend: GitHub contribution calendar, last 30d versus the prior 30d.
-    last_30 = sum(c for d, c in contribution_daily.items() if d > TODAY - dt.timedelta(days=30))
-    prev_30 = sum(c for d, c in contribution_daily.items() if TODAY - dt.timedelta(days=60) < d <= TODAY - dt.timedelta(days=30))
+    # Velocity trend: last 30d versus the prior 30d.
+    last_30 = sum(c for d, c in daily.items() if d > TODAY - dt.timedelta(days=30))
+    prev_30 = sum(c for d, c in daily.items() if TODAY - dt.timedelta(days=60) < d <= TODAY - dt.timedelta(days=30))
     velocity_trend = ((last_30 - prev_30) / prev_30 * 100) if prev_30 else 0.0
-    momentum_7d = sum(c for d, c in contribution_daily.items() if d > TODAY - dt.timedelta(days=7))
+    momentum_7d = sum(c for d, c in daily.items() if d > TODAY - dt.timedelta(days=7))
 
-    # Largest single day, burst days, longest quiet stretch from contribution calendar.
-    biggest_day = max(contribution_daily.items(), key=lambda x: x[1], default=(TODAY, 0))
-    burst_threshold = percentile(contribution_active_values, 90) if contribution_active_values else 0
-    burst_days = sum(1 for d, c in contribution_daily.items() if c >= max(1, burst_threshold))
+    # Largest single day, burst days, longest quiet stretch.
+    biggest_day = max(daily.items(), key=lambda x: x[1], default=(TODAY, 0))
+    burst_threshold = percentile(active_values, 90) if active_values else 0
+    burst_days = sum(1 for d, c in daily.items() if c >= max(1, burst_threshold))
     longest_gap = 0
     gap = 0
     for d in days:
-        if contribution_daily[d] == 0:
+        if daily[d] == 0:
             gap += 1
             longest_gap = max(longest_gap, gap)
         else:
             gap = 0
-    # Mean gap between consecutive active contribution days.
-    sorted_active = sorted(contribution_active_days or active_days_set)
+    # Mean gap between consecutive active days.
+    sorted_active = sorted(active_days_set)
     if len(sorted_active) >= 2:
         gaps = [(sorted_active[i] - sorted_active[i - 1]).days for i in range(1, len(sorted_active))]
         mean_gap = statistics.mean(gaps)
@@ -474,8 +450,8 @@ def collect():
         pr_recent.append((wk.isoformat(), pr_weekly.get(wk, 0)))
 
     momentum_score = min(100, round(
-        len(contribution_active_values) / len(days) * 100 * 0.40
-        + min(sum(contribution_values) / 18, 35)
+        len(active_values) / len(days) * 100 * 0.40
+        + min(sum(daily_values) / 18, 35)
         + min(len(prs) / 4, 15)
         + min(max(velocity_trend, 0) / 4, 10)
     ))
@@ -517,10 +493,8 @@ def collect():
         "prPrev4w": pr_prev_4w,
         "prTrendPct": pr_trend,
         "daily": {d.isoformat(): daily[d] for d in days},
-        "contributionsDaily": {d.isoformat(): contribution_daily[d] for d in days},
-        "activeDaysPct": len(contribution_active_values) / len(days) * 100,
-        "contributionTotal": sum(contribution_values),
-        "commitTotal": sum(daily_values),
+        "activeDaysPct": len(active_values) / len(days) * 100,
+        "commitTotal": fetch_contribution_total(),
         "commitMean": statistics.mean(daily_values),
         "commitMedian": statistics.median(daily_values),
         "commitP95": percentile(daily_values, 95),
@@ -595,7 +569,62 @@ def defs():
     <stop offset="0" stop-color="{CYAN}" stop-opacity="0.45"/>
     <stop offset="1" stop-color="{CYAN}" stop-opacity="0"/>
   </linearGradient>
+  <radialGradient id="glowSpot" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="{LIME}" stop-opacity="0.28"/>
+    <stop offset="1" stop-color="{LIME}" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
 </defs>"""
+
+
+def corner_ticks(W, H, m=20, size=12, color=None):
+    color = color or HAIRLINE_BRIGHT
+    corners = [
+        (m, m, 1, 1), (W - m, m, -1, 1), (m, H - m, 1, -1), (W - m, H - m, -1, -1),
+    ]
+    out = []
+    for x, y, sx, sy in corners:
+        out.append(f'<path d="M{x} {y + size * sy} V{y} H{x + size * sx}" fill="none" stroke="{color}" stroke-width="1.2"/>')
+    return "\n".join(out)
+
+
+def donut_ring(cx, cy, r, thickness, segments, glow=False):
+    """segments: list of (value, color). Draws a ring starting at 12 o'clock, clockwise."""
+    total = sum(v for v, _ in segments) or 1
+    circumference = 2 * math.pi * r
+    out = [f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{HAIRLINE}" stroke-width="{thickness}"/>']
+    cumulative = 0.0
+    for value, color in segments:
+        frac = value / total
+        dash = frac * circumference
+        gap = circumference - dash
+        offset = -cumulative
+        glow_attr = ' filter="url(#softGlow)"' if glow else ""
+        out.append(
+            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{color}" stroke-width="{thickness}" '
+            f'stroke-dasharray="{dash:.2f} {gap:.2f}" stroke-dashoffset="{offset:.2f}" '
+            f'transform="rotate(-90 {cx} {cy})" stroke-linecap="butt"{glow_attr}/>'
+        )
+        cumulative += dash
+    return "\n".join(out)
+
+
+def ledger_row(x, y, w, label, value, color=None, sub=None):
+    color = color or TEXT_HI
+    parts = [
+        f'<text x="{x}" y="{y}" fill="{TEXT}" font-size="12" font-weight="600">{esc(label)}</text>',
+        f'<line x1="{x + 8 + len(label) * 7.3:.1f}" y1="{y - 4}" x2="{x + w - 60}" y2="{y - 4}" stroke="{HAIRLINE}" stroke-width="1" stroke-dasharray="1.5 4"/>',
+        f'<text x="{x + w}" y="{y}" fill="{color}" font-size="13" font-weight="700" text-anchor="end">{esc(value)}</text>',
+    ]
+    if sub:
+        parts.append(f'<text x="{x + w}" y="{y + 15}" fill="{TEXT_DIM}" font-size="10" text-anchor="end">{esc(sub)}</text>')
+    return "\n".join(parts)
 
 
 def section_label(x, y, text, tag=None, width=None):
@@ -692,24 +721,83 @@ def squarify(items, x, y, w, h):
 
 def render_profile(stats):
     W = 1100
-    pad = 44
+    pad = 56
 
     monthly = stats["monthly"]
 
-    # --- Hero: streak + 12-month trajectory --------------------------------
-    hero_y = 96
-    streak_x = pad
-    chart_x = 470
-    chart_y = hero_y + 18
-    chart_w = W - chart_x - pad
-    chart_h = 140
+    # ------------------------------------------------------------------
+    # Eyebrow header
+    # ------------------------------------------------------------------
+    eb_y = 56
+    header = f"""
+    <text x="{pad}" y="{eb_y}" fill="{TEXT_HI}" font-size="26" font-weight="800" letter-spacing="-0.5" class="sans">build telemetry</text>
+    <text x="{pad}" y="{eb_y + 20}" fill="{TEXT_DIM}" font-size="11" letter-spacing="1">AI/ML ENGINEERING · AGENTIC SYSTEMS · {esc(stats["generated"]).upper()}</text>
+    """
+    hairline_y = eb_y + 30
+    hero_y = hairline_y + 10
+
+    # ------------------------------------------------------------------
+    # Hero triptych: streak / OSS merge donut / trajectory — equal-height,
+    # bottom-aligned cards in a single row.
+    # ------------------------------------------------------------------
+    gap = 32
+    avail = W - pad * 2 - gap * 2
+    col1_w = avail * 0.30
+    col2_w = avail * 0.20
+    col3_w = avail * 0.50
+    c1_x = pad
+    c2_x = c1_x + col1_w + gap
+    c3_x = c2_x + col2_w + gap
+
+    inner = 22
+    card_top = hairline_y + 20
+    card_h = 146
+    card_bottom = card_top + card_h
+    label_y = card_top + 16
+    caption_y = card_top + 124
+
+    cards_bg = "\n".join(
+        f'<rect x="{cx:.1f}" y="{card_top}" width="{cw:.1f}" height="{card_h}" rx="12" fill="#ffffff" fill-opacity="0.015" stroke="{HAIRLINE}" stroke-opacity="0.4"/>'
+        for cx, cw in [(c1_x, col1_w), (c2_x, col2_w), (c3_x, col3_w)]
+    )
+
+    # -- Col 1: streak, glowing display number --------------------------
+    streak_val = f'{stats["currentStreak"]}'
+    x1 = c1_x + inner
+    col1 = f"""
+    <text x="{x1}" y="{label_y}" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">CURRENT STREAK</text>
+    <text x="{x1}" y="{card_top + 98}" fill="{LIME}" font-size="96" font-weight="900" letter-spacing="-4" class="sans">{streak_val}<tspan font-size="34" fill="{TEXT_HI}" font-weight="800">d</tspan></text>
+    <text x="{x1}" y="{caption_y}" fill="{TEXT}" font-size="11">longest {stats["longestStreak"]}d · quiet stretch {stats["longestGap"]}d</text>
+    """
+
+    # -- Col 2: PR merge-rate donut --------------------------------------
+    merge_pct = stats["prMergeRatio"]
+    r2 = 38
+    x2 = c2_x + inner
+    donut_cx = x2 + r2 + 10 / 2
+    donut_cy = card_top + 66
+    ring = donut_ring(donut_cx, donut_cy, r2, 10, [(merge_pct, LIME), (max(0, 100 - merge_pct), HAIRLINE)], glow=False)
+    col2 = f"""
+    <text x="{x2}" y="{label_y}" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">PR MERGE RATE</text>
+    {ring}
+    <text x="{donut_cx}" y="{donut_cy + 7}" fill="{TEXT_HI}" font-size="24" font-weight="900" text-anchor="middle" class="sans">{merge_pct:.0f}%</text>
+    <text x="{x2}" y="{caption_y}" fill="{TEXT}" font-size="11">{stats["mergedPrs"]}/{stats["prs"]} merged · {stats["prActiveWeeks"]} wks</text>
+    """
+
+    # -- Col 3: 12-month trajectory (area chart) -------------------------
+    x3 = c3_x + inner
+    chart_x = x3
+    chart_y = card_top + 34
+    chart_w = col3_w - inner * 2
+    axis_y = caption_y
+    chart_h = (axis_y - 16) - chart_y
     max_m = max((v for _, v in monthly), default=1) or 1
-    points = []
+    pts = []
     for i, (_, v) in enumerate(monthly):
         px = chart_x + (i / max(1, len(monthly) - 1)) * chart_w
         py = chart_y + chart_h - (v / max_m) * chart_h
-        points.append((px, py))
-    poly = " ".join(f"{x:.2f},{y:.2f}" for x, y in points)
+        pts.append((px, py))
+    poly = " ".join(f"{x:.2f},{y:.2f}" for x, y in pts)
     area = f"{chart_x},{chart_y + chart_h} {poly} {chart_x + chart_w},{chart_y + chart_h}"
     axis = []
     for i, (mk, _) in enumerate(monthly):
@@ -717,180 +805,169 @@ def render_profile(stats):
             continue
         px = chart_x + (i / max(1, len(monthly) - 1)) * chart_w
         m = MONTH_NAMES[int(mk.split("-")[1]) - 1]
-        axis.append(f'<text x="{px:.1f}" y="{chart_y + chart_h + 16}" fill="{TEXT_DIM}" font-size="10" text-anchor="middle">{m}</text>')
+        axis.append(f'<text x="{px:.1f}" y="{axis_y}" fill="{TEXT_DIM}" font-size="9" text-anchor="middle">{m}</text>')
     peak_idx = max(range(len(monthly)), key=lambda i: monthly[i][1])
     cur_idx = len(monthly) - 1
     annots = []
-    for idx, color, label in [(peak_idx, AMBER, f"peak · {monthly[peak_idx][1]}"), (cur_idx, LIME, f"now · {monthly[cur_idx][1]}")]:
+    for idx, dot_color, text_color, label in [(peak_idx, AMBER, AMBER, f"peak · {monthly[peak_idx][1]}"), (cur_idx, LIME, TEXT_HI, f"now · {monthly[cur_idx][1]}")]:
         if monthly[idx][1] == 0:
             continue
-        px, py = points[idx]
-        annots.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="4" fill="{color}" stroke="{BG}" stroke-width="2"/>')
-        text_anchor = "end" if idx == cur_idx else "start"
-        text_dx = -6 if idx == cur_idx else 6
-        annots.append(f'<text x="{px + text_dx:.1f}" y="{py - 8:.1f}" fill="{color}" font-size="10" font-weight="700" text-anchor="{text_anchor}">{label}</text>')
+        px, py = pts[idx]
+        annots.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="3.5" fill="{dot_color}" stroke="{BG}" stroke-width="1.5"/>')
+        if idx == cur_idx:
+            # Pin the "now" label outside the chart's right edge so it never
+            # collides with the peak annotation regardless of data shape.
+            annots.append(f'<text x="{chart_x + chart_w + 10:.1f}" y="{py + 4:.1f}" fill="{text_color}" font-size="9.5" font-weight="700" text-anchor="start">{label}</text>')
+        else:
+            annots.append(f'<text x="{px + 6:.1f}" y="{py - 8:.1f}" fill="{text_color}" font-size="9.5" font-weight="700" text-anchor="start">{label}</text>')
     grid = [
         f'<line x1="{chart_x}" y1="{chart_y + chart_h}" x2="{chart_x + chart_w}" y2="{chart_y + chart_h}" stroke="{HAIRLINE}"/>',
         f'<line x1="{chart_x}" y1="{chart_y}" x2="{chart_x + chart_w}" y2="{chart_y}" stroke="{HAIRLINE}" stroke-dasharray="2 4"/>',
-        f'<text x="{chart_x - 6}" y="{chart_y + 4}" fill="{TEXT_DIM}" font-size="9" text-anchor="end">{int(max_m)}</text>',
-        f'<text x="{chart_x - 6}" y="{chart_y + chart_h + 3}" fill="{TEXT_DIM}" font-size="9" text-anchor="end">0</text>',
     ]
+    col3 = f"""
+    <text x="{x3}" y="{label_y}" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">12-MONTH TRAJECTORY</text>
+    {chr(10).join(grid)}
+    <polygon points="{area}" fill="url(#limeFade)"/>
+    <polyline points="{poly}" fill="none" stroke="{LIME}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    {chr(10).join(annots)}
+    {chr(10).join(axis)}
+    """
 
-    velocity_trend = stats["velocityTrendPct"]
-    trend_color = LIME if velocity_trend >= 0 else RED
-    trend_sign = "+" if velocity_trend >= 0 else ""
-    trend_arrow = "▲" if velocity_trend >= 0 else "▼"
+    hero_bottom = card_bottom
 
-    # --- Vitals strip --------------------------------------------------------
-    strip_y = 320
-    fields = [
-        ("all contributions", fmt_num(stats["contributionTotal"]), "GitHub calendar", LIME),
-        ("30d velocity", fmt_num(stats["velocity30d"]), f'{trend_arrow} {trend_sign}{velocity_trend:.0f}% vs prior 30', trend_color),
-        ("active days", pct(stats["activeDaysPct"]), f'mean gap {stats["meanGapDays"]:.1f}d', CYAN),
-        ("oss prs merged", fmt_num(stats["externalPrsMerged"]), f'across {stats["externalReposCount"]} external repos', VIOLET),
-        ("pull requests", fmt_num(stats["prs"]), f'{stats["prMergeRatio"]:.0f}% merged', MAGENTA),
+    # ------------------------------------------------------------------
+    # Vitals ledger strip (single row, dotted leaders)
+    # ------------------------------------------------------------------
+    led_y = hero_bottom + 56
+    trend = stats["velocityTrendPct"]
+    trend_color = LIME if trend >= 0 else RED
+    trend_sign = "+" if trend >= 0 else ""
+    led_items = [
+        ("ALL CONTRIBUTIONS", fmt_num(stats["commitTotal"]), "GitHub calendar", LIME),
+        ("30D VELOCITY", fmt_num(stats["velocity30d"]), f'{"▲" if trend >= 0 else "▼"} {trend_sign}{trend:.0f}% vs prior 30', trend_color),
+        ("ACTIVE DAYS", pct(stats["activeDaysPct"]), f'mean gap {stats["meanGapDays"]:.1f}d', CYAN),
+        ("OSS PRS MERGED", fmt_num(stats["externalPrsMerged"]), f'across {stats["externalReposCount"]} external repos', VIOLET),
+        ("PULL REQUESTS", fmt_num(stats["prs"]), f'{stats["prMergeRatio"]:.0f}% merged', MAGENTA),
     ]
-    strip_parts = []
-    col_w = (W - pad * 2) / len(fields)
-    for i, (label, value, sub, color) in enumerate(fields):
-        cx = pad + i * col_w
-        strip_parts.append(number_block(cx, strip_y, label, value, sub, accent=color, big=24))
+    seg_w = (W - pad * 2) / len(led_items)
+    led_parts = [section_label(pad, led_y - 16, "Vitals", width=W - pad * 2)]
+    for i, (label, value, sub, color) in enumerate(led_items):
+        lx = pad + i * seg_w
+        led_parts.append(f'<text x="{lx:.1f}" y="{led_y}" fill="{TEXT_DIM}" font-size="10" font-weight="700" letter-spacing="1.5">{esc(label)}</text>')
+        led_parts.append(f'<text x="{lx:.1f}" y="{led_y + 20}" fill="{color}" font-size="24" font-weight="800" letter-spacing="-1">{esc(value)}</text>')
+        led_parts.append(f'<text x="{lx:.1f}" y="{led_y + 38}" fill="{TEXT_DIM}" font-size="11">{esc(sub)}</text>')
         if i > 0:
-            strip_parts.append(f'<line x1="{cx - 10}" y1="{strip_y - 4}" x2="{cx - 10}" y2="{strip_y + 50}" stroke="{HAIRLINE}"/>')
+            led_parts.append(f'<line x1="{lx - 10:.1f}" y1="{led_y - 4}" x2="{lx - 10:.1f}" y2="{led_y + 50}" stroke="{HAIRLINE}"/>')
+    led_bottom = led_y + 50
 
-    # --- Language treemap ------------------------------------------------
-    tm_y = 412
-    langs = stats["languages"][:]
+    # ------------------------------------------------------------------
+    # Language mix donut (left) + Work categories ledger (right)
+    # ------------------------------------------------------------------
+    mid_y = led_bottom + 46
+    half_w = (W - pad * 2 - 56) / 2
+    left_x = pad
+    right_x = pad + half_w + 56
+
+    langs = stats["languages"][:6]
     total_lang = sum(v for _, v in langs) or 1
-    top_langs = langs[:6]
-    other = total_lang - sum(v for _, v in top_langs)
-    if other > 0:
-        top_langs.append(("Other", other))
-    tm_h = 130
-    rects = squarify(top_langs, pad, tm_y + 14, W - pad * 2, tm_h)
-    tm_parts = []
-    for label, value, rx, ry, rw, rh in rects:
-        color = LANG_COLORS.get(label, PALETTE[0])
-        pct_v = value / total_lang * 100
-        gap = 2
-        cx_, cy_, cw_, ch_ = rx + gap, ry + gap, max(0, rw - gap * 2), max(0, rh - gap * 2)
-        tm_parts.append(f'<rect x="{cx_:.2f}" y="{cy_:.2f}" width="{cw_:.2f}" height="{ch_:.2f}" rx="4" fill="{color}" opacity="0.92"><title>{esc(label)} · {pct_v:.1f}%</title></rect>')
-        if cw_ > 55 and ch_ > 28:
-            text_color = "#0b1320" if color in ("#f1e05a", "#fbbf24", "#fde68a", "#a3e635", "#5eead4", LIME) else "#f8fafc"
-            tm_parts.append(f'<text x="{cx_ + 8:.2f}" y="{cy_ + 18:.2f}" fill="{text_color}" font-size="12" font-weight="800" class="sans">{esc(label)}</text>')
-            tm_parts.append(f'<text x="{cx_ + 8:.2f}" y="{cy_ + 32:.2f}" fill="{text_color}" font-size="10" opacity="0.85">{pct_v:.1f}%</text>')
+    lang_cx = left_x + 78
+    lang_cy = mid_y + 90
+    lang_segments = [(v, LANG_COLORS.get(name, PALETTE[i % len(PALETTE)])) for i, (name, v) in enumerate(langs)]
+    lang_ring = donut_ring(lang_cx, lang_cy, 62, 18, lang_segments)
+    lang_legend = []
+    for i, (name, v) in enumerate(langs):
+        ly = mid_y + 24 + i * 22
+        color = LANG_COLORS.get(name, PALETTE[i % len(PALETTE)])
+        share = v / total_lang * 100
+        lang_legend.append(f'<rect x="{left_x + 172}" y="{ly - 9}" width="9" height="9" rx="2" fill="{color}"/>')
+        lang_legend.append(f'<text x="{left_x + 188}" y="{ly}" fill="{TEXT}" font-size="11.5">{esc(name)}</text>')
+        lang_legend.append(f'<text x="{left_x + half_w}" y="{ly}" fill="{TEXT_MUTED}" font-size="11" text-anchor="end">{share:.0f}%</text>')
 
-    # --- Work categories -----------------------------------------------------
-    cat_y = tm_y + tm_h + 46
+    left_col = f"""
+    {section_label(left_x, mid_y, "Language mix", width=half_w)}
+    {lang_ring}
+    <text x="{lang_cx}" y="{lang_cy + 9}" fill="{TEXT_HI}" font-size="24" font-weight="900" text-anchor="middle" class="sans">{len(stats["languages"])}</text>
+    <text x="{lang_cx}" y="{lang_cy + 24}" fill="{TEXT_DIM}" font-size="8.5" text-anchor="middle" letter-spacing="1">LANGS</text>
+    {chr(10).join(lang_legend)}
+    """
+
     cats = stats["categories"][:5]
     total_cat = sum(v for _, v in cats) or 1
-    seg_w = W - pad * 2
-    cat_segs = []
-    cx = pad
-    for idx, (name, value) in enumerate(cats):
-        sw = max(2, (value / total_cat) * seg_w)
-        color = PALETTE[idx % len(PALETTE)]
-        cat_segs.append(f'<rect x="{cx:.2f}" y="{cat_y + 24}" width="{sw - 2:.2f}" height="12" rx="3" fill="{color}"><title>{esc(name)} · {value}</title></rect>')
-        cx += sw
-    cat_legend = []
-    n_cats = len(cats) or 1
-    chip_w = seg_w / n_cats
-    for idx, (name, value) in enumerate(cats):
-        lx = pad + idx * chip_w
-        ly = cat_y + 58
-        color = PALETTE[idx % len(PALETTE)]
-        share = value / total_cat * 100
-        cat_legend.append(f'<rect x="{lx}" y="{ly - 9}" width="10" height="10" rx="2" fill="{color}"/>')
-        cat_legend.append(f'<text x="{lx + 16}" y="{ly}" fill="{TEXT}" font-size="11">{esc(name)}</text>')
-        cat_legend.append(f'<text x="{lx + 16}" y="{ly + 15}" fill="{TEXT_MUTED}" font-size="10">{share:.0f}%</text>')
+    focus_label = "focused" if stats["focusTop3Pct"] >= 60 else ("balanced" if stats["focusTop3Pct"] >= 40 else "scattered")
+    cat_rows = []
+    for i, (name, v) in enumerate(cats):
+        ry = mid_y + 30 + i * 30
+        share = v / total_cat
+        color = PALETTE[i % len(PALETTE)]
+        bw = share * (half_w - 100)
+        cat_rows.append(f'<text x="{right_x}" y="{ry}" fill="{TEXT}" font-size="11.5" font-weight="600">{esc(name)}</text>')
+        cat_rows.append(f'<rect x="{right_x}" y="{ry + 6}" width="{half_w - 100:.1f}" height="5" rx="2.5" fill="{HAIRLINE}"/>')
+        cat_rows.append(f'<rect x="{right_x}" y="{ry + 6}" width="{bw:.1f}" height="5" rx="2.5" fill="{color}"/>')
+        cat_rows.append(f'<text x="{right_x + half_w}" y="{ry}" fill="{TEXT_MUTED}" font-size="11" text-anchor="end">{share * 100:.0f}%</text>')
 
-    # --- Bottom: top projects + OSS contributions ---------------------------
-    bot_y = cat_y + 100
-    left_w = 470
-    right_x = pad + left_w + 40
-    right_w = W - pad - right_x
+    right_col = f"""
+    {section_label(right_x, mid_y, "Work categories", tag=f'{focus_label} · top-3 {stats["focusTop3Pct"]:.0f}%', width=half_w)}
+    {chr(10).join(cat_rows)}
+    """
 
-    def proj_rows(items, x, y, w, color):
-        if not items:
-            return f'<text x="{x}" y="{y + 22}" fill="{TEXT_DIM}" font-size="12">no commits</text>'
-        max_v = max(v for _, v in items[:4])
-        out = []
-        for i, (name, value) in enumerate(items[:4]):
-            ry = y + 26 + i * 22
-            bw = max(2, (value / max_v) * (w - 200))
-            out.append(f'<text x="{x}" y="{ry}" fill="{TEXT}" font-size="12" font-weight="600">{esc(name)}</text>')
-            out.append(f'<rect x="{x + 130}" y="{ry - 8}" width="{w - 200}" height="6" rx="1" fill="{HAIRLINE}"/>')
-            out.append(f'<rect x="{x + 130}" y="{ry - 8}" width="{bw:.1f}" height="6" rx="1" fill="{color}"/>')
-            out.append(f'<text x="{x + w - 24}" y="{ry}" fill="{TEXT_MUTED}" font-size="11" text-anchor="end">{value}</text>')
-        return "\n".join(out)
+    mid_bottom = mid_y + max(24 + len(langs) * 22, 30 + len(cats) * 30)
 
-    def oss_rows(items, x, y, w):
-        if not items:
-            return f'<text x="{x}" y="{y + 22}" fill="{TEXT_DIM}" font-size="12">no external PRs yet</text>'
-        out = []
-        for i, (repo, merged_n, total_n) in enumerate(items[:4]):
-            ry = y + 26 + i * 22
+    # ------------------------------------------------------------------
+    # Bottom ledger: top projects + OSS contributions
+    # ------------------------------------------------------------------
+    bot_y = mid_bottom + 44
+    bot_labels = [
+        section_label(left_x, bot_y - 18, "Top projects · 7d", width=half_w),
+        section_label(right_x, bot_y - 18, "OSS contributions", tag=f'{stats["externalPrsMerged"]}/{stats["externalPrsTotal"]} merged', width=half_w),
+    ]
+    proj_items = stats["topWeek"][:4] or [("no commits", 0)]
+    oss_items = stats["externalTop"][:4] or [("no external PRs yet", 0, 0)]
+    bot_rows = []
+    for i, (name, value) in enumerate(proj_items):
+        ry = bot_y + 8 + i * 24
+        bot_rows.append(ledger_row(left_x, ry, half_w, name, str(value), color=LIME))
+    for i, item in enumerate(oss_items):
+        ry = bot_y + 8 + i * 24
+        if len(item) == 3:
+            repo, merged_n, total_n = item
             status = "merged" if merged_n else "open"
             color = LIME if merged_n else TEXT_DIM
-            out.append(f'<text x="{x}" y="{ry}" fill="{TEXT}" font-size="12" font-weight="600">{esc(repo)}</text>')
-            out.append(f'<text x="{x + w}" y="{ry}" fill="{color}" font-size="11" font-weight="700" text-anchor="end">{merged_n}/{total_n} {status}</text>')
-        return "\n".join(out)
+            bot_rows.append(ledger_row(right_x, ry, half_w, repo, f'{merged_n}/{total_n} {status}', color=color))
+        else:
+            bot_rows.append(ledger_row(right_x, ry, half_w, item[0], "", color=TEXT_DIM))
 
-    bot_labels = [
-        section_label(pad, bot_y, "Top projects · 7d", width=left_w),
-        section_label(right_x, bot_y, "OSS contributions", tag=f'{stats["externalPrsMerged"]}/{stats["externalPrsTotal"]} merged', width=right_w),
-        hairline(pad, bot_y + 12, pad + left_w),
-        hairline(right_x, bot_y + 12, right_x + right_w),
-    ]
-
-    H = int(bot_y + 4 * 22 + 30)
+    H = int(bot_y + 8 + 4 * 24 + 40)
 
     return f"""<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc">
   <title id="ttl">Alok build telemetry</title>
-  <desc id="desc">Streak hero, trajectory, vitals, language mix, work categories, top projects, and OSS contributions.</desc>
+  <desc id="desc">Streak, PR merge rate, twelve-month trajectory, vitals, language mix, work categories, top projects, and OSS contributions.</desc>
   <style>text {{ font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; }} .sans {{ font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }}</style>
   {defs()}
   {shell(W, H)}
+  {corner_ticks(W, H)}
 
   <!-- Header -->
-  <text x="{pad}" y="56" fill="{TEXT_HI}" font-size="26" font-weight="800" letter-spacing="-0.5" class="sans">build telemetry</text>
-  <text x="{pad}" y="76" fill="{TEXT_MUTED}" font-size="11" letter-spacing="1">AI/ML ENGINEERING · AGENTIC SYSTEMS · {esc(stats["generated"]).upper()}</text>
-  {hairline(pad, 86, W - pad, HAIRLINE_BRIGHT)}
+  {header}
+  {hairline(pad, hairline_y, W - pad, HAIRLINE_BRIGHT)}
 
-  <!-- Hero: streak + trajectory -->
-  <g>
-    <text x="{streak_x}" y="{hero_y + 12}" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">CURRENT STREAK</text>
-    <text x="{streak_x}" y="{hero_y + 105}" fill="{LIME}" font-size="118" font-weight="900" letter-spacing="-6" class="sans">{stats["currentStreak"]}<tspan font-size="40" fill="{TEXT_HI}" font-weight="800">d</tspan></text>
-    <text x="{streak_x}" y="{hero_y + 138}" fill="{TEXT}" font-size="13">longest run {stats["longestStreak"]}d · quiet stretch {stats["longestGap"]}d</text>
-  </g>
-  <g>
-    <text x="{chart_x}" y="{hero_y + 12}" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">12-MONTH TRAJECTORY</text>
-    {chr(10).join(grid)}
-    <polygon points="{area}" fill="url(#limeFade)"/>
-    <polyline points="{poly}" fill="none" stroke="{LIME}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    {chr(10).join(annots)}
-    {chr(10).join(axis)}
-  </g>
+  <!-- Hero triptych -->
+  {col1}
+  {col2}
+  {col3}
 
-  <!-- Vitals -->
-  {hairline(pad, 280, W - pad)}
-  <text x="{pad}" y="292" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">VITALS</text>
-  {chr(10).join(strip_parts)}
+  <!-- Vitals ledger -->
+  {hairline(pad, led_y - 40, W - pad)}
+  {chr(10).join(led_parts)}
 
-  <!-- Language treemap -->
-  {hairline(pad, tm_y - 8, W - pad)}
-  {section_label(pad, tm_y + 4, "Language mix", width=W - pad * 2)}
-  {chr(10).join(tm_parts)}
-
-  <!-- Work categories -->
-  {section_label(pad, cat_y + 12, "Work categories", tag=f'focus top-3 {stats["focusTop3Pct"]:.0f}%', width=W - pad * 2)}
-  {chr(10).join(cat_segs)}
-  {chr(10).join(cat_legend)}
+  <!-- Language mix + work categories -->
+  {hairline(pad, mid_y - 16, W - pad)}
+  {left_col}
+  {right_col}
 
   <!-- Bottom: top projects + OSS -->
+  {hairline(pad, bot_y - 30, W - pad)}
   {chr(10).join(bot_labels)}
-  {proj_rows(stats["topWeek"], pad, bot_y, left_w, LIME)}
-  {oss_rows(stats["externalTop"], right_x, bot_y, right_w)}
+  {chr(10).join(bot_rows)}
 </svg>
 """
 
