@@ -711,50 +711,58 @@ def render_profile(stats):
         if i > 0:
             strip_parts.append(f'<line x1="{cx - 10}" y1="{strip_y - 4}" x2="{cx - 10}" y2="{strip_y + 50}" stroke="{HAIRLINE}"/>')
 
-    # --- Language mix donut ----------------------------------------------
-    tm_y = 412
-    tm_h = 130
+    # --- Language mix (left) + Work categories (right): two-column row -----
+    mid_y = 412
+    half_w = (W - pad * 2 - 56) / 2
+    left_x = pad
+    cat_x = pad + half_w + 56
+
     langs = stats["languages"][:6]
     total_lang = sum(v for _, v in langs) or 1
-    lang_cx = pad + 82
-    lang_cy = tm_y + 76
+    lang_cx = left_x + 78
+    lang_cy = mid_y + 90
     lang_segments = [(v, LANG_COLORS.get(name, PALETTE[i % len(PALETTE)])) for i, (name, v) in enumerate(langs)]
-    lang_ring = donut_ring(lang_cx, lang_cy, 52, 16, lang_segments)
+    lang_ring = donut_ring(lang_cx, lang_cy, 62, 18, lang_segments)
     lang_legend = []
     for i, (name, v) in enumerate(langs):
-        ly = tm_y + 28 + i * 18
+        ly = mid_y + 24 + i * 22
         color = LANG_COLORS.get(name, PALETTE[i % len(PALETTE)])
         share = v / total_lang * 100
-        lang_legend.append(f'<rect x="{pad + 190}" y="{ly - 9}" width="9" height="9" rx="2" fill="{color}"/>')
-        lang_legend.append(f'<text x="{pad + 206}" y="{ly}" fill="{TEXT}" font-size="11.5">{esc(name)}</text>')
-        lang_legend.append(f'<text x="{pad + 430}" y="{ly}" fill="{TEXT_MUTED}" font-size="11" text-anchor="end">{share:.0f}%</text>')
+        lang_legend.append(f'<rect x="{left_x + 172}" y="{ly - 9}" width="9" height="9" rx="2" fill="{color}"/>')
+        lang_legend.append(f'<text x="{left_x + 188}" y="{ly}" fill="{TEXT}" font-size="11.5">{esc(name)}</text>')
+        lang_legend.append(f'<text x="{left_x + half_w}" y="{ly}" fill="{TEXT_MUTED}" font-size="11" text-anchor="end">{share:.0f}%</text>')
 
-    # --- Work categories -----------------------------------------------------
-    cat_y = tm_y + tm_h + 46
+    left_col = f"""
+    {section_label(left_x, mid_y, "Language mix", width=half_w)}
+    {lang_ring}
+    <text x="{lang_cx}" y="{lang_cy + 9}" fill="{TEXT_HI}" font-size="24" font-weight="900" text-anchor="middle" class="sans">{len(stats["languages"])}</text>
+    <text x="{lang_cx}" y="{lang_cy + 24}" fill="{TEXT_DIM}" font-size="8.5" text-anchor="middle" letter-spacing="1">LANGS</text>
+    {chr(10).join(lang_legend)}
+    """
+
     cats = stats["categories"][:5]
     total_cat = sum(v for _, v in cats) or 1
-    seg_w = W - pad * 2
-    cat_segs = []
-    cx = pad
-    for idx, (name, value) in enumerate(cats):
-        sw = max(2, (value / total_cat) * seg_w)
-        color = PALETTE[idx % len(PALETTE)]
-        cat_segs.append(f'<rect x="{cx:.2f}" y="{cat_y + 24}" width="{sw - 2:.2f}" height="12" rx="3" fill="{color}"><title>{esc(name)} · {value}</title></rect>')
-        cx += sw
-    cat_legend = []
-    n_cats = len(cats) or 1
-    chip_w = seg_w / n_cats
-    for idx, (name, value) in enumerate(cats):
-        lx = pad + idx * chip_w
-        ly = cat_y + 58
-        color = PALETTE[idx % len(PALETTE)]
-        share = value / total_cat * 100
-        cat_legend.append(f'<rect x="{lx}" y="{ly - 9}" width="10" height="10" rx="2" fill="{color}"/>')
-        cat_legend.append(f'<text x="{lx + 16}" y="{ly}" fill="{TEXT}" font-size="11">{esc(name)}</text>')
-        cat_legend.append(f'<text x="{lx + 16}" y="{ly + 15}" fill="{TEXT_MUTED}" font-size="10">{share:.0f}%</text>')
+    focus_label = "focused" if stats["focusTop3Pct"] >= 60 else ("balanced" if stats["focusTop3Pct"] >= 40 else "scattered")
+    cat_rows = []
+    for i, (name, v) in enumerate(cats):
+        ry = mid_y + 30 + i * 30
+        share = v / total_cat
+        color = PALETTE[i % len(PALETTE)]
+        bw = share * (half_w - 100)
+        cat_rows.append(f'<text x="{cat_x}" y="{ry}" fill="{TEXT}" font-size="11.5" font-weight="600">{esc(name)}</text>')
+        cat_rows.append(f'<rect x="{cat_x}" y="{ry + 6}" width="{half_w - 100:.1f}" height="5" rx="2.5" fill="{HAIRLINE}"/>')
+        cat_rows.append(f'<rect x="{cat_x}" y="{ry + 6}" width="{bw:.1f}" height="5" rx="2.5" fill="{color}"/>')
+        cat_rows.append(f'<text x="{cat_x + half_w}" y="{ry}" fill="{TEXT_MUTED}" font-size="11" text-anchor="end">{share * 100:.0f}%</text>')
+
+    right_col = f"""
+    {section_label(cat_x, mid_y, "Work categories", tag=f'{focus_label} · top-3 {stats["focusTop3Pct"]:.0f}%', width=half_w)}
+    {chr(10).join(cat_rows)}
+    """
+
+    mid_bottom = mid_y + max(24 + len(langs) * 22, 30 + len(cats) * 30)
 
     # --- Bottom: top projects + OSS contributions ---------------------------
-    bot_y = cat_y + 100
+    bot_y = mid_bottom + 44
     left_w = 470
     right_x = pad + left_w + 40
     right_w = W - pad - right_x
@@ -826,18 +834,10 @@ def render_profile(stats):
   <text x="{pad}" y="292" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">VITALS</text>
   {chr(10).join(strip_parts)}
 
-  <!-- Language mix donut -->
-  {hairline(pad, tm_y - 8, W - pad)}
-  {section_label(pad, tm_y + 4, "Language mix", width=W - pad * 2)}
-  {lang_ring}
-  <text x="{lang_cx}" y="{lang_cy + 9}" fill="{TEXT_HI}" font-size="22" font-weight="900" text-anchor="middle" class="sans">{len(stats["languages"])}</text>
-  <text x="{lang_cx}" y="{lang_cy + 24}" fill="{TEXT_DIM}" font-size="8.5" text-anchor="middle" letter-spacing="1">LANGS</text>
-  {chr(10).join(lang_legend)}
-
-  <!-- Work categories -->
-  {section_label(pad, cat_y + 12, "Work categories", tag=f'focus top-3 {stats["focusTop3Pct"]:.0f}%', width=W - pad * 2)}
-  {chr(10).join(cat_segs)}
-  {chr(10).join(cat_legend)}
+  <!-- Language mix + work categories -->
+  {hairline(pad, mid_y - 16, W - pad)}
+  {left_col}
+  {right_col}
 
   <!-- Bottom: top projects + OSS -->
   {chr(10).join(bot_labels)}
