@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-13",
+  "generated": "2026-07-14",
   "windowDays": 366,
   "repos": [
     {
@@ -615,10 +615,10 @@
     "date": "2025-09-30",
     "commits": 45
   },
-  "burstDays": 25,
-  "burstThreshold": 15.0,
-  "longestGap": 53,
-  "meanGapDays": 1.6994535519125684,
+  "burstDays": 19,
+  "burstThreshold": 15.599999999999994,
+  "longestGap": 52,
+  "meanGapDays": 1.6956521739130435,
   "hourDistribution": [
     7,
     9,
@@ -654,12 +654,11 @@
   },
   "additionsPct": 73.4139023051722,
   "avgCommitSize": 700.3710482529118,
-  "prActiveWeeks": 11,
-  "prThis4w": 7,
+  "prActiveWeeks": 12,
+  "prThis4w": 8,
   "prPrev4w": 13,
-  "prTrendPct": -46.15384615384615,
+  "prTrendPct": -38.46153846153847,
   "daily": {
-    "2025-07-13": 0,
     "2025-07-14": 0,
     "2025-07-15": 0,
     "2025-07-16": 0,
@@ -1024,10 +1023,10 @@
     "2026-07-10": 0,
     "2026-07-11": 0,
     "2026-07-12": 0,
-    "2026-07-13": 0
+    "2026-07-13": 0,
+    "2026-07-14": 0
   },
   "contributionsDaily": {
-    "2025-07-13": 0,
     "2025-07-14": 0,
     "2025-07-15": 0,
     "2025-07-16": 0,
@@ -1391,26 +1390,27 @@
     "2026-07-09": 21,
     "2026-07-10": 36,
     "2026-07-11": 32,
-    "2026-07-12": 9,
-    "2026-07-13": 0
+    "2026-07-12": 16,
+    "2026-07-13": 15,
+    "2026-07-14": 0
   },
-  "activeDaysPct": 50.27322404371585,
-  "contributionTotal": 1408,
+  "activeDaysPct": 50.54644808743169,
+  "contributionTotal": 1430,
   "commitTotal": 601,
   "commitMean": 1.6420765027322404,
   "commitMedian": 0.0,
   "commitP95": 8.75,
   "commitActiveMean": 4.485074626865671,
   "commitMax": 18,
-  "currentStreak": 49,
-  "longestStreak": 49,
+  "currentStreak": 50,
+  "longestStreak": 50,
   "additions": 309016,
   "deletions": 111907,
-  "prs": 31,
+  "prs": 32,
   "mergedPrs": 24,
-  "externalPrsTotal": 18,
+  "externalPrsTotal": 19,
   "externalPrsMerged": 11,
-  "externalReposCount": 7,
+  "externalReposCount": 8,
   "externalTop": [
     [
       "Khushi-Choudhary11/SachCheck",
@@ -1433,20 +1433,20 @@
       1
     ],
     [
-      "future-agi/futureagi-sdk",
+      "supermemoryai/supermemory",
       0,
       1
     ],
     [
-      "DevloperHS/learn_devops",
+      "future-agi/futureagi-sdk",
       0,
       1
     ]
   ],
-  "prMergeRatio": 77.41935483870968,
-  "prWeeklyMean": 2.8181818181818183,
-  "prWeeklyMedian": 2,
-  "prWeeklyP95": 6.5,
+  "prMergeRatio": 75.0,
+  "prWeeklyMean": 2.6666666666666665,
+  "prWeeklyMedian": 2.0,
+  "prWeeklyP95": 6.2499999999999964,
   "prWeeklyMax": 9,
   "prRecent": [
     [
@@ -1551,15 +1551,10 @@
     ],
     [
       "2026-07-13",
-      0
+      1
     ]
   ],
-  "topWeek": [
-    [
-      "aloktripathi1",
-      2
-    ]
-  ],
+  "topWeek": [],
   "topMonth": [
     [
       "Reed",
@@ -1729,16 +1724,16 @@
     ]
   ],
   "weekdayMean": [
-    2.8867924528301887,
-    3.9423076923076925,
+    3.169811320754717,
+    3.8679245283018866,
     3.269230769230769,
     4.538461538461538,
     4.288461538461538,
     4.096153846153846,
-    3.9245283018867925
+    4.134615384615385
   ],
   "weekdayActive": [
-    21,
+    22,
     27,
     29,
     29,
@@ -1795,15 +1790,15 @@
     ],
     [
       "2026-07-01",
-      178
+      200
     ]
   ],
-  "velocity30d": 328,
-  "velocityPrev30d": 187,
-  "velocityTrendPct": 75.40106951871658,
-  "momentum7d": 123,
+  "velocity30d": 345,
+  "velocityPrev30d": 164,
+  "velocityTrendPct": 110.3658536585366,
+  "momentum7d": 124,
   "momentumScore": 73,
-  "shipping7d": 1,
+  "shipping7d": 0,
   "shipping30d": 9,
   "focusTop3Pct": 48.0865224625624,
   "hhi": 0.11243324354030028,
