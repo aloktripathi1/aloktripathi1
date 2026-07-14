@@ -612,9 +612,9 @@ def hairline(x1, y, x2, color=HAIRLINE):
 
 def number_block(x, y, label, value, sub=None, accent=TEXT_HI, label_color=TEXT_MUTED, big=34):
     parts = [f'<text x="{x}" y="{y}" fill="{label_color}" font-size="10" font-weight="700" letter-spacing="1.5">{esc(label.upper())}</text>']
-    parts.append(f'<text x="{x}" y="{y + big - 4}" fill="{accent}" font-size="{big}" font-weight="800" letter-spacing="-1">{esc(value)}</text>')
+    parts.append(f'<text x="{x}" y="{y + big + 3}" fill="{accent}" font-size="{big}" font-weight="800" letter-spacing="-1">{esc(value)}</text>')
     if sub:
-        parts.append(f'<text x="{x}" y="{y + big + 14}" fill="{TEXT_DIM}" font-size="11">{esc(sub)}</text>')
+        parts.append(f'<text x="{x}" y="{y + big + 21}" fill="{TEXT_DIM}" font-size="11">{esc(sub)}</text>')
     return "\n".join(parts)
 
 
@@ -772,10 +772,15 @@ def render_profile(stats):
             return f'<text x="{x}" y="{y + 22}" fill="{TEXT_DIM}" font-size="12">no commits</text>'
         max_v = max(v for _, v in items[:4])
         out = []
+        # Name column is 130px wide; at 12px monospace (~7.2px/char) ~16 chars
+        # fit before the bar, so clip longer names and keep the full name on hover.
+        name_max = 16
         for i, (name, value) in enumerate(items[:4]):
             ry = y + 26 + i * 22
             bw = max(2, (value / max_v) * (w - 200))
-            out.append(f'<text x="{x}" y="{ry}" fill="{TEXT}" font-size="12" font-weight="600">{esc(name)}</text>')
+            disp = name if len(name) <= name_max else name[:name_max - 1] + "…"
+            title = f'<title>{esc(name)}</title>' if disp != name else ""
+            out.append(f'<text x="{x}" y="{ry}" fill="{TEXT}" font-size="12" font-weight="600">{title}{esc(disp)}</text>')
             out.append(f'<rect x="{x + 130}" y="{ry - 8}" width="{w - 200}" height="6" rx="1" fill="{HAIRLINE}"/>')
             out.append(f'<rect x="{x + 130}" y="{ry - 8}" width="{bw:.1f}" height="6" rx="1" fill="{color}"/>')
             out.append(f'<text x="{x + w - 24}" y="{ry}" fill="{TEXT_MUTED}" font-size="11" text-anchor="end">{value}</text>')
@@ -794,7 +799,7 @@ def render_profile(stats):
         return "\n".join(out)
 
     bot_labels = [
-        section_label(pad, bot_y, "Top projects · 7d", width=left_w),
+        section_label(pad, bot_y, "Top projects · 30d", width=left_w),
         section_label(right_x, bot_y, "OSS contributions", tag=f'{stats["externalPrsMerged"]}/{stats["externalPrsTotal"]} merged', width=right_w),
         hairline(pad, bot_y + 12, pad + left_w),
         hairline(right_x, bot_y + 12, right_x + right_w),
@@ -841,7 +846,7 @@ def render_profile(stats):
 
   <!-- Bottom: top projects + OSS -->
   {chr(10).join(bot_labels)}
-  {proj_rows(stats["topWeek"], pad, bot_y, left_w, LIME)}
+  {proj_rows(stats["topMonth"], pad, bot_y, left_w, LIME)}
   {oss_rows(stats["externalTop"], right_x, bot_y, right_w)}
 </svg>
 """
