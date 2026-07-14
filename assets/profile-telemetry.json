@@ -20,6 +20,68 @@
       ]
     },
     {
+      "name": "MAY2026-Team-004",
+      "description": "A community and society management platform.",
+      "url": "https://github.com/aloktripathi1/MAY2026-Team-004",
+      "isPrivate": true,
+      "primaryLanguage": "TypeScript",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 337815,
+          "node": {
+            "name": "TypeScript",
+            "color": "#3178c6"
+          }
+        },
+        {
+          "size": 8937,
+          "node": {
+            "name": "CSS",
+            "color": "#663399"
+          }
+        },
+        {
+          "size": 319,
+          "node": {
+            "name": "JavaScript",
+            "color": "#f1e05a"
+          }
+        }
+      ]
+    },
+    {
+      "name": "aloktripathi1.github.io",
+      "description": "",
+      "url": "https://github.com/aloktripathi1/aloktripathi1.github.io",
+      "isPrivate": true,
+      "primaryLanguage": "TypeScript",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 123409,
+          "node": {
+            "name": "TypeScript",
+            "color": "#3178c6"
+          }
+        },
+        {
+          "size": 84016,
+          "node": {
+            "name": "CSS",
+            "color": "#663399"
+          }
+        },
+        {
+          "size": 847,
+          "node": {
+            "name": "JavaScript",
+            "color": "#f1e05a"
+          }
+        }
+      ]
+    },
+    {
       "name": "SachCheck",
       "description": "An AI-powered claim-level fact verification for articles, news, and images, built to fight misinformation in real time.",
       "url": "https://github.com/aloktripathi1/SachCheck",
@@ -89,6 +151,15 @@
       ]
     },
     {
+      "name": "grokbase",
+      "description": "RAG powered code Q&A with AST chunking, hybrid retrieval and citation-grounded answers.",
+      "url": "https://github.com/aloktripathi1/grokbase",
+      "isPrivate": true,
+      "primaryLanguage": null,
+      "defaultBranch": "main",
+      "languages": []
+    },
+    {
       "name": "Reed",
       "description": "Memory-first AI mentor that proactively brings up goals, patterns, and commitments across conversations.",
       "url": "https://github.com/aloktripathi1/Reed",
@@ -151,6 +222,15 @@
       ]
     },
     {
+      "name": "Sentinel",
+      "description": "PagerZero is an autonomous incident-response agent that performs first-responder triage. ",
+      "url": "https://github.com/aloktripathi1/Sentinel",
+      "isPrivate": true,
+      "primaryLanguage": null,
+      "defaultBranch": "main",
+      "languages": []
+    },
+    {
       "name": "Plant-leaves-Super-Resolution-Challenge",
       "description": "End-to-end deep learning pipeline for restoring high-resolution plant leaf images from degraded low-resolution inputs.",
       "url": "https://github.com/aloktripathi1/Plant-leaves-Super-Resolution-Challenge",
@@ -210,6 +290,54 @@
           "node": {
             "name": "HTML",
             "color": "#e34c26"
+          }
+        }
+      ]
+    },
+    {
+      "name": "RidgeLine",
+      "description": "A trekking management app with real-time slot booking and staff ops",
+      "url": "https://github.com/aloktripathi1/RidgeLine",
+      "isPrivate": true,
+      "primaryLanguage": "JavaScript",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 206902,
+          "node": {
+            "name": "JavaScript",
+            "color": "#f1e05a"
+          }
+        },
+        {
+          "size": 111496,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
+          }
+        },
+        {
+          "size": 6633,
+          "node": {
+            "name": "HTML",
+            "color": "#e34c26"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ClaimLens",
+      "description": "",
+      "url": "https://github.com/aloktripathi1/ClaimLens",
+      "isPrivate": true,
+      "primaryLanguage": "Python",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 62720,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
           }
         }
       ]
@@ -577,6 +705,130 @@
       ]
     },
     {
+      "name": "gradegenie",
+      "description": "GradeGenie \u2013 A precise grade calculator built by an IITM BS student for fellow students. ",
+      "url": "https://github.com/aloktripathi1/gradegenie",
+      "isPrivate": true,
+      "primaryLanguage": "TypeScript",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 265752,
+          "node": {
+            "name": "TypeScript",
+            "color": "#3178c6"
+          }
+        },
+        {
+          "size": 7783,
+          "node": {
+            "name": "CSS",
+            "color": "#663399"
+          }
+        },
+        {
+          "size": 360,
+          "node": {
+            "name": "JavaScript",
+            "color": "#f1e05a"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ParkEase",
+      "description": "A multi-user 4-wheeler parking management system built with Flask and SQLite.",
+      "url": "https://github.com/aloktripathi1/ParkEase",
+      "isPrivate": true,
+      "primaryLanguage": "HTML",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 243916,
+          "node": {
+            "name": "HTML",
+            "color": "#e34c26"
+          }
+        },
+        {
+          "size": 57196,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
+          }
+        },
+        {
+          "size": 44844,
+          "node": {
+            "name": "CSS",
+            "color": "#663399"
+          }
+        },
+        {
+          "size": 19819,
+          "node": {
+            "name": "JavaScript",
+            "color": "#f1e05a"
+          }
+        },
+        {
+          "size": 31,
+          "node": {
+            "name": "Procfile",
+            "color": "#3B2F63"
+          }
+        }
+      ]
+    },
+    {
+      "name": "vercel-fastapi-latency",
+      "description": "",
+      "url": "https://github.com/aloktripathi1/vercel-fastapi-latency",
+      "isPrivate": true,
+      "primaryLanguage": "Python",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 2205,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
+          }
+        }
+      ]
+    },
+    {
+      "name": "chatgpt-organizer",
+      "description": "A free and open-source Chrome extension to organize your ChatGPT chats into custom folders, similar to the \u201cProjects\u201d feature available only in the paid version of ChatGPT. ",
+      "url": "https://github.com/aloktripathi1/chatgpt-organizer",
+      "isPrivate": true,
+      "primaryLanguage": "JavaScript",
+      "defaultBranch": "master",
+      "languages": [
+        {
+          "size": 46695,
+          "node": {
+            "name": "JavaScript",
+            "color": "#f1e05a"
+          }
+        },
+        {
+          "size": 11656,
+          "node": {
+            "name": "CSS",
+            "color": "#663399"
+          }
+        },
+        {
+          "size": 2581,
+          "node": {
+            "name": "HTML",
+            "color": "#e34c26"
+          }
+        }
+      ]
+    },
+    {
       "name": "latex2obsidian",
       "description": "LaTeX2Obsidian is a precision tool that converts messy ChatGPT-style LaTeX into clean, Obsidian-compatible MathJax syntax.",
       "url": "https://github.com/aloktripathi1/latex2obsidian",
@@ -608,56 +860,56 @@
       ]
     }
   ],
-  "reposAnalyzed": 19,
+  "reposAnalyzed": 28,
   "reposPublic": 20,
-  "reposPrivate": 0,
+  "reposPrivate": 10,
   "biggestDay": {
     "date": "2025-09-30",
     "commits": 45
   },
-  "burstDays": 19,
-  "burstThreshold": 15.599999999999994,
+  "burstDays": 20,
+  "burstThreshold": 16.0,
   "longestGap": 52,
   "meanGapDays": 1.6956521739130435,
   "hourDistribution": [
+    18,
+    14,
     7,
-    9,
-    0,
-    2,
+    3,
     0,
     3,
     5,
-    34,
-    22,
-    17,
-    57,
-    43,
-    19,
+    35,
     23,
-    37,
-    40,
-    41,
-    60,
-    43,
-    25,
-    21,
-    26,
-    32,
-    35
+    28,
+    93,
+    67,
+    31,
+    54,
+    51,
+    75,
+    65,
+    88,
+    64,
+    46,
+    49,
+    44,
+    39,
+    48
   ],
-  "peakHour": 17,
+  "peakHour": 10,
   "hourBuckets": {
-    "night (00\u201306)": 21,
-    "morning (06\u201312)": 178,
-    "afternoon (12\u201318)": 220,
-    "evening (18\u201324)": 182
+    "night (00\u201306)": 45,
+    "morning (06\u201312)": 251,
+    "afternoon (12\u201318)": 364,
+    "evening (18\u201324)": 290
   },
-  "additionsPct": 73.4139023051722,
-  "avgCommitSize": 700.3710482529118,
+  "additionsPct": 71.55369200086503,
+  "avgCommitSize": 613.3031578947368,
   "prActiveWeeks": 12,
-  "prThis4w": 8,
+  "prThis4w": 33,
   "prPrev4w": 13,
-  "prTrendPct": -38.46153846153847,
+  "prTrendPct": 153.84615384615387,
   "daily": {
     "2025-07-14": 0,
     "2025-07-15": 0,
@@ -745,7 +997,7 @@
     "2025-10-05": 3,
     "2025-10-06": 1,
     "2025-10-07": 1,
-    "2025-10-08": 3,
+    "2025-10-08": 4,
     "2025-10-09": 1,
     "2025-10-10": 5,
     "2025-10-11": 3,
@@ -793,7 +1045,7 @@
     "2025-11-22": 0,
     "2025-11-23": 0,
     "2025-11-24": 0,
-    "2025-11-25": 0,
+    "2025-11-25": 5,
     "2025-11-26": 0,
     "2025-11-27": 4,
     "2025-11-28": 1,
@@ -805,19 +1057,19 @@
     "2025-12-04": 0,
     "2025-12-05": 0,
     "2025-12-06": 8,
-    "2025-12-07": 0,
+    "2025-12-07": 9,
     "2025-12-08": 0,
     "2025-12-09": 1,
     "2025-12-10": 0,
     "2025-12-11": 0,
     "2025-12-12": 0,
-    "2025-12-13": 0,
-    "2025-12-14": 9,
+    "2025-12-13": 1,
+    "2025-12-14": 12,
     "2025-12-15": 0,
     "2025-12-16": 1,
     "2025-12-17": 5,
     "2025-12-18": 0,
-    "2025-12-19": 0,
+    "2025-12-19": 1,
     "2025-12-20": 0,
     "2025-12-21": 0,
     "2025-12-22": 0,
@@ -827,43 +1079,43 @@
     "2025-12-26": 0,
     "2025-12-27": 0,
     "2025-12-28": 0,
-    "2025-12-29": 0,
-    "2025-12-30": 0,
-    "2025-12-31": 0,
-    "2026-01-01": 0,
-    "2026-01-02": 0,
+    "2025-12-29": 2,
+    "2025-12-30": 4,
+    "2025-12-31": 1,
+    "2026-01-01": 7,
+    "2026-01-02": 2,
     "2026-01-03": 4,
-    "2026-01-04": 8,
-    "2026-01-05": 4,
-    "2026-01-06": 1,
+    "2026-01-04": 11,
+    "2026-01-05": 6,
+    "2026-01-06": 11,
     "2026-01-07": 11,
-    "2026-01-08": 0,
+    "2026-01-08": 9,
     "2026-01-09": 6,
-    "2026-01-10": 3,
+    "2026-01-10": 5,
     "2026-01-11": 5,
     "2026-01-12": 0,
     "2026-01-13": 0,
-    "2026-01-14": 0,
-    "2026-01-15": 0,
+    "2026-01-14": 1,
+    "2026-01-15": 1,
     "2026-01-16": 0,
     "2026-01-17": 0,
     "2026-01-18": 0,
     "2026-01-19": 0,
-    "2026-01-20": 3,
-    "2026-01-21": 0,
-    "2026-01-22": 0,
+    "2026-01-20": 16,
+    "2026-01-21": 2,
+    "2026-01-22": 8,
     "2026-01-23": 0,
-    "2026-01-24": 0,
+    "2026-01-24": 6,
     "2026-01-25": 1,
     "2026-01-26": 6,
-    "2026-01-27": 0,
-    "2026-01-28": 0,
-    "2026-01-29": 0,
+    "2026-01-27": 1,
+    "2026-01-28": 2,
+    "2026-01-29": 4,
     "2026-01-30": 0,
     "2026-01-31": 0,
-    "2026-02-01": 0,
+    "2026-02-01": 1,
     "2026-02-02": 0,
-    "2026-02-03": 0,
+    "2026-02-03": 1,
     "2026-02-04": 0,
     "2026-02-05": 2,
     "2026-02-06": 3,
@@ -888,7 +1140,7 @@
     "2026-02-25": 1,
     "2026-02-26": 7,
     "2026-02-27": 7,
-    "2026-02-28": 9,
+    "2026-02-28": 10,
     "2026-03-01": 10,
     "2026-03-02": 3,
     "2026-03-03": 0,
@@ -906,7 +1158,7 @@
     "2026-03-15": 2,
     "2026-03-16": 0,
     "2026-03-17": 4,
-    "2026-03-18": 7,
+    "2026-03-18": 11,
     "2026-03-19": 1,
     "2026-03-20": 8,
     "2026-03-21": 0,
@@ -923,20 +1175,20 @@
     "2026-04-01": 9,
     "2026-04-02": 12,
     "2026-04-03": 3,
-    "2026-04-04": 1,
+    "2026-04-04": 4,
     "2026-04-05": 0,
     "2026-04-06": 0,
     "2026-04-07": 0,
     "2026-04-08": 1,
-    "2026-04-09": 0,
+    "2026-04-09": 2,
     "2026-04-10": 3,
     "2026-04-11": 0,
     "2026-04-12": 0,
-    "2026-04-13": 3,
+    "2026-04-13": 6,
     "2026-04-14": 0,
     "2026-04-15": 1,
     "2026-04-16": 0,
-    "2026-04-17": 11,
+    "2026-04-17": 13,
     "2026-04-18": 4,
     "2026-04-19": 0,
     "2026-04-20": 14,
@@ -974,56 +1226,56 @@
     "2026-05-22": 0,
     "2026-05-23": 0,
     "2026-05-24": 0,
-    "2026-05-25": 1,
+    "2026-05-25": 9,
     "2026-05-26": 2,
     "2026-05-27": 0,
     "2026-05-28": 9,
-    "2026-05-29": 1,
-    "2026-05-30": 0,
-    "2026-05-31": 5,
-    "2026-06-01": 1,
-    "2026-06-02": 0,
-    "2026-06-03": 0,
-    "2026-06-04": 7,
-    "2026-06-05": 0,
-    "2026-06-06": 5,
-    "2026-06-07": 3,
-    "2026-06-08": 2,
-    "2026-06-09": 1,
-    "2026-06-10": 0,
-    "2026-06-11": 4,
-    "2026-06-12": 0,
-    "2026-06-13": 0,
-    "2026-06-14": 0,
-    "2026-06-15": 1,
-    "2026-06-16": 0,
-    "2026-06-17": 0,
-    "2026-06-18": 0,
-    "2026-06-19": 0,
-    "2026-06-20": 0,
-    "2026-06-21": 1,
+    "2026-05-29": 3,
+    "2026-05-30": 2,
+    "2026-05-31": 6,
+    "2026-06-01": 2,
+    "2026-06-02": 1,
+    "2026-06-03": 3,
+    "2026-06-04": 9,
+    "2026-06-05": 1,
+    "2026-06-06": 6,
+    "2026-06-07": 4,
+    "2026-06-08": 4,
+    "2026-06-09": 2,
+    "2026-06-10": 1,
+    "2026-06-11": 7,
+    "2026-06-12": 2,
+    "2026-06-13": 1,
+    "2026-06-14": 2,
+    "2026-06-15": 19,
+    "2026-06-16": 11,
+    "2026-06-17": 7,
+    "2026-06-18": 8,
+    "2026-06-19": 8,
+    "2026-06-20": 12,
+    "2026-06-21": 14,
     "2026-06-22": 1,
     "2026-06-23": 8,
     "2026-06-24": 12,
     "2026-06-25": 6,
-    "2026-06-26": 0,
+    "2026-06-26": 1,
     "2026-06-27": 0,
     "2026-06-28": 3,
-    "2026-06-29": 0,
-    "2026-06-30": 0,
-    "2026-07-01": 3,
-    "2026-07-02": 4,
-    "2026-07-03": 5,
-    "2026-07-04": 12,
+    "2026-06-29": 2,
+    "2026-06-30": 1,
+    "2026-07-01": 4,
+    "2026-07-02": 14,
+    "2026-07-03": 7,
+    "2026-07-04": 14,
     "2026-07-05": 7,
-    "2026-07-06": 5,
-    "2026-07-07": 2,
-    "2026-07-08": 0,
-    "2026-07-09": 0,
-    "2026-07-10": 0,
-    "2026-07-11": 0,
-    "2026-07-12": 0,
-    "2026-07-13": 0,
+    "2026-07-06": 6,
+    "2026-07-07": 12,
+    "2026-07-08": 2,
+    "2026-07-09": 16,
+    "2026-07-10": 21,
+    "2026-07-11": 27,
+    "2026-07-12": 15,
+    "2026-07-13": 9,
     "2026-07-14": 0
   },
   "contributionsDaily": {
@@ -1368,8 +1620,8 @@
     "2026-06-17": 14,
     "2026-06-18": 12,
     "2026-06-19": 9,
-    "2026-06-20": 13,
-    "2026-06-21": 15,
+    "2026-06-20": 12,
+    "2026-06-21": 16,
     "2026-06-22": 1,
     "2026-06-23": 11,
     "2026-06-24": 13,
@@ -1377,8 +1629,8 @@
     "2026-06-26": 1,
     "2026-06-27": 3,
     "2026-06-28": 4,
-    "2026-06-29": 3,
-    "2026-06-30": 1,
+    "2026-06-29": 2,
+    "2026-06-30": 2,
     "2026-07-01": 4,
     "2026-07-02": 17,
     "2026-07-03": 7,
@@ -1396,18 +1648,18 @@
   },
   "activeDaysPct": 50.54644808743169,
   "contributionTotal": 1430,
-  "commitTotal": 601,
-  "commitMean": 1.6420765027322404,
+  "commitTotal": 950,
+  "commitMean": 2.5956284153005464,
   "commitMedian": 0.0,
-  "commitP95": 8.75,
-  "commitActiveMean": 4.485074626865671,
-  "commitMax": 18,
+  "commitP95": 12.0,
+  "commitActiveMean": 5.367231638418079,
+  "commitMax": 27,
   "currentStreak": 50,
   "longestStreak": 50,
-  "additions": 309016,
-  "deletions": 111907,
-  "prs": 32,
-  "mergedPrs": 24,
+  "additions": 416899,
+  "deletions": 165739,
+  "prs": 57,
+  "mergedPrs": 48,
   "externalPrsTotal": 19,
   "externalPrsMerged": 11,
   "externalReposCount": 8,
@@ -1443,11 +1695,11 @@
       1
     ]
   ],
-  "prMergeRatio": 75.0,
-  "prWeeklyMean": 2.6666666666666665,
-  "prWeeklyMedian": 2.0,
-  "prWeeklyP95": 6.2499999999999964,
-  "prWeeklyMax": 9,
+  "prMergeRatio": 84.21052631578947,
+  "prWeeklyMean": 4.75,
+  "prWeeklyMedian": 3.0,
+  "prWeeklyP95": 15.74999999999999,
+  "prWeeklyMax": 24,
   "prRecent": [
     [
       "2026-01-19",
@@ -1547,34 +1799,39 @@
     ],
     [
       "2026-07-06",
-      2
+      24
     ],
     [
       "2026-07-13",
-      1
+      4
     ]
   ],
-  "topWeek": [],
+  "topWeek": [
+    [
+      "MAY2026-Team-004",
+      90
+    ]
+  ],
   "topMonth": [
+    [
+      "MAY2026-Team-004",
+      97
+    ],
+    [
+      "aloktripathi1.github.io",
+      67
+    ],
     [
       "Reed",
       29
     ],
     [
+      "RidgeLine",
+      23
+    ],
+    [
       "aloktripathi1",
       20
-    ],
-    [
-      "thirsty-ai",
-      7
-    ],
-    [
-      "tds-project-1",
-      5
-    ],
-    [
-      "paper2code",
-      3
     ]
   ],
   "topYear": [
@@ -1583,12 +1840,24 @@
       115
     ],
     [
+      "aloktripathi1.github.io",
+      113
+    ],
+    [
       "Messy-Mashup-Classifier",
       108
     ],
     [
+      "MAY2026-Team-004",
+      97
+    ],
+    [
       "tds-jan-2026",
       66
+    ],
+    [
+      "gradegenie",
+      65
     ],
     [
       "deadline-intel",
@@ -1597,6 +1866,10 @@
     [
       "aloktripathi1",
       56
+    ],
+    [
+      "RidgeLine",
+      50
     ],
     [
       "Learnsy",
@@ -1627,6 +1900,14 @@
       11
     ],
     [
+      "vercel-fastapi-latency",
+      9
+    ],
+    [
+      "ClaimLens",
+      8
+    ],
+    [
       "thirsty-ai",
       7
     ],
@@ -1643,12 +1924,24 @@
       5
     ],
     [
+      "ParkEase",
+      5
+    ],
+    [
       "paper2code",
       4
     ],
     [
       "Latent",
       4
+    ],
+    [
+      "grokbase",
+      1
+    ],
+    [
+      "Sentinel",
+      1
     ],
     [
       "LumenAI",
@@ -1658,27 +1951,27 @@
   "languages": [
     [
       "TypeScript",
-      1297195
+      2024171
     ],
     [
       "Python",
-      1218086
+      1451703
+    ],
+    [
+      "JavaScript",
+      441022
+    ],
+    [
+      "CSS",
+      311504
+    ],
+    [
+      "HTML",
+      292995
     ],
     [
       "Vue",
       240723
-    ],
-    [
-      "JavaScript",
-      166080
-    ],
-    [
-      "CSS",
-      154268
-    ],
-    [
-      "HTML",
-      39865
     ],
     [
       "PLpgSQL",
@@ -1702,35 +1995,35 @@
     ],
     [
       "Procfile",
-      109
+      140
     ]
   ],
   "categories": [
     [
       "Web Apps",
-      279
+      442
+    ],
+    [
+      "Other",
+      289
     ],
     [
       "Competitive ML",
       123
     ],
     [
-      "Other",
-      113
-    ],
-    [
       "AI / Agents",
-      86
+      96
     ]
   ],
   "weekdayMean": [
-    3.169811320754717,
-    3.8679245283018866,
+    3.150943396226415,
+    3.8867924528301887,
     3.269230769230769,
     4.538461538461538,
     4.288461538461538,
-    4.096153846153846,
-    4.134615384615385
+    4.076923076923077,
+    4.153846153846154
   ],
   "weekdayActive": [
     22,
@@ -1797,11 +2090,11 @@
   "velocityPrev30d": 164,
   "velocityTrendPct": 110.3658536585366,
   "momentum7d": 124,
-  "momentumScore": 73,
-  "shipping7d": 0,
-  "shipping30d": 9,
-  "focusTop3Pct": 48.0865224625624,
-  "hhi": 0.11243324354030028,
-  "entropy": 3.5233837279596063,
-  "entropyNormalized": 0.8294359347726659
+  "momentumScore": 79,
+  "shipping7d": 1,
+  "shipping30d": 15,
+  "focusTop3Pct": 35.368421052631575,
+  "hhi": 0.07721440443213297,
+  "entropy": 4.019080797563815,
+  "entropyNormalized": 0.8360274751346217
 }

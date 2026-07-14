@@ -901,9 +901,9 @@ def render_profile(stats):
 def main():
     ASSETS.mkdir(exist_ok=True)
     stats = collect()
-    (ASSETS / "telemetry.json").write_text(json.dumps(stats, indent=2), encoding="utf-8")
-    (ASSETS / "telemetry.svg").write_text(render_profile(stats), encoding="utf-8")
-    print(f"Generated {ASSETS / 'telemetry.svg'}")
+    (ASSETS / "profile-telemetry.json").write_text(json.dumps(stats, indent=2), encoding="utf-8")
+    (ASSETS / "profile-telemetry.svg").write_text(render_profile(stats), encoding="utf-8")
+    print(f"Generated {ASSETS / 'profile-telemetry.svg'}")
 
 
 if __name__ == "__main__":

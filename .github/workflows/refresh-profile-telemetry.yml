@@ -34,17 +34,17 @@ jobs:
         run: gh auth status
 
       - name: Generate profile telemetry
-        run: python3 scripts/telemetry.py
+        run: python3 scripts/generate_profile_telemetry.py
 
       - name: Commit refreshed assets
         run: |
-          if git diff --quiet -- assets/telemetry.svg assets/telemetry.json; then
+          if git diff --quiet -- assets/profile-telemetry.svg assets/profile-telemetry.json; then
             echo "No telemetry changes."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/telemetry.svg assets/telemetry.json
+          git add assets/profile-telemetry.svg assets/profile-telemetry.json
           git commit -m "chore: refresh profile telemetry"
           git push
