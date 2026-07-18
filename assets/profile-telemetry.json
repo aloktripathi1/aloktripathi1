@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-17",
+  "generated": "2026-07-18",
   "windowDays": 366,
   "repos": [
     {
@@ -617,7 +617,7 @@
   },
   "burstDays": 19,
   "burstThreshold": 15.400000000000006,
-  "longestGap": 49,
+  "longestGap": 48,
   "meanGapDays": 1.6881720430107527,
   "hourDistribution": [
     7,
@@ -654,12 +654,11 @@
   },
   "additionsPct": 73.23747680890537,
   "avgCommitSize": 700.8778877887788,
-  "prActiveWeeks": 12,
+  "prActiveWeeks": 13,
   "prThis4w": 8,
   "prPrev4w": 13,
   "prTrendPct": -38.46153846153847,
   "daily": {
-    "2025-07-17": 0,
     "2025-07-18": 0,
     "2025-07-19": 0,
     "2025-07-20": 0,
@@ -1024,10 +1023,10 @@
     "2026-07-14": 5,
     "2026-07-15": 0,
     "2026-07-16": 0,
-    "2026-07-17": 0
+    "2026-07-17": 0,
+    "2026-07-18": 0
   },
   "contributionsDaily": {
-    "2025-07-17": 0,
     "2025-07-18": 0,
     "2025-07-19": 0,
     "2025-07-20": 0,
@@ -1392,7 +1391,8 @@
     "2026-07-14": 5,
     "2026-07-15": 1,
     "2026-07-16": 0,
-    "2026-07-17": 0
+    "2026-07-17": 0,
+    "2026-07-18": 0
   },
   "activeDaysPct": 51.09289617486339,
   "contributionTotal": 1436,
@@ -1406,7 +1406,7 @@
   "longestStreak": 52,
   "additions": 311063,
   "deletions": 113669,
-  "prs": 32,
+  "prs": 33,
   "mergedPrs": 24,
   "externalPrsTotal": 19,
   "externalPrsMerged": 11,
@@ -1443,10 +1443,10 @@
       1
     ]
   ],
-  "prMergeRatio": 75.0,
-  "prWeeklyMean": 2.6666666666666665,
-  "prWeeklyMedian": 2.0,
-  "prWeeklyP95": 6.2499999999999964,
+  "prMergeRatio": 72.72727272727273,
+  "prWeeklyMean": 2.5384615384615383,
+  "prWeeklyMedian": 2,
+  "prWeeklyP95": 5.999999999999993,
   "prWeeklyMax": 9,
   "prRecent": [
     [
@@ -1495,7 +1495,7 @@
     ],
     [
       "2026-04-06",
-      0
+      1
     ],
     [
       "2026-04-13",
@@ -1732,9 +1732,9 @@
     3.230769230769231,
     4.038461538461538,
     3.2884615384615383,
-    4.452830188679245,
+    4.538461538461538,
     4.2075471698113205,
-    4.096153846153846,
+    4.018867924528302,
     4.134615384615385
   ],
   "weekdayActive": [
@@ -1798,11 +1798,11 @@
       206
     ]
   ],
-  "velocity30d": 301,
-  "velocityPrev30d": 208,
-  "velocityTrendPct": 44.71153846153847,
-  "momentum7d": 69,
-  "momentumScore": 73,
+  "velocity30d": 289,
+  "velocityPrev30d": 217,
+  "velocityTrendPct": 33.17972350230415,
+  "momentum7d": 37,
+  "momentumScore": 72,
   "shipping7d": 1,
   "shipping30d": 8,
   "focusTop3Pct": 47.68976897689769,
