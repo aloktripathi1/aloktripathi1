@@ -33,7 +33,7 @@ CATEGORY_KEYWORDS = {
     "Web Apps": ("web", "app", "next", "vue", "react", "sangam", "learnsy", "hub"),
     "Tooling": ("cli", "tui", "tracker", "activitywatch", "dashboard"),
 }
-IGNORED_LANGUAGES = {"Jupyter Notebook"}
+IGNORED_LANGUAGES = {"Jupyter Notebook", "HTML", "CSS"}
 VERBOSE = os.environ.get("VERBOSE") == "1"
 
 # --- Design tokens --------------------------------------------------------
@@ -717,7 +717,7 @@ def render_profile(stats):
     left_x = pad
     cat_x = pad + half_w + 56
 
-    langs = stats["languages"][:6]
+    langs = stats["languages"][:4]
     total_lang = sum(v for _, v in langs) or 1
     lang_cx = left_x + 78
     lang_cy = mid_y + 90
@@ -821,9 +821,9 @@ def render_profile(stats):
 
   <!-- Hero: streak + trajectory -->
   <g>
-    <text x="{streak_x}" y="{hero_y + 12}" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">CURRENT STREAK</text>
-    <text x="{streak_x}" y="{hero_y + 105}" fill="{LIME}" font-size="118" font-weight="900" letter-spacing="-6" class="sans">{stats["currentStreak"]}<tspan font-size="40" fill="{TEXT_HI}" font-weight="800">d</tspan></text>
-    <text x="{streak_x}" y="{hero_y + 138}" fill="{TEXT}" font-size="13">longest run {stats["longestStreak"]}d · quiet stretch {stats["longestGap"]}d</text>
+    <text x="{streak_x}" y="{hero_y + 12}" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">OSS PRS MERGED</text>
+    <text x="{streak_x}" y="{hero_y + 105}" fill="{LIME}" font-size="118" font-weight="900" letter-spacing="-6" class="sans">{stats["externalPrsMerged"]}</text>
+    <text x="{streak_x}" y="{hero_y + 138}" fill="{TEXT}" font-size="13">across {stats["externalReposCount"]} external repos · {stats["externalPrsTotal"]} opened</text>
   </g>
   <g>
     <text x="{chart_x}" y="{hero_y + 12}" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">12-MONTH TRAJECTORY</text>
