@@ -53,26 +53,20 @@ CYAN = "#5fd4d0"
 MAGENTA = "#ff5f8f"
 VIOLET = "#9d8cff"
 RED = "#ff5f5f"
-PALETTE = [LIME, CYAN, AMBER, VIOLET, MAGENTA, "#5eead4", "#fde68a", "#94a3b8"]
-
-# GitHub-aligned language colors.
-LANG_COLORS = {
-    "TypeScript": "#3178c6",
-    "JavaScript": "#f1e05a",
-    "Python": "#3572A5",
-    "Vue": "#41b883",
-    "CSS": "#a855f7",
-    "HTML": "#e34c26",
-    "Kotlin": "#A97BFF",
-    "Go": "#00ADD8",
-    "Shell": "#89e051",
-    "Dockerfile": "#384d54",
-    "Mako": "#7e858d",
-    "Other": "#475569",
-}
 
 WEEKDAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 MONTH_NAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+# Recognizable OSS repos worth naming by their common name (vs. owner/repo).
+KNOWN_OSS_LABELS = {
+    "mem0ai/mem0": "mem0",
+    "run-llama/llama_index": "LlamaIndex",
+    "qdrant/qdrant-client": "Qdrant",
+    "qdrant/qdrant": "Qdrant",
+    "supermemoryai/supermemory": "Supermemory",
+    "langchain-ai/langchain": "LangChain",
+    "langchain-ai/langchainjs": "LangChain",
+}
 
 
 # ---------------------------------------------------------------------------
@@ -412,6 +406,18 @@ def collect():
     top_year = sorted(((n, sum(repo_daily[n].values())) for n in repo_daily), key=lambda x: x[1], reverse=True)
     top_year = [(n, c) for n, c in top_year if c > 0]
 
+    # Longest-running repo: widest first-to-last-commit span, not just a single burst.
+    longest_running = None
+    best_span = -1
+    for name, counts in repo_daily.items():
+        active = sorted(d for d, c in counts.items() if c > 0)
+        if len(active) < 2:
+            continue
+        span = (active[-1] - active[0]).days + 1
+        if span > best_span:
+            best_span = span
+            longest_running = {"name": name, "spanDays": span, "activeDays": len(active)}
+
     # Velocity trend: GitHub contribution calendar, last 30d versus the prior 30d.
     last_30 = sum(c for d, c in contribution_daily.items() if d > TODAY - dt.timedelta(days=30))
     prev_30 = sum(c for d, c in contribution_daily.items() if TODAY - dt.timedelta(days=60) < d <= TODAY - dt.timedelta(days=30))
@@ -536,6 +542,7 @@ def collect():
         "externalPrsMerged": external_prs_merged,
         "externalReposCount": len(external_repo_counts),
         "externalTop": external_top,
+        "longestRunningRepo": longest_running,
         "prMergeRatio": (merged / len(prs) * 100) if prs else 0,
         "prWeeklyMean": statistics.mean(pr_week_values),
         "prWeeklyMedian": statistics.median(pr_week_values),
@@ -647,54 +654,22 @@ def render_profile(stats):
     W = 1100
     pad = 44
 
-    monthly = stats["monthly"]
-
-    # --- Hero: streak + 12-month trajectory --------------------------------
+    # --- Hero: OSS PRs merged (left) + PR merge-rate donut (right) ---------
     hero_y = 96
     streak_x = pad
-    chart_x = 470
-    chart_y = hero_y + 18
-    chart_w = W - chart_x - pad
-    chart_h = 140
-    max_m = max((v for _, v in monthly), default=1) or 1
-    points = []
-    for i, (_, v) in enumerate(monthly):
-        px = chart_x + (i / max(1, len(monthly) - 1)) * chart_w
-        py = chart_y + chart_h - (v / max_m) * chart_h
-        points.append((px, py))
-    poly = " ".join(f"{x:.2f},{y:.2f}" for x, y in points)
-    area = f"{chart_x},{chart_y + chart_h} {poly} {chart_x + chart_w},{chart_y + chart_h}"
-    axis = []
-    for i, (mk, _) in enumerate(monthly):
-        if i % 2 != 0:
-            continue
-        px = chart_x + (i / max(1, len(monthly) - 1)) * chart_w
-        m = MONTH_NAMES[int(mk.split("-")[1]) - 1]
-        axis.append(f'<text x="{px:.1f}" y="{chart_y + chart_h + 16}" fill="{TEXT_DIM}" font-size="10" text-anchor="middle">{m}</text>')
-    peak_idx = max(range(len(monthly)), key=lambda i: monthly[i][1])
-    cur_idx = len(monthly) - 1
-    annots = []
-    for idx, color, label in [(peak_idx, AMBER, f"peak · {monthly[peak_idx][1]}"), (cur_idx, LIME, f"now · {monthly[cur_idx][1]}")]:
-        if monthly[idx][1] == 0:
-            continue
-        px, py = points[idx]
-        annots.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="4" fill="{color}" stroke="{BG}" stroke-width="2"/>')
-        text_anchor = "end" if idx == cur_idx else "start"
-        text_dx = -6 if idx == cur_idx else 6
-        annots.append(f'<text x="{px + text_dx:.1f}" y="{py - 8:.1f}" fill="{color}" font-size="10" font-weight="700" text-anchor="{text_anchor}">{label}</text>')
-    grid = [
-        f'<line x1="{chart_x}" y1="{chart_y + chart_h}" x2="{chart_x + chart_w}" y2="{chart_y + chart_h}" stroke="{HAIRLINE}"/>',
-        f'<line x1="{chart_x}" y1="{chart_y}" x2="{chart_x + chart_w}" y2="{chart_y}" stroke="{HAIRLINE}" stroke-dasharray="2 4"/>',
-        f'<text x="{chart_x - 6}" y="{chart_y + 4}" fill="{TEXT_DIM}" font-size="9" text-anchor="end">{int(max_m)}</text>',
-        f'<text x="{chart_x - 6}" y="{chart_y + chart_h + 3}" fill="{TEXT_DIM}" font-size="9" text-anchor="end">0</text>',
-    ]
+    donut_col_x = 620
 
+    merge_pct = stats["prMergeRatio"]
+    donut_cx = donut_col_x + 70
+    donut_cy = hero_y + 88
+    merge_ring = donut_ring(donut_cx, donut_cy, 58, 14, [(merge_pct, LIME), (max(0, 100 - merge_pct), HAIRLINE)])
+
+    # --- Vitals strip --------------------------------------------------------
     velocity_trend = stats["velocityTrendPct"]
     trend_color = LIME if velocity_trend >= 0 else RED
     trend_sign = "+" if velocity_trend >= 0 else ""
     trend_arrow = "▲" if velocity_trend >= 0 else "▼"
 
-    # --- Vitals strip --------------------------------------------------------
     strip_y = 320
     fields = [
         ("all contributions", fmt_num(stats["contributionTotal"]), "GitHub calendar", LIME),
@@ -711,127 +686,64 @@ def render_profile(stats):
         if i > 0:
             strip_parts.append(f'<line x1="{cx - 10}" y1="{strip_y - 4}" x2="{cx - 10}" y2="{strip_y + 50}" stroke="{HAIRLINE}"/>')
 
-    # --- Language mix (left) + Work categories (right): two-column row -----
-    mid_y = 412
-    half_w = (W - pad * 2 - 56) / 2
-    left_x = pad
-    cat_x = pad + half_w + 56
+    # --- Longest-running project: follow-through over bursts ----------------
+    lrr_y = 412
+    lrr = stats["longestRunningRepo"]
+    if lrr:
+        lrr_line = (
+            f'<text x="{pad}" y="{lrr_y + 26}" fill="{TEXT_HI}" font-size="14" font-weight="700">{esc(lrr["name"])}</text>'
+            f'<text x="{pad + 12 + len(lrr["name"]) * 8.4:.1f}" y="{lrr_y + 26}" fill="{TEXT_MUTED}" font-size="12">'
+            f'{lrr["spanDays"]}d span · {lrr["activeDays"]} active days</text>'
+        )
+    else:
+        lrr_line = f'<text x="{pad}" y="{lrr_y + 26}" fill="{TEXT_DIM}" font-size="12">no repo with sustained activity yet</text>'
 
-    langs = stats["languages"][:6]
-    total_lang = sum(v for _, v in langs) or 1
-    lang_cx = left_x + 78
-    lang_cy = mid_y + 90
-    lang_segments = [(v, LANG_COLORS.get(name, PALETTE[i % len(PALETTE)])) for i, (name, v) in enumerate(langs)]
-    lang_ring = donut_ring(lang_cx, lang_cy, 62, 18, lang_segments)
-    lang_legend = []
-    for i, (name, v) in enumerate(langs):
-        ly = mid_y + 24 + i * 22
-        color = LANG_COLORS.get(name, PALETTE[i % len(PALETTE)])
-        share = v / total_lang * 100
-        lang_legend.append(f'<rect x="{left_x + 172}" y="{ly - 9}" width="9" height="9" rx="2" fill="{color}"/>')
-        lang_legend.append(f'<text x="{left_x + 188}" y="{ly}" fill="{TEXT}" font-size="11.5">{esc(name)}</text>')
-        lang_legend.append(f'<text x="{left_x + half_w}" y="{ly}" fill="{TEXT_MUTED}" font-size="11" text-anchor="end">{share:.0f}%</text>')
-
-    left_col = f"""
-    {section_label(left_x, mid_y, "Language mix", width=half_w)}
-    {lang_ring}
-    <text x="{lang_cx}" y="{lang_cy + 9}" fill="{TEXT_HI}" font-size="24" font-weight="900" text-anchor="middle" class="sans">{len(stats["languages"])}</text>
-    <text x="{lang_cx}" y="{lang_cy + 24}" fill="{TEXT_DIM}" font-size="8.5" text-anchor="middle" letter-spacing="1">LANGS</text>
-    {chr(10).join(lang_legend)}
-    """
-
-    cats = stats["categories"][:5]
-    total_cat = sum(v for _, v in cats) or 1
-    focus_label = "focused" if stats["focusTop3Pct"] >= 60 else ("balanced" if stats["focusTop3Pct"] >= 40 else "scattered")
-    cat_rows = []
-    for i, (name, v) in enumerate(cats):
-        ry = mid_y + 30 + i * 30
-        share = v / total_cat
-        color = PALETTE[i % len(PALETTE)]
-        bw = share * (half_w - 100)
-        cat_rows.append(f'<text x="{cat_x}" y="{ry}" fill="{TEXT}" font-size="11.5" font-weight="600">{esc(name)}</text>')
-        cat_rows.append(f'<rect x="{cat_x}" y="{ry + 6}" width="{half_w - 100:.1f}" height="5" rx="2.5" fill="{HAIRLINE}"/>')
-        cat_rows.append(f'<rect x="{cat_x}" y="{ry + 6}" width="{bw:.1f}" height="5" rx="2.5" fill="{color}"/>')
-        cat_rows.append(f'<text x="{cat_x + half_w}" y="{ry}" fill="{TEXT_MUTED}" font-size="11" text-anchor="end">{share * 100:.0f}%</text>')
-
-    right_col = f"""
-    {section_label(cat_x, mid_y, "Work categories", tag=f'{focus_label} · top-3 {stats["focusTop3Pct"]:.0f}%', width=half_w)}
-    {chr(10).join(cat_rows)}
-    """
-
-    mid_bottom = mid_y + max(24 + len(langs) * 22, 30 + len(cats) * 30)
-
-    # --- Bottom: top projects + OSS contributions ---------------------------
-    bot_y = mid_bottom + 44
-    left_w = 470
-    right_x = pad + left_w + 40
-    right_w = W - pad - right_x
-
-    def proj_rows(items, x, y, w, color):
-        if not items:
-            return f'<text x="{x}" y="{y + 22}" fill="{TEXT_DIM}" font-size="12">no commits</text>'
-        max_v = max(v for _, v in items[:4])
-        out = []
-        # Name column is 130px wide; at 12px monospace (~7.2px/char) ~16 chars
-        # fit before the bar, so clip longer names and keep the full name on hover.
-        name_max = 16
-        for i, (name, value) in enumerate(items[:4]):
-            ry = y + 26 + i * 22
-            bw = max(2, (value / max_v) * (w - 200))
-            disp = name if len(name) <= name_max else name[:name_max - 1] + "…"
-            title = f'<title>{esc(name)}</title>' if disp != name else ""
-            out.append(f'<text x="{x}" y="{ry}" fill="{TEXT}" font-size="12" font-weight="600">{title}{esc(disp)}</text>')
-            out.append(f'<rect x="{x + 130}" y="{ry - 8}" width="{w - 200}" height="6" rx="1" fill="{HAIRLINE}"/>')
-            out.append(f'<rect x="{x + 130}" y="{ry - 8}" width="{bw:.1f}" height="6" rx="1" fill="{color}"/>')
-            out.append(f'<text x="{x + w - 24}" y="{ry}" fill="{TEXT_MUTED}" font-size="11" text-anchor="end">{value}</text>')
-        return "\n".join(out)
+    # --- OSS contributions: named repos, full width -------------------------
+    oss_y = lrr_y + 66
 
     def oss_rows(items, x, y, w):
         if not items:
             return f'<text x="{x}" y="{y + 22}" fill="{TEXT_DIM}" font-size="12">no external PRs yet</text>'
         out = []
-        for i, (repo, merged_n, total_n) in enumerate(items[:4]):
-            ry = y + 26 + i * 22
+        for i, (repo, merged_n, total_n) in enumerate(items[:6]):
+            ry = y + 26 + i * 24
             status = "merged" if merged_n else "open"
             color = LIME if merged_n else TEXT_DIM
-            out.append(f'<text x="{x}" y="{ry}" fill="{TEXT}" font-size="12" font-weight="600">{esc(repo)}</text>')
-            out.append(f'<text x="{x + w}" y="{ry}" fill="{color}" font-size="11" font-weight="700" text-anchor="end">{merged_n}/{total_n} {status}</text>')
+            out.append(f'<text x="{x}" y="{ry}" fill="{TEXT}" font-size="13" font-weight="600">{esc(repo)}</text>')
+            out.append(f'<text x="{x + w}" y="{ry}" fill="{color}" font-size="12" font-weight="700" text-anchor="end">{merged_n}/{total_n} {status}</text>')
         return "\n".join(out)
 
-    bot_labels = [
-        section_label(pad, bot_y, "Top projects · 30d", width=left_w),
-        section_label(right_x, bot_y, "OSS contributions", tag=f'{stats["externalPrsMerged"]}/{stats["externalPrsTotal"]} merged', width=right_w),
-        hairline(pad, bot_y + 12, pad + left_w),
-        hairline(right_x, bot_y + 12, right_x + right_w),
-    ]
+    # Recognized OSS (mem0, LlamaIndex, Qdrant, ...) surfaces first; stable sort
+    # preserves the existing merged/total ranking within each group.
+    oss_sorted = sorted(stats["externalTop"], key=lambda item: 0 if item[0] in KNOWN_OSS_LABELS else 1)
+    oss_items = oss_sorted[:6] or [("no external PRs yet", 0, 0)]
+    oss_rows_svg = oss_rows(oss_sorted, pad, oss_y, W - pad * 2)
 
-    H = int(bot_y + 4 * 22 + 30)
+    H = int(oss_y + len(oss_items) * 24 + 34)
 
     return f"""<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc">
-  <title id="ttl">Alok build telemetry</title>
-  <desc id="desc">Streak hero, trajectory, vitals, language mix, work categories, top projects, and OSS contributions.</desc>
+  <title id="ttl">Alok Tripathi — AI/ML Engineer</title>
+  <desc id="desc">OSS PRs merged, PR merge rate, vitals, longest-running project, and named open-source contributions.</desc>
   <style>text {{ font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, monospace; }} .sans {{ font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }}</style>
   {defs()}
   {shell(W, H)}
 
   <!-- Header -->
-  <text x="{pad}" y="56" fill="{TEXT_HI}" font-size="26" font-weight="800" letter-spacing="-0.5" class="sans">build telemetry</text>
-  <text x="{pad}" y="76" fill="{TEXT_MUTED}" font-size="11" letter-spacing="1">AI/ML ENGINEERING · AGENTIC SYSTEMS · {esc(stats["generated"]).upper()}</text>
+  <text x="{pad}" y="56" fill="{TEXT_HI}" font-size="26" font-weight="800" letter-spacing="-0.5" class="sans">AI/ML Engineer</text>
+  <text x="{pad}" y="76" fill="{TEXT_MUTED}" font-size="11" letter-spacing="1">SHIPS AI PRODUCTS · AGENTIC SYSTEMS · {esc(stats["generated"]).upper()}</text>
   {hairline(pad, 86, W - pad, HAIRLINE_BRIGHT)}
 
-  <!-- Hero: streak + trajectory -->
+  <!-- Hero: OSS PRs merged + PR merge-rate donut -->
   <g>
-    <text x="{streak_x}" y="{hero_y + 12}" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">CURRENT STREAK</text>
-    <text x="{streak_x}" y="{hero_y + 105}" fill="{LIME}" font-size="118" font-weight="900" letter-spacing="-6" class="sans">{stats["currentStreak"]}<tspan font-size="40" fill="{TEXT_HI}" font-weight="800">d</tspan></text>
-    <text x="{streak_x}" y="{hero_y + 138}" fill="{TEXT}" font-size="13">longest run {stats["longestStreak"]}d · quiet stretch {stats["longestGap"]}d</text>
+    <text x="{streak_x}" y="{hero_y + 12}" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">OSS PRS MERGED</text>
+    <text x="{streak_x}" y="{hero_y + 105}" fill="{LIME}" font-size="118" font-weight="900" letter-spacing="-6" class="sans">{stats["externalPrsMerged"]}</text>
+    <text x="{streak_x}" y="{hero_y + 138}" fill="{TEXT}" font-size="13">across {stats["externalReposCount"]} external repos · {stats["externalPrsTotal"]} opened</text>
   </g>
   <g>
-    <text x="{chart_x}" y="{hero_y + 12}" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">12-MONTH TRAJECTORY</text>
-    {chr(10).join(grid)}
-    <polygon points="{area}" fill="url(#limeFade)"/>
-    <polyline points="{poly}" fill="none" stroke="{LIME}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    {chr(10).join(annots)}
-    {chr(10).join(axis)}
+    <text x="{donut_col_x}" y="{hero_y + 12}" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">PR MERGE RATE</text>
+    {merge_ring}
+    <text x="{donut_cx}" y="{donut_cy + 10}" fill="{TEXT_HI}" font-size="28" font-weight="900" text-anchor="middle" class="sans">{merge_pct:.0f}%</text>
+    <text x="{donut_cx}" y="{hero_y + 168}" fill="{TEXT}" font-size="13" text-anchor="middle">{stats["prs"]} PRs shipped total</text>
   </g>
 
   <!-- Vitals -->
@@ -839,15 +751,15 @@ def render_profile(stats):
   <text x="{pad}" y="292" fill="{TEXT_MUTED}" font-size="10" font-weight="700" letter-spacing="2">VITALS</text>
   {chr(10).join(strip_parts)}
 
-  <!-- Language mix + work categories -->
-  {hairline(pad, mid_y - 16, W - pad)}
-  {left_col}
-  {right_col}
+  <!-- Longest-running project -->
+  {hairline(pad, lrr_y - 16, W - pad)}
+  {section_label(pad, lrr_y - 4, "Longest-running project", width=W - pad * 2)}
+  {lrr_line}
 
-  <!-- Bottom: top projects + OSS -->
-  {chr(10).join(bot_labels)}
-  {proj_rows(stats["topMonth"], pad, bot_y, left_w, LIME)}
-  {oss_rows(stats["externalTop"], right_x, bot_y, right_w)}
+  <!-- OSS contributions -->
+  {hairline(pad, oss_y - 16, W - pad)}
+  {section_label(pad, oss_y - 4, "OSS contributions", tag=f'{stats["externalPrsMerged"]}/{stats["externalPrsTotal"]} merged', width=W - pad * 2)}
+  {oss_rows_svg}
 </svg>
 """
 
