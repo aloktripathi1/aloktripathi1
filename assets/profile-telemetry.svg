@@ -26,7 +26,7 @@
 
   <!-- Header -->
   <text x="44" y="56" fill="#f5f5f0" font-size="26" font-weight="800" letter-spacing="-0.5" class="sans">build telemetry</text>
-  <text x="44" y="76" fill="#7a7a72" font-size="11" letter-spacing="1">AI/ML ENGINEERING · AGENTIC SYSTEMS · 2026-07-22</text>
+  <text x="44" y="76" fill="#7a7a72" font-size="11" letter-spacing="1">AI/ML ENGINEERING · AGENTIC SYSTEMS · 2026-07-23</text>
   <line x1="44" y1="86" x2="1056" y2="86" stroke="#333333"/>
 
   <!-- Hero: streak + trajectory -->
@@ -39,14 +39,14 @@
     <text x="470" y="108" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="2">12-MONTH TRAJECTORY</text>
     <line x1="470" y1="254" x2="1056" y2="254" stroke="#242424"/>
 <line x1="470" y1="114" x2="1056" y2="114" stroke="#242424" stroke-dasharray="2 4"/>
-<text x="464" y="118" fill="#4a4a44" font-size="9" text-anchor="end">236</text>
+<text x="464" y="118" fill="#4a4a44" font-size="9" text-anchor="end">244</text>
 <text x="464" y="257" fill="#4a4a44" font-size="9" text-anchor="end">0</text>
-    <polygon points="470,254 470.00,254.00 523.27,205.95 576.55,178.07 629.82,220.78 683.09,197.64 736.36,169.76 789.64,172.14 842.91,163.24 896.18,197.64 949.45,191.12 1002.73,114.00 1056.00,130.02 1056,254" fill="url(#limeFade)"/>
-    <polyline points="470.00,254.00 523.27,205.95 576.55,178.07 629.82,220.78 683.09,197.64 736.36,169.76 789.64,172.14 842.91,163.24 896.18,197.64 949.45,191.12 1002.73,114.00 1056.00,130.02" fill="none" stroke="#F7EE00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="1002.7" cy="114.0" r="4" fill="#ff8a3d" stroke="#0a0a0a" stroke-width="2"/>
-<text x="1008.7" y="106.0" fill="#ff8a3d" font-size="10" font-weight="700" text-anchor="start">peak · 236</text>
-<circle cx="1056.0" cy="130.0" r="4" fill="#F7EE00" stroke="#0a0a0a" stroke-width="2"/>
-<text x="1050.0" y="122.0" fill="#F7EE00" font-size="10" font-weight="700" text-anchor="end">now · 209</text>
+    <polygon points="470,254 470.00,254.00 523.27,207.52 576.55,180.56 629.82,221.87 683.09,199.49 736.36,172.52 789.64,174.82 842.91,166.21 896.18,199.49 949.45,193.18 1002.73,118.59 1056.00,114.00 1056,254" fill="url(#limeFade)"/>
+    <polyline points="470.00,254.00 523.27,207.52 576.55,180.56 629.82,221.87 683.09,199.49 736.36,172.52 789.64,174.82 842.91,166.21 896.18,199.49 949.45,193.18 1002.73,118.59 1056.00,114.00" fill="none" stroke="#F7EE00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1056.0" cy="114.0" r="4" fill="#ff8a3d" stroke="#0a0a0a" stroke-width="2"/>
+<text x="1050.0" y="106.0" fill="#ff8a3d" font-size="10" font-weight="700" text-anchor="end">peak · 244</text>
+<circle cx="1056.0" cy="114.0" r="4" fill="#F7EE00" stroke="#0a0a0a" stroke-width="2"/>
+<text x="1050.0" y="106.0" fill="#F7EE00" font-size="10" font-weight="700" text-anchor="end">now · 244</text>
     <text x="470.0" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Aug</text>
 <text x="576.5" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Oct</text>
 <text x="683.1" y="270" fill="#4a4a44" font-size="10" text-anchor="middle">Dec</text>
@@ -59,14 +59,14 @@
   <line x1="44" y1="280" x2="1056" y2="280" stroke="#242424"/>
   <text x="44" y="292" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="2">VITALS</text>
   <text x="44.0" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ALL CONTRIBUTIONS</text>
-<text x="44.0" y="347" fill="#F7EE00" font-size="24" font-weight="800" letter-spacing="-1">1,439</text>
+<text x="44.0" y="347" fill="#F7EE00" font-size="24" font-weight="800" letter-spacing="-1">1,474</text>
 <text x="44.0" y="365" fill="#4a4a44" font-size="11">GitHub calendar</text>
 <text x="246.4" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">30D VELOCITY</text>
-<text x="246.4" y="347" fill="#F7EE00" font-size="24" font-weight="800" letter-spacing="-1">254</text>
-<text x="246.4" y="365" fill="#4a4a44" font-size="11">▲ +2% vs prior 30</text>
+<text x="246.4" y="347" fill="#F7EE00" font-size="24" font-weight="800" letter-spacing="-1">278</text>
+<text x="246.4" y="365" fill="#4a4a44" font-size="11">▲ +7% vs prior 30</text>
 <line x1="236.4" y1="316" x2="236.4" y2="370" stroke="#242424"/>
 <text x="448.8" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">ACTIVE DAYS</text>
-<text x="448.8" y="347" fill="#5fd4d0" font-size="24" font-weight="800" letter-spacing="-1">51%</text>
+<text x="448.8" y="347" fill="#5fd4d0" font-size="24" font-weight="800" letter-spacing="-1">52%</text>
 <text x="448.8" y="365" fill="#4a4a44" font-size="11">mean gap 1.7d</text>
 <line x1="438.8" y1="316" x2="438.8" y2="370" stroke="#242424"/>
 <text x="651.2" y="320" fill="#7a7a72" font-size="10" font-weight="700" letter-spacing="1.5">OSS PRS MERGED</text>
@@ -129,21 +129,21 @@
 <text x="1056" y="606" fill="#4a4a44" font-size="10.5" letter-spacing="1" text-anchor="end">11/19 MERGED</text>
 <line x1="44" y1="618" x2="514" y2="618" stroke="#242424"/>
 <line x1="554" y1="618" x2="1056" y2="618" stroke="#242424"/>
-  <text x="44" y="632" fill="#c9c9c0" font-size="12" font-weight="600">Reed</text>
+  <text x="44" y="632" fill="#c9c9c0" font-size="12" font-weight="600">aloktripathi1</text>
 <rect x="174" y="624" width="270" height="6" rx="1" fill="#242424"/>
 <rect x="174" y="624" width="270.0" height="6" rx="1" fill="#F7EE00"/>
-<text x="490" y="632" fill="#7a7a72" font-size="11" text-anchor="end">29</text>
-<text x="44" y="654" fill="#c9c9c0" font-size="12" font-weight="600">aloktripathi1</text>
+<text x="490" y="632" fill="#7a7a72" font-size="11" text-anchor="end">28</text>
+<text x="44" y="654" fill="#c9c9c0" font-size="12" font-weight="600">Reed</text>
 <rect x="174" y="646" width="270" height="6" rx="1" fill="#242424"/>
-<rect x="174" y="646" width="260.7" height="6" rx="1" fill="#F7EE00"/>
-<text x="490" y="654" fill="#7a7a72" font-size="11" text-anchor="end">28</text>
+<rect x="174" y="646" width="221.8" height="6" rx="1" fill="#F7EE00"/>
+<text x="490" y="654" fill="#7a7a72" font-size="11" text-anchor="end">23</text>
 <text x="44" y="676" fill="#c9c9c0" font-size="12" font-weight="600">thirsty-ai</text>
 <rect x="174" y="668" width="270" height="6" rx="1" fill="#242424"/>
-<rect x="174" y="668" width="65.2" height="6" rx="1" fill="#F7EE00"/>
+<rect x="174" y="668" width="67.5" height="6" rx="1" fill="#F7EE00"/>
 <text x="490" y="676" fill="#7a7a72" font-size="11" text-anchor="end">7</text>
 <text x="44" y="698" fill="#c9c9c0" font-size="12" font-weight="600">tds-project-1</text>
 <rect x="174" y="690" width="270" height="6" rx="1" fill="#242424"/>
-<rect x="174" y="690" width="46.6" height="6" rx="1" fill="#F7EE00"/>
+<rect x="174" y="690" width="48.2" height="6" rx="1" fill="#F7EE00"/>
 <text x="490" y="698" fill="#7a7a72" font-size="11" text-anchor="end">5</text>
   <text x="554" y="632" fill="#c9c9c0" font-size="12" font-weight="600">Khushi-Choudhary11/SachCheck</text>
 <text x="1056" y="632" fill="#F7EE00" font-size="11" font-weight="700" text-anchor="end">7/7 merged</text>
