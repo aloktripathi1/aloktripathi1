@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28",
+  "generated": "2026-07-29",
   "windowDays": 366,
   "repos": [
     {
@@ -646,10 +646,10 @@
     "date": "2025-09-30",
     "commits": 45
   },
-  "burstDays": 20,
+  "burstDays": 21,
   "burstThreshold": 16.0,
-  "longestGap": 38,
-  "meanGapDays": 1.7142857142857142,
+  "longestGap": 37,
+  "meanGapDays": 1.7083333333333333,
   "hourDistribution": [
     7,
     9,
@@ -690,7 +690,6 @@
   "prPrev4w": 6,
   "prTrendPct": -50.0,
   "daily": {
-    "2025-07-28": 0,
     "2025-07-29": 0,
     "2025-07-30": 0,
     "2025-07-31": 0,
@@ -1055,10 +1054,10 @@
     "2026-07-25": 4,
     "2026-07-26": 0,
     "2026-07-27": 0,
-    "2026-07-28": 0
+    "2026-07-28": 0,
+    "2026-07-29": 0
   },
   "contributionsDaily": {
-    "2025-07-28": 0,
     "2025-07-29": 0,
     "2025-07-30": 0,
     "2025-07-31": 0,
@@ -1421,19 +1420,20 @@
     "2026-07-23": 0,
     "2026-07-24": 0,
     "2026-07-25": 5,
-    "2026-07-26": 0,
+    "2026-07-26": 6,
     "2026-07-27": 0,
-    "2026-07-28": 0
+    "2026-07-28": 30,
+    "2026-07-29": 1
   },
-  "activeDaysPct": 51.91256830601093,
-  "contributionTotal": 1479,
+  "activeDaysPct": 52.732240437158474,
+  "contributionTotal": 1516,
   "commitTotal": 613,
   "commitMean": 1.674863387978142,
   "commitMedian": 0.0,
   "commitP95": 8.75,
   "commitActiveMean": 4.474452554744525,
   "commitMax": 18,
-  "currentStreak": 0,
+  "currentStreak": 2,
   "longestStreak": 52,
   "additions": 317526,
   "deletions": 114883,
@@ -1756,24 +1756,24 @@
     ]
   ],
   "weekdayMean": [
-    3.169811320754717,
-    4.018867924528302,
-    3.9615384615384617,
+    3.230769230769231,
+    4.584905660377358,
+    3.9056603773584904,
     4.538461538461538,
     4.288461538461538,
     4.1923076923076925,
-    4.134615384615385
+    4.25
   ],
   "weekdayActive": [
     22,
-    29,
-    31,
+    30,
+    32,
     29,
     28,
     27,
-    24
+    25
   ],
-  "bestWeekday": 3,
+  "bestWeekday": 1,
   "quietWeekday": 0,
   "monthly": [
     [
@@ -1822,14 +1822,14 @@
     ],
     [
       "2026-07-01",
-      249
+      286
     ]
   ],
-  "velocity30d": 253,
-  "velocityPrev30d": 251,
-  "velocityTrendPct": 0.796812749003984,
-  "momentum7d": 40,
-  "momentumScore": 64,
+  "velocity30d": 287,
+  "velocityPrev30d": 249,
+  "velocityTrendPct": 15.261044176706829,
+  "momentum7d": 42,
+  "momentumScore": 68,
   "shipping7d": 1,
   "shipping30d": 5,
   "focusTop3Pct": 47.14518760195758,
