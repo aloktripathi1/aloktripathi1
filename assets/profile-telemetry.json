@@ -1,7 +1,59 @@
 {
-  "generated": "2026-07-31",
+  "generated": "2026-08-01",
   "windowDays": 366,
   "repos": [
+    {
+      "name": "GyanKosh",
+      "description": "AI pipeline turning raw educational documents into classroom-ready lesson packages",
+      "url": "https://github.com/aloktripathi1/GyanKosh",
+      "isPrivate": false,
+      "primaryLanguage": "Python",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 156742,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
+          }
+        },
+        {
+          "size": 32814,
+          "node": {
+            "name": "JavaScript",
+            "color": "#f1e05a"
+          }
+        },
+        {
+          "size": 16539,
+          "node": {
+            "name": "CSS",
+            "color": "#663399"
+          }
+        },
+        {
+          "size": 6375,
+          "node": {
+            "name": "HTML",
+            "color": "#e34c26"
+          }
+        },
+        {
+          "size": 635,
+          "node": {
+            "name": "Mako",
+            "color": "#7e858d"
+          }
+        },
+        {
+          "size": 415,
+          "node": {
+            "name": "Dockerfile",
+            "color": "#384d54"
+          }
+        }
+      ]
+    },
     {
       "name": "aloktripathi1",
       "description": "My GitHub profile README, built with love and way too many iterations.",
@@ -639,17 +691,17 @@
       ]
     }
   ],
-  "reposAnalyzed": 20,
-  "reposPublic": 21,
+  "reposAnalyzed": 21,
+  "reposPublic": 22,
   "reposPrivate": 0,
   "biggestDay": {
     "date": "2025-09-30",
     "commits": 45
   },
-  "burstDays": 21,
+  "burstDays": 22,
   "burstThreshold": 16.0,
-  "longestGap": 35,
-  "meanGapDays": 1.7083333333333333,
+  "longestGap": 34,
+  "meanGapDays": 1.7098445595854923,
   "hourDistribution": [
     7,
     9,
@@ -661,12 +713,12 @@
     34,
     22,
     17,
-    60,
-    47,
-    21,
-    23,
-    37,
-    40,
+    74,
+    51,
+    29,
+    24,
+    39,
+    48,
     41,
     63,
     43,
@@ -676,21 +728,20 @@
     32,
     35
   ],
-  "peakHour": 17,
+  "peakHour": 10,
   "hourBuckets": {
     "night (00\u201306)": 21,
-    "morning (06\u201312)": 185,
-    "afternoon (12\u201318)": 225,
+    "morning (06\u201312)": 203,
+    "afternoon (12\u201318)": 244,
     "evening (18\u201324)": 182
   },
-  "additionsPct": 73.43186658927081,
-  "avgCommitSize": 705.3980424143556,
+  "additionsPct": 73.96579644991205,
+  "avgCommitSize": 683.06,
   "prActiveWeeks": 13,
   "prThis4w": 3,
   "prPrev4w": 6,
   "prTrendPct": -50.0,
   "daily": {
-    "2025-07-31": 0,
     "2025-08-01": 0,
     "2025-08-02": 0,
     "2025-08-03": 0,
@@ -1055,10 +1106,10 @@
     "2026-07-28": 0,
     "2026-07-29": 0,
     "2026-07-30": 0,
-    "2026-07-31": 0
+    "2026-07-31": 37,
+    "2026-08-01": 0
   },
   "contributionsDaily": {
-    "2025-07-31": 0,
     "2025-08-01": 0,
     "2025-08-02": 0,
     "2025-08-03": 0,
@@ -1423,20 +1474,21 @@
     "2026-07-28": 30,
     "2026-07-29": 14,
     "2026-07-30": 0,
-    "2026-07-31": 0
+    "2026-07-31": 39,
+    "2026-08-01": 0
   },
-  "activeDaysPct": 52.732240437158474,
-  "contributionTotal": 1529,
-  "commitTotal": 613,
-  "commitMean": 1.674863387978142,
+  "activeDaysPct": 53.00546448087432,
+  "contributionTotal": 1568,
+  "commitTotal": 650,
+  "commitMean": 1.7759562841530054,
   "commitMedian": 0.0,
-  "commitP95": 8.75,
-  "commitActiveMean": 4.474452554744525,
-  "commitMax": 18,
-  "currentStreak": 0,
+  "commitP95": 9.0,
+  "commitActiveMean": 4.7101449275362315,
+  "commitMax": 37,
+  "currentStreak": 1,
   "longestStreak": 52,
-  "additions": 317526,
-  "deletions": 114883,
+  "additions": 328400,
+  "deletions": 115589,
   "prs": 33,
   "mergedPrs": 24,
   "externalPrsTotal": 19,
@@ -1587,11 +1639,15 @@
   ],
   "topWeek": [
     [
-      "Gradientlab",
-      4
+      "GyanKosh",
+      37
     ]
   ],
   "topMonth": [
+    [
+      "GyanKosh",
+      37
+    ],
     [
       "aloktripathi1",
       28
@@ -1606,10 +1662,6 @@
     ],
     [
       "Gradientlab",
-      4
-    ],
-    [
-      "thirsty-ai",
       4
     ]
   ],
@@ -1633,6 +1685,10 @@
     [
       "deadline-intel",
       64
+    ],
+    [
+      "GyanKosh",
+      37
     ],
     [
       "Learnsy",
@@ -1697,12 +1753,12 @@
   ],
   "languages": [
     [
-      "TypeScript",
-      1350004
+      "Python",
+      1373824
     ],
     [
-      "Python",
-      1217082
+      "TypeScript",
+      1350004
     ],
     [
       "Vue",
@@ -1710,7 +1766,7 @@
     ],
     [
       "JavaScript",
-      166080
+      198894
     ],
     [
       "PLpgSQL",
@@ -1718,15 +1774,15 @@
     ],
     [
       "Dockerfile",
-      1586
+      2001
+    ],
+    [
+      "Mako",
+      1228
     ],
     [
       "Shell",
       796
-    ],
-    [
-      "Mako",
-      593
     ],
     [
       "PowerShell",
@@ -1743,25 +1799,25 @@
       287
     ],
     [
+      "AI / Agents",
+      123
+    ],
+    [
       "Competitive ML",
       123
     ],
     [
       "Other",
       117
-    ],
-    [
-      "AI / Agents",
-      86
     ]
   ],
   "weekdayMean": [
     3.230769230769231,
     4.673076923076923,
     4.230769230769231,
-    4.452830188679245,
-    4.2075471698113205,
-    4.1923076923076925,
+    4.538461538461538,
+    4.943396226415095,
+    4.113207547169812,
     4.25
   ],
   "weekdayActive": [
@@ -1769,17 +1825,13 @@
     30,
     32,
     29,
-    28,
+    29,
     27,
     25
   ],
-  "bestWeekday": 1,
+  "bestWeekday": 4,
   "quietWeekday": 0,
   "monthly": [
-    [
-      "2025-08-01",
-      0
-    ],
     [
       "2025-09-01",
       81
@@ -1822,18 +1874,22 @@
     ],
     [
       "2026-07-01",
-      299
+      338
+    ],
+    [
+      "2026-08-01",
+      0
     ]
   ],
-  "velocity30d": 295,
-  "velocityPrev30d": 234,
-  "velocityTrendPct": 26.06837606837607,
-  "momentum7d": 55,
+  "velocity30d": 317,
+  "velocityPrev30d": 248,
+  "velocityTrendPct": 27.82258064516129,
+  "momentum7d": 89,
   "momentumScore": 71,
   "shipping7d": 1,
   "shipping30d": 5,
-  "focusTop3Pct": 47.14518760195758,
-  "hhi": 0.11067171586799338,
-  "entropy": 3.5546887229591775,
-  "entropyNormalized": 0.8224775250574407
+  "focusTop3Pct": 44.46153846153847,
+  "hhi": 0.10167100591715976,
+  "entropy": 3.6674525109977485,
+  "entropyNormalized": 0.834969825263122
 }
