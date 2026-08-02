@@ -1,31 +1,31 @@
 {
-  "generated": "2026-08-01",
+  "generated": "2026-08-02",
   "windowDays": 366,
   "repos": [
     {
       "name": "GyanKosh",
-      "description": "AI pipeline turning raw educational documents into classroom-ready lesson packages",
+      "description": "A multi-agent, orchestrated AI pipeline that turns any raw educational document into a classroom-ready teaching package, grounded in the source and validated before it ships.",
       "url": "https://github.com/aloktripathi1/GyanKosh",
       "isPrivate": false,
       "primaryLanguage": "Python",
       "defaultBranch": "main",
       "languages": [
         {
-          "size": 156742,
+          "size": 230685,
           "node": {
             "name": "Python",
             "color": "#3572A5"
           }
         },
         {
-          "size": 32814,
+          "size": 38757,
           "node": {
             "name": "JavaScript",
             "color": "#f1e05a"
           }
         },
         {
-          "size": 16539,
+          "size": 17488,
           "node": {
             "name": "CSS",
             "color": "#663399"
@@ -46,10 +46,17 @@
           }
         },
         {
-          "size": 415,
+          "size": 487,
           "node": {
             "name": "Dockerfile",
             "color": "#384d54"
+          }
+        },
+        {
+          "size": 341,
+          "node": {
+            "name": "Shell",
+            "color": "#89e051"
           }
         }
       ]
@@ -698,10 +705,10 @@
     "date": "2025-09-30",
     "commits": 45
   },
-  "burstDays": 22,
+  "burstDays": 23,
   "burstThreshold": 16.0,
-  "longestGap": 34,
-  "meanGapDays": 1.7098445595854923,
+  "longestGap": 33,
+  "meanGapDays": 1.7061855670103092,
   "hourDistribution": [
     7,
     9,
@@ -713,15 +720,15 @@
     34,
     22,
     17,
-    74,
-    51,
-    29,
-    24,
+    75,
+    55,
+    31,
+    25,
     39,
-    48,
-    41,
-    63,
-    43,
+    56,
+    50,
+    68,
+    45,
     25,
     21,
     26,
@@ -731,18 +738,17 @@
   "peakHour": 10,
   "hourBuckets": {
     "night (00\u201306)": 21,
-    "morning (06\u201312)": 203,
-    "afternoon (12\u201318)": 244,
-    "evening (18\u201324)": 182
+    "morning (06\u201312)": 208,
+    "afternoon (12\u201318)": 269,
+    "evening (18\u201324)": 184
   },
-  "additionsPct": 73.96579644991205,
-  "avgCommitSize": 683.06,
+  "additionsPct": 74.40527941491291,
+  "avgCommitSize": 671.2287390029326,
   "prActiveWeeks": 13,
   "prThis4w": 3,
   "prPrev4w": 6,
   "prTrendPct": -50.0,
   "daily": {
-    "2025-08-01": 0,
     "2025-08-02": 0,
     "2025-08-03": 0,
     "2025-08-04": 0,
@@ -1107,10 +1113,10 @@
     "2026-07-29": 0,
     "2026-07-30": 0,
     "2026-07-31": 37,
-    "2026-08-01": 0
+    "2026-08-01": 32,
+    "2026-08-02": 0
   },
   "contributionsDaily": {
-    "2025-08-01": 0,
     "2025-08-02": 0,
     "2025-08-03": 0,
     "2025-08-04": 0,
@@ -1475,20 +1481,21 @@
     "2026-07-29": 14,
     "2026-07-30": 0,
     "2026-07-31": 39,
-    "2026-08-01": 0
+    "2026-08-01": 32,
+    "2026-08-02": 0
   },
-  "activeDaysPct": 53.00546448087432,
-  "contributionTotal": 1568,
-  "commitTotal": 650,
-  "commitMean": 1.7759562841530054,
+  "activeDaysPct": 53.278688524590166,
+  "contributionTotal": 1600,
+  "commitTotal": 682,
+  "commitMean": 1.8633879781420766,
   "commitMedian": 0.0,
   "commitP95": 9.0,
-  "commitActiveMean": 4.7101449275362315,
+  "commitActiveMean": 4.906474820143885,
   "commitMax": 37,
-  "currentStreak": 1,
+  "currentStreak": 2,
   "longestStreak": 52,
-  "additions": 328400,
-  "deletions": 115589,
+  "additions": 340611,
+  "deletions": 117167,
   "prs": 33,
   "mergedPrs": 24,
   "externalPrsTotal": 19,
@@ -1640,17 +1647,17 @@
   "topWeek": [
     [
       "GyanKosh",
-      37
+      69
     ]
   ],
   "topMonth": [
     [
       "GyanKosh",
-      37
+      69
     ],
     [
       "aloktripathi1",
-      28
+      23
     ],
     [
       "Reed",
@@ -1675,6 +1682,10 @@
       108
     ],
     [
+      "GyanKosh",
+      69
+    ],
+    [
       "tds-jan-2026",
       66
     ],
@@ -1685,10 +1696,6 @@
     [
       "deadline-intel",
       64
-    ],
-    [
-      "GyanKosh",
-      37
     ],
     [
       "Learnsy",
@@ -1754,7 +1761,7 @@
   "languages": [
     [
       "Python",
-      1373824
+      1447767
     ],
     [
       "TypeScript",
@@ -1766,7 +1773,7 @@
     ],
     [
       "JavaScript",
-      198894
+      204837
     ],
     [
       "PLpgSQL",
@@ -1774,7 +1781,7 @@
     ],
     [
       "Dockerfile",
-      2001
+      2073
     ],
     [
       "Mako",
@@ -1782,7 +1789,7 @@
     ],
     [
       "Shell",
-      796
+      1137
     ],
     [
       "PowerShell",
@@ -1800,7 +1807,7 @@
     ],
     [
       "AI / Agents",
-      123
+      155
     ],
     [
       "Competitive ML",
@@ -1816,9 +1823,9 @@
     4.673076923076923,
     4.230769230769231,
     4.538461538461538,
-    4.943396226415095,
-    4.113207547169812,
-    4.25
+    5.038461538461538,
+    4.716981132075472,
+    4.169811320754717
   ],
   "weekdayActive": [
     22,
@@ -1826,7 +1833,7 @@
     32,
     29,
     29,
-    27,
+    28,
     25
   ],
   "bestWeekday": 4,
@@ -1878,18 +1885,18 @@
     ],
     [
       "2026-08-01",
-      0
+      32
     ]
   ],
-  "velocity30d": 317,
-  "velocityPrev30d": 248,
-  "velocityTrendPct": 27.82258064516129,
-  "momentum7d": 89,
-  "momentumScore": 71,
+  "velocity30d": 342,
+  "velocityPrev30d": 247,
+  "velocityTrendPct": 38.46153846153847,
+  "momentum7d": 115,
+  "momentumScore": 74,
   "shipping7d": 1,
   "shipping30d": 5,
-  "focusTop3Pct": 44.46153846153847,
-  "hhi": 0.10167100591715976,
-  "entropy": 3.6674525109977485,
-  "entropyNormalized": 0.834969825263122
+  "focusTop3Pct": 42.81524926686217,
+  "hhi": 0.09964654586733859,
+  "entropy": 3.6677531181940153,
+  "entropyNormalized": 0.8350382645782563
 }
