@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06",
+  "generated": "2026-08-07",
   "windowDays": 366,
   "repos": [
     {
@@ -391,58 +391,6 @@
       ]
     },
     {
-      "name": "LumenAI",
-      "description": "An AI-powered research paper intelligence: ask questions, get citation-grounded answers.",
-      "url": "https://github.com/aloktripathi1/LumenAI",
-      "isPrivate": false,
-      "primaryLanguage": "Python",
-      "defaultBranch": "main",
-      "languages": [
-        {
-          "size": 36201,
-          "node": {
-            "name": "Python",
-            "color": "#3572A5"
-          }
-        },
-        {
-          "size": 12892,
-          "node": {
-            "name": "TypeScript",
-            "color": "#3178c6"
-          }
-        },
-        {
-          "size": 796,
-          "node": {
-            "name": "Shell",
-            "color": "#89e051"
-          }
-        },
-        {
-          "size": 593,
-          "node": {
-            "name": "Mako",
-            "color": "#7e858d"
-          }
-        },
-        {
-          "size": 329,
-          "node": {
-            "name": "Dockerfile",
-            "color": "#384d54"
-          }
-        },
-        {
-          "size": 59,
-          "node": {
-            "name": "CSS",
-            "color": "#663399"
-          }
-        }
-      ]
-    },
-    {
       "name": "Learnsy",
       "description": "Learnsy is a distraction-free, YouTube-powered study platform designed for deep learning, habit-building, and knowledge retention. ",
       "url": "https://github.com/aloktripathi1/Learnsy",
@@ -698,17 +646,17 @@
       ]
     }
   ],
-  "reposAnalyzed": 21,
-  "reposPublic": 22,
+  "reposAnalyzed": 20,
+  "reposPublic": 21,
   "reposPrivate": 0,
   "biggestDay": {
     "date": "2026-08-03",
     "commits": 48
   },
-  "burstDays": 20,
-  "burstThreshold": 16.30000000000001,
-  "longestGap": 29,
-  "meanGapDays": 1.6954314720812182,
+  "burstDays": 21,
+  "burstThreshold": 17.0,
+  "longestGap": 28,
+  "meanGapDays": 1.696969696969697,
   "hourDistribution": [
     7,
     9,
@@ -724,7 +672,7 @@
     57,
     31,
     25,
-    39,
+    38,
     56,
     57,
     69,
@@ -739,17 +687,16 @@
   "hourBuckets": {
     "night (00\u201306)": 21,
     "morning (06\u201312)": 212,
-    "afternoon (12\u201318)": 277,
+    "afternoon (12\u201318)": 276,
     "evening (18\u201324)": 187
   },
-  "additionsPct": 74.24332166553695,
-  "avgCommitSize": 670.974175035868,
+  "additionsPct": 74.14152863288595,
+  "avgCommitSize": 669.2931034482758,
   "prActiveWeeks": 14,
   "prThis4w": 2,
   "prPrev4w": 8,
   "prTrendPct": -75.0,
   "daily": {
-    "2025-08-06": 0,
     "2025-08-07": 0,
     "2025-08-08": 0,
     "2025-08-09": 0,
@@ -1045,7 +992,7 @@
     "2026-05-26": 2,
     "2026-05-27": 0,
     "2026-05-28": 9,
-    "2026-05-29": 1,
+    "2026-05-29": 0,
     "2026-05-30": 0,
     "2026-05-31": 5,
     "2026-06-01": 1,
@@ -1114,10 +1061,10 @@
     "2026-08-03": 0,
     "2026-08-04": 4,
     "2026-08-05": 0,
-    "2026-08-06": 0
+    "2026-08-06": 0,
+    "2026-08-07": 0
   },
   "contributionsDaily": {
-    "2025-08-06": 0,
     "2025-08-07": 0,
     "2025-08-08": 0,
     "2025-08-09": 0,
@@ -1413,7 +1360,7 @@
     "2026-05-26": 1,
     "2026-05-27": 2,
     "2026-05-28": 23,
-    "2026-05-29": 4,
+    "2026-05-29": 2,
     "2026-05-30": 5,
     "2026-05-31": 14,
     "2026-06-01": 6,
@@ -1482,19 +1429,20 @@
     "2026-08-03": 48,
     "2026-08-04": 9,
     "2026-08-05": 0,
-    "2026-08-06": 0
+    "2026-08-06": 20,
+    "2026-08-07": 0
   },
-  "activeDaysPct": 54.09836065573771,
-  "contributionTotal": 1669,
-  "commitTotal": 697,
-  "commitMean": 1.9043715846994536,
+  "activeDaysPct": 54.37158469945356,
+  "contributionTotal": 1687,
+  "commitTotal": 696,
+  "commitMean": 1.901639344262295,
   "commitMedian": 0.0,
   "commitP95": 9.0,
-  "commitActiveMean": 4.943262411347518,
+  "commitActiveMean": 4.9714285714285715,
   "commitMax": 37,
-  "currentStreak": 0,
+  "currentStreak": 1,
   "longestStreak": 52,
-  "additions": 347213,
+  "additions": 345372,
   "deletions": 120456,
   "prs": 34,
   "mergedPrs": 25,
@@ -1647,7 +1595,7 @@
   "topWeek": [
     [
       "GyanKosh",
-      84
+      47
     ]
   ],
   "topMonth": [
@@ -1744,20 +1692,16 @@
     [
       "Latent",
       4
-    ],
-    [
-      "LumenAI",
-      1
     ]
   ],
   "languages": [
     [
       "Python",
-      1461342
+      1425141
     ],
     [
       "TypeScript",
-      1350004
+      1337112
     ],
     [
       "Vue",
@@ -1773,19 +1717,19 @@
     ],
     [
       "Dockerfile",
-      2089
+      1760
     ],
     [
       "Mako",
-      1228
-    ],
-    [
-      "Shell",
-      1137
+      635
     ],
     [
       "PowerShell",
       571
+    ],
+    [
+      "Shell",
+      341
     ],
     [
       "Procfile",
@@ -1799,7 +1743,7 @@
     ],
     [
       "AI / Agents",
-      170
+      169
     ],
     [
       "Competitive ML",
@@ -1813,9 +1757,9 @@
   "weekdayMean": [
     4.153846153846154,
     4.846153846153846,
-    4.150943396226415,
-    4.452830188679245,
-    5.0576923076923075,
+    4.230769230769231,
+    4.830188679245283,
+    4.9245283018867925,
     4.8076923076923075,
     4.461538461538462
   ],
@@ -1823,13 +1767,13 @@
     23,
     31,
     32,
-    29,
+    30,
     29,
     28,
     26
   ],
   "bestWeekday": 4,
-  "quietWeekday": 2,
+  "quietWeekday": 0,
   "monthly": [
     [
       "2025-09-01",
@@ -1865,7 +1809,7 @@
     ],
     [
       "2026-05-01",
-      106
+      104
     ],
     [
       "2026-06-01",
@@ -1877,18 +1821,18 @@
     ],
     [
       "2026-08-01",
-      100
+      120
     ]
   ],
-  "velocity30d": 362,
-  "velocityPrev30d": 261,
-  "velocityTrendPct": 38.69731800766284,
-  "momentum7d": 139,
+  "velocity30d": 378,
+  "velocityPrev30d": 258,
+  "velocityTrendPct": 46.51162790697674,
+  "momentum7d": 120,
   "momentumScore": 75,
   "shipping7d": 1,
   "shipping30d": 3,
-  "focusTop3Pct": 44.04591104734577,
-  "hhi": 0.1001278280147136,
-  "entropy": 3.6571337885055977,
-  "entropyNormalized": 0.8326205591470992
+  "focusTop3Pct": 44.10919540229885,
+  "hhi": 0.10041369401506144,
+  "entropy": 3.646746517426474,
+  "entropyNormalized": 0.8437776930487121
 }
