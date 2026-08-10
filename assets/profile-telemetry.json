@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09",
+  "generated": "2026-08-10",
   "windowDays": 366,
   "repos": [
     {
@@ -654,9 +654,9 @@
     "commits": 48
   },
   "burstDays": 22,
-  "burstThreshold": 17,
-  "longestGap": 26,
-  "meanGapDays": 1.69,
+  "burstThreshold": 17.0,
+  "longestGap": 25,
+  "meanGapDays": 1.6865671641791045,
   "hourDistribution": [
     7,
     9,
@@ -693,11 +693,10 @@
   "additionsPct": 74.14152863288595,
   "avgCommitSize": 669.2931034482758,
   "prActiveWeeks": 14,
-  "prThis4w": 2,
+  "prThis4w": 1,
   "prPrev4w": 8,
-  "prTrendPct": -75.0,
+  "prTrendPct": -87.5,
   "daily": {
-    "2025-08-09": 0,
     "2025-08-10": 0,
     "2025-08-11": 0,
     "2025-08-12": 0,
@@ -1062,10 +1061,10 @@
     "2026-08-06": 0,
     "2026-08-07": 0,
     "2026-08-08": 0,
-    "2026-08-09": 0
+    "2026-08-09": 0,
+    "2026-08-10": 0
   },
   "contributionsDaily": {
-    "2025-08-09": 0,
     "2025-08-10": 0,
     "2025-08-11": 0,
     "2025-08-12": 0,
@@ -1430,17 +1429,18 @@
     "2026-08-06": 20,
     "2026-08-07": 22,
     "2026-08-08": 5,
-    "2026-08-09": 0
+    "2026-08-09": 6,
+    "2026-08-10": 0
   },
-  "activeDaysPct": 54.91803278688525,
-  "contributionTotal": 1714,
+  "activeDaysPct": 55.19125683060109,
+  "contributionTotal": 1720,
   "commitTotal": 696,
   "commitMean": 1.901639344262295,
   "commitMedian": 0.0,
   "commitP95": 9.0,
   "commitActiveMean": 4.9714285714285715,
   "commitMax": 37,
-  "currentStreak": 3,
+  "currentStreak": 4,
   "longestStreak": 52,
   "additions": 345372,
   "deletions": 120456,
@@ -1487,10 +1487,6 @@
   "prWeeklyP95": 5.749999999999998,
   "prWeeklyMax": 9,
   "prRecent": [
-    [
-      "2026-02-09",
-      0
-    ],
     [
       "2026-02-16",
       0
@@ -1590,6 +1586,10 @@
     [
       "2026-08-03",
       1
+    ],
+    [
+      "2026-08-10",
+      0
     ]
   ],
   "topWeek": [
@@ -1755,13 +1755,13 @@
     ]
   ],
   "weekdayMean": [
-    4.153846153846154,
+    4.0754716981132075,
     4.846153846153846,
     4.230769230769231,
     4.923076923076923,
     5.4423076923076925,
-    4.811320754716981,
-    4.377358490566038
+    4.903846153846154,
+    4.490566037735849
   ],
   "weekdayActive": [
     23,
@@ -1770,7 +1770,7 @@
     30,
     30,
     29,
-    26
+    27
   ],
   "bestWeekday": 4,
   "quietWeekday": 0,
@@ -1821,14 +1821,14 @@
     ],
     [
       "2026-08-01",
-      147
+      153
     ]
   ],
-  "velocity30d": 348,
-  "velocityPrev30d": 308,
-  "velocityTrendPct": 12.987012987012985,
-  "momentum7d": 104,
-  "momentumScore": 69,
+  "velocity30d": 322,
+  "velocityPrev30d": 328,
+  "velocityTrendPct": -1.8292682926829267,
+  "momentum7d": 62,
+  "momentumScore": 66,
   "shipping7d": 1,
   "shipping30d": 3,
   "focusTop3Pct": 44.10919540229885,
