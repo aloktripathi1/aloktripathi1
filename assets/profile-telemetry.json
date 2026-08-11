@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-10",
+  "generated": "2026-08-11",
   "windowDays": 366,
   "repos": [
     {
@@ -655,8 +655,8 @@
   },
   "burstDays": 22,
   "burstThreshold": 17.0,
-  "longestGap": 25,
-  "meanGapDays": 1.6865671641791045,
+  "longestGap": 24,
+  "meanGapDays": 1.683168316831683,
   "hourDistribution": [
     7,
     9,
@@ -697,7 +697,6 @@
   "prPrev4w": 8,
   "prTrendPct": -87.5,
   "daily": {
-    "2025-08-10": 0,
     "2025-08-11": 0,
     "2025-08-12": 0,
     "2025-08-13": 0,
@@ -1062,10 +1061,10 @@
     "2026-08-07": 0,
     "2026-08-08": 0,
     "2026-08-09": 0,
-    "2026-08-10": 0
+    "2026-08-10": 0,
+    "2026-08-11": 0
   },
   "contributionsDaily": {
-    "2025-08-10": 0,
     "2025-08-11": 0,
     "2025-08-12": 0,
     "2025-08-13": 0,
@@ -1430,17 +1429,18 @@
     "2026-08-07": 22,
     "2026-08-08": 5,
     "2026-08-09": 6,
-    "2026-08-10": 0
+    "2026-08-10": 2,
+    "2026-08-11": 0
   },
-  "activeDaysPct": 55.19125683060109,
-  "contributionTotal": 1720,
+  "activeDaysPct": 55.46448087431693,
+  "contributionTotal": 1722,
   "commitTotal": 696,
   "commitMean": 1.901639344262295,
   "commitMedian": 0.0,
   "commitP95": 9.0,
   "commitActiveMean": 4.9714285714285715,
   "commitMax": 37,
-  "currentStreak": 4,
+  "currentStreak": 5,
   "longestStreak": 52,
   "additions": 345372,
   "deletions": 120456,
@@ -1592,12 +1592,7 @@
       0
     ]
   ],
-  "topWeek": [
-    [
-      "GyanKosh",
-      4
-    ]
-  ],
+  "topWeek": [],
   "topMonth": [
     [
       "GyanKosh",
@@ -1755,16 +1750,16 @@
     ]
   ],
   "weekdayMean": [
-    4.0754716981132075,
-    4.846153846153846,
+    4.113207547169812,
+    4.754716981132075,
     4.230769230769231,
     4.923076923076923,
     5.4423076923076925,
     4.903846153846154,
-    4.490566037735849
+    4.576923076923077
   ],
   "weekdayActive": [
-    23,
+    24,
     31,
     32,
     30,
@@ -1821,15 +1816,15 @@
     ],
     [
       "2026-08-01",
-      153
+      155
     ]
   ],
-  "velocity30d": 322,
-  "velocityPrev30d": 328,
-  "velocityTrendPct": -1.8292682926829267,
-  "momentum7d": 62,
+  "velocity30d": 308,
+  "velocityPrev30d": 339,
+  "velocityTrendPct": -9.144542772861357,
+  "momentum7d": 55,
   "momentumScore": 66,
-  "shipping7d": 1,
+  "shipping7d": 0,
   "shipping30d": 3,
   "focusTop3Pct": 44.10919540229885,
   "hhi": 0.10041369401506144,
