@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31",
+  "generated": "2026-09-01",
   "windowDays": 366,
   "repos": [
     {
@@ -656,7 +656,7 @@
   "burstDays": 23,
   "burstThreshold": 17.0,
   "longestGap": 14,
-  "meanGapDays": 1.7317073170731707,
+  "meanGapDays": 1.7524271844660195,
   "hourDistribution": [
     7,
     9,
@@ -697,7 +697,6 @@
   "prPrev4w": 2,
   "prTrendPct": -50.0,
   "daily": {
-    "2025-08-31": 0,
     "2025-09-01": 0,
     "2025-09-02": 0,
     "2025-09-03": 0,
@@ -1062,10 +1061,10 @@
     "2026-08-28": 0,
     "2026-08-29": 0,
     "2026-08-30": 0,
-    "2026-08-31": 0
+    "2026-08-31": 0,
+    "2026-09-01": 0
   },
   "contributionsDaily": {
-    "2025-08-31": 0,
     "2025-09-01": 0,
     "2025-09-02": 0,
     "2025-09-03": 0,
@@ -1430,17 +1429,18 @@
     "2026-08-28": 0,
     "2026-08-29": 0,
     "2026-08-30": 0,
-    "2026-08-31": 0
+    "2026-08-31": 1,
+    "2026-09-01": 0
   },
-  "activeDaysPct": 56.284153005464475,
-  "contributionTotal": 1744,
+  "activeDaysPct": 56.557377049180324,
+  "contributionTotal": 1745,
   "commitTotal": 698,
   "commitMean": 1.907103825136612,
   "commitMedian": 0.0,
   "commitP95": 9.0,
   "commitActiveMean": 4.950354609929078,
   "commitMax": 37,
-  "currentStreak": 0,
+  "currentStreak": 1,
   "longestStreak": 52,
   "additions": 351674,
   "deletions": 120491,
@@ -1592,16 +1592,11 @@
       0
     ]
   ],
-  "topWeek": [
-    [
-      "Latent",
-      2
-    ]
-  ],
+  "topWeek": [],
   "topMonth": [
     [
       "GyanKosh",
-      15
+      4
     ],
     [
       "Latent",
@@ -1751,16 +1746,16 @@
     ]
   ],
   "weekdayMean": [
-    4.113207547169812,
-    5.211538461538462,
+    4.132075471698113,
+    5.113207547169812,
     4.288461538461538,
     4.923076923076923,
     5.4423076923076925,
     4.903846153846154,
-    4.490566037735849
+    4.576923076923077
   ],
   "weekdayActive": [
-    24,
+    25,
     33,
     33,
     30,
@@ -1771,10 +1766,6 @@
   "bestWeekday": 4,
   "quietWeekday": 0,
   "monthly": [
-    [
-      "2025-09-01",
-      81
-    ],
     [
       "2025-10-01",
       128
@@ -1817,15 +1808,19 @@
     ],
     [
       "2026-08-01",
-      177
+      178
+    ],
+    [
+      "2026-09-01",
+      0
     ]
   ],
-  "velocity30d": 145,
-  "velocityPrev30d": 349,
-  "velocityTrendPct": -58.45272206303726,
-  "momentum7d": 2,
+  "velocity30d": 135,
+  "velocityPrev30d": 353,
+  "velocityTrendPct": -61.756373937677054,
+  "momentum7d": 1,
   "momentumScore": 66,
-  "shipping7d": 1,
+  "shipping7d": 0,
   "shipping30d": 2,
   "focusTop3Pct": 43.98280802292264,
   "hhi": 0.09988013234702507,
