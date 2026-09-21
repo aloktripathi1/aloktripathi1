@@ -21,5 +21,3 @@ I contribute bug fixes, performance improvements, and regression tests to open-s
 * **[OpenScience](https://github.com/synthetic-sciences/openscience)**
 
   * [#96](https://github.com/synthetic-sciences/openscience/issues/96) — Reported a bug where cancelling a science search did not properly cancel the underlying connector work.
-
-More contributions are on my [GitHub profile](https://github.com/aloktripathi1).
