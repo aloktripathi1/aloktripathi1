@@ -1,36 +1,25 @@
 ## Hi, I'm Alok !!
 
-![Visitors](https://komarev.com/ghpvc/?username=aloktripathi1&label=visitors&color=0f766e&style=flat-square)
+I build AI/ML systems, agentic workflows, and applied research projects, with a focus on turning ideas into reliable, usable systems.
 
-> crafting intelligence from chaos.
+### Open Source Contributions
 
-<div align="center">
-  <img width="100%" src="./assets/profile-telemetry.svg" alt="build telemetry" />
-</div>
+I contribute bug fixes, performance improvements, and regression tests to open-source AI/ML projects.
 
-## Featured Projects
+* **[mem0](https://github.com/mem0ai/mem0)**
 
-- **[SachCheck](https://github.com/aloktripathi1/SachCheck)** — Claim-level fact verification for articles and images. Extracts atomic claims, cross-references 4 evidence sources in parallel (Google Fact Check, Wikipedia, GDELT, ClaimBuster), runs an 11-signal heuristic scorer, and streams verdicts live via SSE — Claude Haiku for extraction, Sonnet for synthesis, OCR fallback chain for images. 1st Runner-Up, Anthropic × IIT Madras CBC Hackathon. [Live](https://sachcheck.netlify.app/)
+  * [#5415](https://github.com/mem0ai/mem0/pull/5415) — Added native `embed_batch()` support for Ollama embeddings.
+  * [#5609](https://github.com/mem0ai/mem0/pull/5609) — Added native batch embedding support across 5 providers.
+* **[Qdrant Client](https://github.com/qdrant/qdrant-client)**
 
-- **[Messy Mashup Classifier](https://github.com/aloktripathi1/Messy-Mashup-Classifier)** — Multi-label music-genre classification on noisy audio mashups. 6-model ensemble including an Audio Spectrogram Transformer, 0.9614 Macro F1. Top 2.5% of 1,200+ teams.
+  * [#1224](https://github.com/qdrant/qdrant-client/pull/1224) — Fixed `MatchText` / `MatchTextAny` crashes on non-string payload values.
 
-- **[Reed](https://github.com/aloktripathi1/Reed)** — Memory-first AI mentor for career decisions. Opens every conversation with context pulled from prior goals, patterns, commitments, and past sessions instead of starting cold. TypeScript, Next.js, Claude, Supabase. [Live](https://ask-reed.vercel.app/)
+* **[LlamaIndex](https://github.com/run-llama/llama_index)**
 
-- **[Ridgeline](https://github.com/aloktripathi1/ridgeline)** — Full-stack ops management app for tracking work and day-to-day tasks through a production workflow. Vue, FastAPI, SQLite, Redis, Claude. [Live](https://ridge-line.vercel.app/)
+  * [#22169](https://github.com/run-llama/llama_index/pull/22169) — Fixed async Qdrant queries incorrectly dropping valid `shard_identifier=0` values.
 
-## Tech Stack
+* **[OpenScience](https://github.com/synthetic-sciences/openscience)**
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
-![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+  * [#96](https://github.com/synthetic-sciences/openscience/issues/96) — Reported a bug where cancelling a science search did not properly cancel the underlying connector work.
+
+More contributions are on my [GitHub profile](https://github.com/aloktripathi1).
