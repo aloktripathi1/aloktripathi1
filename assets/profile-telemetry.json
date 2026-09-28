@@ -1,20 +1,27 @@
 {
-  "generated": "2026-09-27",
+  "generated": "2026-09-28",
   "windowDays": 366,
   "repos": [
     {
-      "name": "freight-rate-ml",
+      "name": "freight-rate-prediction",
       "description": "",
-      "url": "https://github.com/aloktripathi1/freight-rate-ml",
+      "url": "https://github.com/aloktripathi1/freight-rate-prediction",
       "isPrivate": false,
       "primaryLanguage": "Python",
       "defaultBranch": "main",
       "languages": [
         {
-          "size": 1916,
+          "size": 180444,
           "node": {
             "name": "Python",
             "color": "#3572A5"
+          }
+        },
+        {
+          "size": 16250,
+          "node": {
+            "name": "TeX",
+            "color": "#3D6117"
           }
         }
       ]
@@ -514,11 +521,11 @@
     "commits": 48
   },
   "burstDays": 20,
-  "burstThreshold": 18.200000000000017,
+  "burstThreshold": 17.900000000000034,
   "longestGap": 20,
-  "meanGapDays": 1.8571428571428572,
+  "meanGapDays": 1.8527918781725887,
   "hourDistribution": [
-    13,
+    17,
     7,
     0,
     2,
@@ -536,28 +543,27 @@
     91,
     97,
     92,
-    60,
+    56,
     34,
     28,
     38,
-    37,
-    34
+    45,
+    37
   ],
   "peakHour": 16,
   "hourBuckets": {
-    "night (00\u201306)": 25,
+    "night (00\u201306)": 29,
     "morning (06\u201312)": 185,
     "afternoon (12\u201318)": 436,
-    "evening (18\u201324)": 231
+    "evening (18\u201324)": 238
   },
-  "additionsPct": 68.97151428465283,
-  "avgCommitSize": 491.0741163055872,
+  "additionsPct": 66.93211335109682,
+  "avgCommitSize": 671.9932432432432,
   "prActiveWeeks": 17,
   "prThis4w": 1,
-  "prPrev4w": 15,
-  "prTrendPct": -93.33333333333333,
+  "prPrev4w": 5,
+  "prTrendPct": -80.0,
   "daily": {
-    "2025-09-27": 7,
     "2025-09-28": 4,
     "2025-09-29": 4,
     "2025-09-30": 18,
@@ -921,11 +927,11 @@
     "2026-09-23": 1,
     "2026-09-24": 0,
     "2026-09-25": 0,
-    "2026-09-26": 2,
-    "2026-09-27": 1
+    "2026-09-26": 1,
+    "2026-09-27": 15,
+    "2026-09-28": 5
   },
   "contributionsDaily": {
-    "2025-09-27": 0,
     "2025-09-28": 8,
     "2025-09-29": 9,
     "2025-09-30": 45,
@@ -1289,21 +1295,22 @@
     "2026-09-23": 4,
     "2026-09-24": 0,
     "2026-09-25": 0,
-    "2026-09-26": 3,
-    "2026-09-27": 1
+    "2026-09-26": 1,
+    "2026-09-27": 17,
+    "2026-09-28": 5
   },
-  "activeDaysPct": 53.825136612021865,
-  "contributionTotal": 1689,
-  "commitTotal": 877,
-  "commitMean": 2.3961748633879782,
+  "activeDaysPct": 54.09836065573771,
+  "contributionTotal": 1708,
+  "commitTotal": 888,
+  "commitMean": 2.4262295081967213,
   "commitMedian": 0.0,
-  "commitP95": 11.0,
-  "commitActiveMean": 5.550632911392405,
+  "commitP95": 11.75,
+  "commitActiveMean": 5.620253164556962,
   "commitMax": 37,
-  "currentStreak": 2,
+  "currentStreak": 3,
   "longestStreak": 25,
-  "additions": 297041,
-  "deletions": 133631,
+  "additions": 399404,
+  "deletions": 197326,
   "prs": 85,
   "mergedPrs": 73,
   "externalPrsTotal": 21,
@@ -1347,10 +1354,6 @@
   "prWeeklyP95": 12.79999999999999,
   "prWeeklyMax": 24,
   "prRecent": [
-    [
-      "2026-03-30",
-      0
-    ],
     [
       "2026-04-06",
       1
@@ -1450,26 +1453,30 @@
     [
       "2026-09-21",
       1
+    ],
+    [
+      "2026-09-28",
+      0
     ]
   ],
   "topWeek": [
     [
-      "aloktripathi1",
-      5
+      "freight-rate-prediction",
+      20
     ],
     [
-      "freight-rate-ml",
+      "aloktripathi1",
       2
     ]
   ],
   "topMonth": [
     [
-      "aloktripathi1",
-      5
+      "freight-rate-prediction",
+      20
     ],
     [
-      "freight-rate-ml",
-      2
+      "aloktripathi1",
+      5
     ]
   ],
   "topYear": [
@@ -1478,12 +1485,12 @@
       243
     ],
     [
-      "Medihub",
-      114
-    ],
-    [
       "Messy-Mashup-Classifier",
       108
+    ],
+    [
+      "Medihub",
+      107
     ],
     [
       "GyanKosh",
@@ -1518,6 +1525,10 @@
       21
     ],
     [
+      "freight-rate-prediction",
+      20
+    ],
+    [
       "Plant-leaves-Super-Resolution-Challenge",
       15
     ],
@@ -1532,10 +1543,6 @@
     [
       "Latent",
       6
-    ],
-    [
-      "freight-rate-ml",
-      2
     ]
   ],
   "languages": [
@@ -1545,7 +1552,7 @@
     ],
     [
       "Python",
-      812283
+      990811
     ],
     [
       "JavaScript",
@@ -1554,6 +1561,10 @@
     [
       "Vue",
       240723
+    ],
+    [
+      "TeX",
+      16250
     ],
     [
       "PLpgSQL",
@@ -1579,7 +1590,7 @@
   "categories": [
     [
       "Web Apps",
-      584
+      577
     ],
     [
       "AI / Agents",
@@ -1591,20 +1602,20 @@
     ],
     [
       "Other",
-      8
+      26
     ]
   ],
   "weekdayMean": [
-    4.1923076923076925,
+    4.2075471698113205,
     5.153846153846154,
     4.288461538461538,
     4.576923076923077,
     5.230769230769231,
-    4.452830188679245,
-    4.415094339622642
+    4.5,
+    4.716981132075472
   ],
   "weekdayActive": [
-    25,
+    26,
     31,
     33,
     26,
@@ -1661,18 +1672,18 @@
     ],
     [
       "2026-09-01",
-      11
+      30
     ]
   ],
-  "velocity30d": 12,
+  "velocity30d": 31,
   "velocityPrev30d": 216,
-  "velocityTrendPct": -94.44444444444444,
-  "momentum7d": 11,
+  "velocityTrendPct": -85.64814814814815,
+  "momentum7d": 27,
   "momentumScore": 72,
   "shipping7d": 2,
   "shipping30d": 2,
-  "focusTop3Pct": 53.02166476624858,
-  "hhi": 0.13699782481222267,
-  "entropy": 3.2946946476139574,
-  "entropyNormalized": 0.8236736619034893
+  "focusTop3Pct": 51.57657657657657,
+  "hhi": 0.13216510429348266,
+  "entropy": 3.36275974999371,
+  "entropyNormalized": 0.8406899374984275
 }
