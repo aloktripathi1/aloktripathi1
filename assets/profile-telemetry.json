@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02",
+  "generated": "2026-10-03",
   "windowDays": 366,
   "repos": [
     {
@@ -523,7 +523,7 @@
   "burstDays": 22,
   "burstThreshold": 17.0,
   "longestGap": 20,
-  "meanGapDays": 1.8615384615384616,
+  "meanGapDays": 1.875,
   "hourDistribution": [
     17,
     7,
@@ -537,8 +537,8 @@
     13,
     67,
     74,
+    46,
     47,
-    48,
     57,
     89,
     93,
@@ -547,24 +547,23 @@
     33,
     27,
     35,
-    44,
+    41,
     37
   ],
   "peakHour": 16,
   "hourBuckets": {
     "night (00\u201306)": 29,
     "morning (06\u201312)": 171,
-    "afternoon (12\u201318)": 425,
-    "evening (18\u201324)": 231
+    "afternoon (12\u201318)": 423,
+    "evening (18\u201324)": 228
   },
-  "additionsPct": 67.09962368046278,
-  "avgCommitSize": 688.232476635514,
+  "additionsPct": 67.04474365596018,
+  "avgCommitSize": 689.3689776733255,
   "prActiveWeeks": 17,
   "prThis4w": 1,
   "prPrev4w": 5,
   "prTrendPct": -80.0,
   "daily": {
-    "2025-10-02": 5,
     "2025-10-03": 2,
     "2025-10-04": 2,
     "2025-10-05": 3,
@@ -929,12 +928,12 @@
     "2026-09-29": 0,
     "2026-09-30": 3,
     "2026-10-01": 0,
-    "2026-10-02": 0
+    "2026-10-02": 0,
+    "2026-10-03": 0
   },
   "contributionsDaily": {
-    "2025-10-02": 15,
-    "2025-10-03": 6,
-    "2025-10-04": 6,
+    "2025-10-03": 0,
+    "2025-10-04": 0,
     "2025-10-05": 9,
     "2025-10-06": 3,
     "2025-10-07": 3,
@@ -1297,20 +1296,21 @@
     "2026-09-29": 1,
     "2026-09-30": 1,
     "2026-10-01": 0,
-    "2026-10-02": 0
+    "2026-10-02": 0,
+    "2026-10-03": 0
   },
-  "activeDaysPct": 53.551912568306015,
-  "contributionTotal": 1621,
-  "commitTotal": 856,
-  "commitMean": 2.33879781420765,
+  "activeDaysPct": 52.732240437158474,
+  "contributionTotal": 1594,
+  "commitTotal": 851,
+  "commitMean": 2.3251366120218577,
   "commitMedian": 0.0,
   "commitP95": 11.0,
-  "commitActiveMean": 5.52258064516129,
+  "commitActiveMean": 5.525974025974026,
   "commitMax": 37,
   "currentStreak": 0,
   "longestStreak": 25,
-  "additions": 395302,
-  "deletions": 193825,
+  "additions": 393320,
+  "deletions": 193333,
   "prs": 85,
   "mergedPrs": 73,
   "externalPrsTotal": 21,
@@ -1467,10 +1467,6 @@
     [
       "GyanKosh",
       3
-    ],
-    [
-      "aloktripathi1",
-      1
     ]
   ],
   "topMonth": [
@@ -1501,12 +1497,12 @@
       87
     ],
     [
-      "Medihub",
-      72
-    ],
-    [
       "aloktripathi1",
       69
+    ],
+    [
+      "Medihub",
+      67
     ],
     [
       "deadline-intel",
@@ -1598,7 +1594,7 @@
   "categories": [
     [
       "Web Apps",
-      542
+      537
     ],
     [
       "AI / Agents",
@@ -1617,18 +1613,18 @@
     4.115384615384615,
     4.3076923076923075,
     3.7884615384615383,
-    4.490566037735849,
-    5.132075471698113,
-    4.5,
+    4.288461538461538,
+    5.018867924528302,
+    4.30188679245283,
     4.653846153846154
   ],
   "weekdayActive": [
     25,
     31,
     33,
+    25,
     26,
     27,
-    28,
     26
   ],
   "bestWeekday": 4,
@@ -1684,14 +1680,14 @@
     ]
   ],
   "velocity30d": 32,
-  "velocityPrev30d": 87,
-  "velocityTrendPct": -63.2183908045977,
-  "momentum7d": 25,
+  "velocityPrev30d": 78,
+  "velocityTrendPct": -58.97435897435898,
+  "momentum7d": 24,
   "momentumScore": 71,
-  "shipping7d": 3,
+  "shipping7d": 2,
   "shipping30d": 3,
-  "focusTop3Pct": 51.16822429906542,
-  "hhi": 0.13438127784085946,
-  "entropy": 3.3655444577693396,
-  "entropyNormalized": 0.8413861144423349
+  "focusTop3Pct": 51.46886016451234,
+  "hhi": 0.1350053369161324,
+  "entropy": 3.364057554158758,
+  "entropyNormalized": 0.8410143885396895
 }
