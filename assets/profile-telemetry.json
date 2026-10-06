@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05",
+  "generated": "2026-10-06",
   "windowDays": 366,
   "repos": [
     {
@@ -523,7 +523,7 @@
   "burstDays": 22,
   "burstThreshold": 17.0,
   "longestGap": 20,
-  "meanGapDays": 1.875,
+  "meanGapDays": 1.8795811518324608,
   "hourDistribution": [
     17,
     7,
@@ -544,7 +544,7 @@
     93,
     91,
     55,
-    33,
+    30,
     27,
     35,
     41,
@@ -555,16 +555,15 @@
     "night (00\u201306)": 29,
     "morning (06\u201312)": 167,
     "afternoon (12\u201318)": 423,
-    "evening (18\u201324)": 228
+    "evening (18\u201324)": 225
   },
-  "additionsPct": 67.12811585818358,
-  "avgCommitSize": 685.689492325856,
+  "additionsPct": 67.14851126574747,
+  "avgCommitSize": 687.031990521327,
   "prActiveWeeks": 17,
   "prThis4w": 1,
   "prPrev4w": 5,
   "prTrendPct": -80.0,
   "daily": {
-    "2025-10-05": 3,
     "2025-10-06": 1,
     "2025-10-07": 1,
     "2025-10-08": 3,
@@ -929,10 +928,10 @@
     "2026-10-02": 0,
     "2026-10-03": 0,
     "2026-10-04": 0,
-    "2026-10-05": 0
+    "2026-10-05": 0,
+    "2026-10-06": 0
   },
   "contributionsDaily": {
-    "2025-10-05": 9,
     "2025-10-06": 3,
     "2025-10-07": 3,
     "2025-10-08": 10,
@@ -1297,20 +1296,21 @@
     "2026-10-02": 0,
     "2026-10-03": 0,
     "2026-10-04": 0,
-    "2026-10-05": 0
+    "2026-10-05": 0,
+    "2026-10-06": 0
   },
-  "activeDaysPct": 52.732240437158474,
-  "contributionTotal": 1594,
-  "commitTotal": 847,
-  "commitMean": 2.314207650273224,
+  "activeDaysPct": 52.459016393442624,
+  "contributionTotal": 1585,
+  "commitTotal": 844,
+  "commitMean": 2.3060109289617485,
   "commitMedian": 0.0,
   "commitP95": 11.0,
-  "commitActiveMean": 5.572368421052632,
+  "commitActiveMean": 5.589403973509934,
   "commitMax": 37,
   "currentStreak": 0,
   "longestStreak": 25,
-  "additions": 389866,
-  "deletions": 190913,
+  "additions": 389364,
+  "deletions": 190491,
   "prs": 85,
   "mergedPrs": 73,
   "externalPrsTotal": 21,
@@ -1502,7 +1502,7 @@
     ],
     [
       "Medihub",
-      63
+      60
     ],
     [
       "RidgeLine",
@@ -1590,7 +1590,7 @@
   "categories": [
     [
       "Web Apps",
-      533
+      530
     ],
     [
       "AI / Agents",
@@ -1607,12 +1607,12 @@
   ],
   "weekdayMean": [
     4.037735849056604,
-    4.3076923076923075,
+    4.226415094339623,
     3.7884615384615383,
     4.288461538461538,
     5.115384615384615,
     4.384615384615385,
-    4.566037735849057
+    4.480769230769231
   ],
   "weekdayActive": [
     25,
@@ -1621,7 +1621,7 @@
     25,
     26,
     27,
-    26
+    25
   ],
   "bestWeekday": 4,
   "quietWeekday": 2,
@@ -1676,14 +1676,14 @@
     ]
   ],
   "velocity30d": 32,
-  "velocityPrev30d": 58,
-  "velocityTrendPct": -44.827586206896555,
-  "momentum7d": 2,
+  "velocityPrev30d": 36,
+  "velocityTrendPct": -11.11111111111111,
+  "momentum7d": 1,
   "momentumScore": 71,
   "shipping7d": 1,
   "shipping30d": 3,
-  "focusTop3Pct": 51.71192443919716,
-  "hhi": 0.13555865621981325,
-  "entropy": 3.362435727708261,
-  "entropyNormalized": 0.8406089319270652
+  "focusTop3Pct": 51.8957345971564,
+  "hhi": 0.13600604209249567,
+  "entropy": 3.360946913658024,
+  "entropyNormalized": 0.840236728414506
 }
