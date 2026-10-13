@@ -8,3 +8,4 @@ I build AI/ML systems, agentic workflows, and applied research projects, with a 
 * **[Qdrant Client](https://github.com/qdrant/qdrant-client):** PR [#1224](https://github.com/qdrant/qdrant-client/pull/1224) fixed `MatchText` crashes on non-string payloads
 * **[LlamaIndex](https://github.com/run-llama/llama_index):** PR [#22169](https://github.com/run-llama/llama_index/pull/22169) fixed async Qdrant `shard_identifier=0` handling
 * **[OpenScience](https://github.com/synthetic-sciences/openscience):** Issue [#96](https://github.com/synthetic-sciences/openscience/issues/96) reported a science-search cancellation bug
+* **[Supermemory](https://github.com/supermemoryai/supermemory):** Fix merged via PR [#1799](https://github.com/supermemoryai/supermemory/pull/1799) - memory-search middleware now fails open instead of crashing chat completions on backend errors
