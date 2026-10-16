@@ -1,7 +1,31 @@
 {
-  "generated": "2026-10-15",
+  "generated": "2026-10-16",
   "windowDays": 366,
   "repos": [
+    {
+      "name": "Veritas",
+      "description": "A financial AI research agent that turns company documents into a one-page, source-cited stock brief.",
+      "url": "https://github.com/aloktripathi1/Veritas",
+      "isPrivate": false,
+      "primaryLanguage": "Python",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 96807,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
+          }
+        },
+        {
+          "size": 3304,
+          "node": {
+            "name": "Shell",
+            "color": "#89e051"
+          }
+        }
+      ]
+    },
     {
       "name": "aloktripathi1",
       "description": "My GitHub profile README, built with love and way too many iterations.",
@@ -513,8 +537,8 @@
       ]
     }
   ],
-  "reposAnalyzed": 16,
-  "reposPublic": 16,
+  "reposAnalyzed": 17,
+  "reposPublic": 17,
   "reposPrivate": 0,
   "biggestDay": {
     "date": "2026-08-03",
@@ -523,7 +547,7 @@
   "burstDays": 22,
   "burstThreshold": 17.0,
   "longestGap": 20,
-  "meanGapDays": 1.956989247311828,
+  "meanGapDays": 1.89247311827957,
   "hourDistribution": [
     17,
     7,
@@ -543,8 +567,8 @@
     89,
     93,
     89,
-    53,
-    30,
+    70,
+    32,
     27,
     35,
     40,
@@ -555,16 +579,15 @@
     "night (00\u201306)": 29,
     "morning (06\u201312)": 161,
     "afternoon (12\u201318)": 417,
-    "evening (18\u201324)": 222
+    "evening (18\u201324)": 241
   },
-  "additionsPct": 67.98099863290611,
-  "avgCommitSize": 682.0663449939686,
+  "additionsPct": 68.72243423518985,
+  "avgCommitSize": 682.5978773584906,
   "prActiveWeeks": 17,
   "prThis4w": 1,
   "prPrev4w": 0,
   "prTrendPct": 0,
   "daily": {
-    "2025-10-15": 1,
     "2025-10-16": 0,
     "2025-10-17": 0,
     "2025-10-18": 0,
@@ -929,10 +952,10 @@
     "2026-10-12": 0,
     "2026-10-13": 1,
     "2026-10-14": 0,
-    "2026-10-15": 0
+    "2026-10-15": 20,
+    "2026-10-16": 0
   },
   "contributionsDaily": {
-    "2025-10-15": 3,
     "2025-10-16": 0,
     "2025-10-17": 0,
     "2025-10-18": 0,
@@ -1297,20 +1320,21 @@
     "2026-10-12": 0,
     "2026-10-13": 1,
     "2026-10-14": 1,
-    "2026-10-15": 0
+    "2026-10-15": 7,
+    "2026-10-16": 0
   },
   "activeDaysPct": 51.09289617486339,
-  "contributionTotal": 1537,
-  "commitTotal": 829,
-  "commitMean": 2.2650273224043715,
+  "contributionTotal": 1541,
+  "commitTotal": 848,
+  "commitMean": 2.3169398907103824,
   "commitMedian": 0.0,
-  "commitP95": 11.0,
-  "commitActiveMean": 5.7172413793103445,
+  "commitP95": 11.75,
+  "commitActiveMean": 5.848275862068966,
   "commitMax": 37,
-  "currentStreak": 2,
+  "currentStreak": 3,
   "longestStreak": 25,
-  "additions": 384387,
-  "deletions": 181046,
+  "additions": 397795,
+  "deletions": 181048,
   "prs": 85,
   "mergedPrs": 73,
   "externalPrsTotal": 21,
@@ -1461,11 +1485,19 @@
   ],
   "topWeek": [
     [
+      "Veritas",
+      20
+    ],
+    [
       "aloktripathi1",
       1
     ]
   ],
   "topMonth": [
+    [
+      "Veritas",
+      20
+    ],
     [
       "freight-rate-prediction",
       20
@@ -1506,7 +1538,7 @@
     ],
     [
       "Medihub",
-      44
+      43
     ],
     [
       "Learnsy",
@@ -1523,6 +1555,10 @@
     [
       "notetmp",
       21
+    ],
+    [
+      "Veritas",
+      20
     ],
     [
       "freight-rate-prediction",
@@ -1552,7 +1588,7 @@
     ],
     [
       "Python",
-      990925
+      1087732
     ],
     [
       "JavaScript",
@@ -1571,16 +1607,16 @@
       10443
     ],
     [
+      "Shell",
+      3645
+    ],
+    [
       "Dockerfile",
       1323
     ],
     [
       "Mako",
       635
-    ],
-    [
-      "Shell",
-      341
     ],
     [
       "Procfile",
@@ -1590,11 +1626,11 @@
   "categories": [
     [
       "Web Apps",
-      515
+      514
     ],
     [
       "AI / Agents",
-      165
+      185
     ],
     [
       "Competitive ML",
@@ -1608,17 +1644,17 @@
   "weekdayMean": [
     4.0576923076923075,
     4.134615384615385,
-    3.547169811320755,
-    4.150943396226415,
-    4.826923076923077,
+    3.5576923076923075,
+    4.283018867924528,
+    4.735849056603773,
     4.211538461538462,
     4.480769230769231
   ],
   "weekdayActive": [
     24,
     30,
-    33,
-    24,
+    32,
+    25,
     25,
     26,
     25
@@ -1672,18 +1708,18 @@
     ],
     [
       "2026-10-01",
-      2
+      9
     ]
   ],
-  "velocity30d": 34,
+  "velocity30d": 41,
   "velocityPrev30d": 23,
-  "velocityTrendPct": 47.82608695652174,
-  "momentum7d": 2,
+  "velocityTrendPct": 78.26086956521739,
+  "momentum7d": 9,
   "momentumScore": 80,
-  "shipping7d": 1,
-  "shipping30d": 3,
-  "focusTop3Pct": 52.834740651387214,
-  "hhi": 0.13875336308514774,
-  "entropy": 3.3486279304662263,
-  "entropyNormalized": 0.8371569826165566
+  "shipping7d": 2,
+  "shipping30d": 4,
+  "focusTop3Pct": 51.65094339622641,
+  "hhi": 0.13304056158775363,
+  "entropy": 3.429707418686581,
+  "entropyNormalized": 0.8390797792885737
 }
