@@ -1,10 +1,48 @@
 {
-  "generated": "2026-10-27",
+  "generated": "2026-10-28",
   "windowDays": 366,
   "repos": [
     {
+      "name": "debloat-seek",
+      "description": "Customize the IITM BS Degree SEEK Portal.",
+      "url": "https://github.com/aloktripathi1/debloat-seek",
+      "isPrivate": false,
+      "primaryLanguage": "Python",
+      "defaultBranch": "main",
+      "languages": [
+        {
+          "size": 72604,
+          "node": {
+            "name": "Python",
+            "color": "#3572A5"
+          }
+        },
+        {
+          "size": 52206,
+          "node": {
+            "name": "CSS",
+            "color": "#663399"
+          }
+        },
+        {
+          "size": 18423,
+          "node": {
+            "name": "JavaScript",
+            "color": "#f1e05a"
+          }
+        },
+        {
+          "size": 10279,
+          "node": {
+            "name": "HTML",
+            "color": "#e34c26"
+          }
+        }
+      ]
+    },
+    {
       "name": "aloktripathi1",
-      "description": "My GitHub profile README, built with love and way too many iterations.",
+      "description": "",
       "url": "https://github.com/aloktripathi1/aloktripathi1",
       "isPrivate": false,
       "primaryLanguage": "Python",
@@ -537,17 +575,17 @@
       ]
     }
   ],
-  "reposAnalyzed": 17,
-  "reposPublic": 17,
+  "reposAnalyzed": 18,
+  "reposPublic": 18,
   "reposPrivate": 0,
   "biggestDay": {
     "date": "2026-08-03",
     "commits": 48
   },
-  "burstDays": 22,
-  "burstThreshold": 17,
+  "burstDays": 23,
+  "burstThreshold": 17.0,
   "longestGap": 20,
-  "meanGapDays": 1.9105263157894736,
+  "meanGapDays": 1.905759162303665,
   "hourDistribution": [
     17,
     7,
@@ -558,37 +596,36 @@
     1,
     6,
     9,
-    13,
+    14,
     64,
     68,
     44,
-    44,
-    58,
-    89,
+    53,
+    68,
+    95,
     93,
     89,
     70,
     32,
-    27,
+    30,
     35,
     40,
     37
   ],
-  "peakHour": 16,
+  "peakHour": 15,
   "hourBuckets": {
     "night (00\u201306)": 29,
-    "morning (06\u201312)": 161,
-    "afternoon (12\u201318)": 417,
-    "evening (18\u201324)": 241
+    "morning (06\u201312)": 162,
+    "afternoon (12\u201318)": 442,
+    "evening (18\u201324)": 244
   },
-  "additionsPct": 68.72243423518985,
-  "avgCommitSize": 682.5978773584906,
+  "additionsPct": 68.90946638002741,
+  "avgCommitSize": 673.0775370581528,
   "prActiveWeeks": 18,
   "prThis4w": 2,
   "prPrev4w": 1,
   "prTrendPct": 100.0,
   "daily": {
-    "2025-10-27": 0,
     "2025-10-28": 1,
     "2025-10-29": 1,
     "2025-10-30": 2,
@@ -951,12 +988,12 @@
     "2026-10-22": 0,
     "2026-10-23": 0,
     "2026-10-24": 0,
-    "2026-10-25": 0,
-    "2026-10-26": 0,
-    "2026-10-27": 0
+    "2026-10-25": 9,
+    "2026-10-26": 1,
+    "2026-10-27": 19,
+    "2026-10-28": 0
   },
   "contributionsDaily": {
-    "2025-10-27": 0,
     "2025-10-28": 3,
     "2025-10-29": 3,
     "2025-10-30": 6,
@@ -1321,20 +1358,21 @@
     "2026-10-24": 6,
     "2026-10-25": 15,
     "2026-10-26": 1,
-    "2026-10-27": 0
+    "2026-10-27": 18,
+    "2026-10-28": 0
   },
-  "activeDaysPct": 52.18579234972678,
-  "contributionTotal": 1565,
-  "commitTotal": 848,
-  "commitMean": 2.3169398907103824,
+  "activeDaysPct": 52.459016393442624,
+  "contributionTotal": 1583,
+  "commitTotal": 877,
+  "commitMean": 2.3961748633879782,
   "commitMedian": 0.0,
-  "commitP95": 11.75,
-  "commitActiveMean": 5.848275862068966,
+  "commitP95": 12.0,
+  "commitActiveMean": 5.925675675675675,
   "commitMax": 37,
-  "currentStreak": 3,
+  "currentStreak": 4,
   "longestStreak": 25,
-  "additions": 397795,
-  "deletions": 181048,
+  "additions": 406765,
+  "deletions": 183524,
   "prs": 87,
   "mergedPrs": 73,
   "externalPrsTotal": 23,
@@ -1483,15 +1521,20 @@
       0
     ]
   ],
-  "topWeek": [],
+  "topWeek": [
+    [
+      "debloat-seek",
+      29
+    ]
+  ],
   "topMonth": [
+    [
+      "debloat-seek",
+      29
+    ],
     [
       "Veritas",
       20
-    ],
-    [
-      "freight-rate-prediction",
-      5
     ],
     [
       "GyanKosh",
@@ -1534,6 +1577,10 @@
     [
       "Learnsy",
       33
+    ],
+    [
+      "debloat-seek",
+      29
     ],
     [
       "Reed",
@@ -1579,11 +1626,11 @@
     ],
     [
       "Python",
-      1087732
+      1160336
     ],
     [
       "JavaScript",
-      269772
+      288195
     ],
     [
       "Vue",
@@ -1617,25 +1664,25 @@
   "categories": [
     [
       "Web Apps",
-      514
+      444
     ],
     [
       "AI / Agents",
       185
     ],
     [
-      "Competitive ML",
-      123
+      "Other",
+      125
     ],
     [
-      "Other",
-      26
+      "Competitive ML",
+      123
     ]
   ],
   "weekdayMean": [
-    4.037735849056604,
-    4.056603773584905,
-    3.5576923076923075,
+    4.115384615384615,
+    4.39622641509434,
+    3.490566037735849,
     4.365384615384615,
     4.826923076923077,
     4.326923076923077,
@@ -1643,7 +1690,7 @@
   ],
   "weekdayActive": [
     26,
-    30,
+    31,
     32,
     25,
     25,
@@ -1699,18 +1746,18 @@
     ],
     [
       "2026-10-01",
-      33
+      51
     ]
   ],
-  "velocity30d": 40,
-  "velocityPrev30d": 26,
-  "velocityTrendPct": 53.84615384615385,
-  "momentum7d": 22,
+  "velocity30d": 53,
+  "velocityPrev30d": 31,
+  "velocityTrendPct": 70.96774193548387,
+  "momentum7d": 40,
   "momentumScore": 81,
-  "shipping7d": 0,
+  "shipping7d": 1,
   "shipping30d": 4,
-  "focusTop3Pct": 51.65094339622641,
-  "hhi": 0.13304056158775363,
-  "entropy": 3.429707418686581,
-  "entropyNormalized": 0.8390797792885737
+  "focusTop3Pct": 49.9429874572406,
+  "hhi": 0.1254809011232186,
+  "entropy": 3.5258445452359854,
+  "entropyNormalized": 0.8455414771288334
 }
