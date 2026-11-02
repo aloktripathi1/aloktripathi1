@@ -1,6 +1,6 @@
 ## Hi, I'm Alok !!
 
-I build AI/ML systems, agentic workflows, and applied research projects, with a focus on turning ideas into reliable, usable systems.
+I build AI/ML systems, agentic workflows and applied research projects with a focus on turning ideas into reliable, usable systems.
 
 ### Contributions
 
