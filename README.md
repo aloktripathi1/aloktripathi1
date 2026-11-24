@@ -11,3 +11,4 @@ I build AI/ML systems, agentic workflows and applied research projects with a fo
 * **[LlamaIndex](https://github.com/run-llama/llama_index):** PR [#22169](https://github.com/run-llama/llama_index/pull/22169) fixed async Qdrant `shard_identifier=0` handling
 * **[OpenScience](https://github.com/synthetic-sciences/openscience):** Issue [#96](https://github.com/synthetic-sciences/openscience/issues/96) reported a science-search cancellation bug
 * **[Supermemory](https://github.com/supermemoryai/supermemory):** Fix merged via PR [#1799](https://github.com/supermemoryai/supermemory/pull/1799) – memory-search middleware now fails open instead of crashing chat completions on backend errors
+* **[SelfGraph](https://github.com/hydra-db/selfgraph):** PR [#513](https://github.com/hydra-db/selfgraph/pull/513) fixed `KuzuStore(read_only=True)` failing to open any database and closed the store on a failed open, in both the Python and TypeScript SDKs
